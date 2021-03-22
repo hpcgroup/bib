@@ -26,6 +26,61 @@
       primaryClass={cs.DC}
 }
 
+@misc{chen2016revisiting,
+    title={Revisiting Distributed Synchronous SGD},
+    author={Jianmin Chen and Xinghao Pan and Rajat Monga and Samy Bengio and Rafal Jozefowicz},
+    year={2016},
+    eprint={1604.00981},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{wahib2020scaling,
+    title={Scaling Distributed Deep Learning Workloads beyond the Memory Capacity with KARMA},
+    author={Mohamed Wahib and Haoyu Zhang and Truong Thao Nguyen and Aleksandr Drozd and Jens Domke and Lingqi Zhang and Ryousei Takano and Satoshi Matsuoka},
+    year={2020},
+    eprint={2008.11421},
+    archivePrefix={arXiv},
+    primaryClass={cs.DC}
+}
+
+@misc{ying2018image,
+    title={Image Classification at Supercomputer Scale},
+    author={Chris Ying and Sameer Kumar and Dehao Chen and Tao Wang and Youlong Cheng},
+    year={2018},
+    eprint={1811.06992},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@INPROCEEDINGS{summit2019,
+  author={J. {Yin} and S. {Gahlot} and N. {Laanait} and K. {Maheshwari} and J. {Morrison} and S. {Dash} and M. {Shankar}},
+  booktitle={2019 IEEE/ACM Third Workshop on Deep Learning on Supercomputers (DLS)}, 
+  title={Strategies to Deploy and Scale Deep Learning on the Summit Supercomputer}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={84-94},
+  doi={10.1109/DLS49591.2019.00016}}
+
+  @misc{oyama2020case,
+      title={The Case for Strong Scaling in Deep Learning: Training Large 3D CNNs with Hybrid Parallelism}, 
+      author={Yosuke Oyama and Naoya Maruyama and Nikoli Dryden and Erin McCarthy and Peter Harrington and Jan Balewski and Satoshi Matsuoka and Peter Nugent and Brian Van Essen},
+      year={2020},
+      eprint={2007.12856},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
+}
+
+@misc{flexflow,
+    title={Beyond Data and Model Parallelism for Deep Neural Networks},
+    author={Zhihao Jia and Matei Zaharia and Alex Aiken},
+    year={2018},
+    eprint={1807.05358},
+    archivePrefix={arXiv},
+    primaryClass={cs.DC}
+}
+
 @inproceedings{jia2018data,
 	author = {Jia, Zhihao and Zaharia, Matei and Aiken, Alex},
 	booktitle = {Proceedings of Machine Learning and Systems},
@@ -188,6 +243,24 @@ volume	= {abs/1609.08144}
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
+
+@inproceedings{dryden2019,
+author = {Dryden, Nikoli and Maruyama, Naoya and Moon, Tim and Benson, Tom and Snir, Marc and Van Essen, Brian},
+title = {Channel and Filter Parallelism for Large-Scale CNN Training},
+year = {2019},
+isbn = {9781450362290},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3295500.3356207},
+doi = {10.1145/3295500.3356207},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {10},
+numpages = {20},
+keywords = {convolution, CNN, deep learning, algorithms, scaling},
+location = {Denver, Colorado},
+series = {SC '19}
+}
+
 
 @article{BiT-resnet,
   author    = {Alexander Kolesnikov and
@@ -364,11 +437,14 @@ volume	= {abs/1609.08144}
 
 @InProceedings{pmlr-v28-coates13, 
 title = {Deep learning with COTS HPC systems}, 
-author = {Adam Coates and Brody Huval and Tao Wang and David Wu and
-Bryan Catanzaro and Ng Andrew}, 
+author = {Adam Coates and Brody Huval and Tao Wang and David Wu and Bryan Catanzaro and Ng Andrew}, 
 pages = {1337--1345}, 
 year = {2013}, 
-editor = {Sanjoy Dasgupta and David McAllester}, volume = {28}, number = {3}, series = {Proceedings of Machine Learning Research}, address = {Atlanta, Georgia, USA}, 
+editor = {Sanjoy Dasgupta and David McAllester}, 
+volume = {28}, 
+number = {3}, 
+series = {Proceedings of Machine Learning Research}, 
+address = {Atlanta, Georgia, USA}, 
 month = {17--19 Jun}, 
 publisher = {PMLR}, 
 pdf = {http://proceedings.mlr.press/v28/coates13.pdf}, 

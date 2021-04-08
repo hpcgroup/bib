@@ -1,3 +1,72 @@
+@inproceedings{40565,
+title	= {Large Scale Distributed Deep Networks},
+author	= {Jeffrey Dean and Greg S. Corrado and Rajat Monga and Kai Chen and Matthieu Devin and Quoc V. Le and Mark Z. Mao and Marc’Aurelio Ranzato and Andrew Senior and Paul Tucker and Ke Yang and Andrew Y. Ng},
+year	= {2012},
+booktitle	= {NIPS}
+}
+
+
+
+@inproceedings {projectadam,
+author = {Trishul Chilimbi and Yutaka Suzue and Johnson Apacible and Karthik Kalyanaraman},
+title = {Project Adam: Building an Efficient and Scalable Deep Learning Training System},
+booktitle = {11th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 14)},
+year = {2014},
+isbn = { 978-1-931971-16-4},
+address = {Broomfield, CO},
+pages = {571--582},
+url = {https://www.usenix.org/conference/osdi14/technical-sessions/presentation/chilimbi},
+publisher = {{USENIX} Association},
+month = oct,
+}
+
+@misc{niu2011hogwild,
+      title={HOGWILD!: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent}, 
+      author={Feng Niu and Benjamin Recht and Christopher Re and Stephen J. Wright},
+      year={2011},
+      eprint={1106.5730},
+      archivePrefix={arXiv},
+      primaryClass={math.OC}
+}
+
+@ARTICLE{MoDNN,
+  author={X. {Chen} and D. Z. {Chen} and Y. {Han} and X. S. {Hu}},
+  journal={IEEE Transactions on Parallel and Distributed Systems}, 
+  title={moDNN: Memory Optimal Deep Neural Network Training on Graphics Processing Units}, 
+  year={2019},
+  volume={30},
+  number={3},
+  pages={646-661},
+  doi={10.1109/TPDS.2018.2866582}}
+
+@inproceedings{vDNN,
+author = {Rhu, Minsoo and Gimelshein, Natalia and Clemons, Jason and Zulfiqar, Arslan and Keckler, Stephen W.},
+title = {VDNN: Virtualized Deep Neural Networks for Scalable, Memory-Efficient Neural Network Design},
+year = {2016},
+publisher = {IEEE Press},
+abstract = {The most widely used machine learning frameworks require users to carefully tune their memory usage so that the deep neural network (DNN) fits into the DRAM capacity of a GPU. This restriction hampers a researcher's flexibility to study different machine learning algorithms, forcing them to either use a less desirable network architecture or parallelize the processing across multiple GPUs. We propose a runtime memory manager that virtualizes the memory usage of DNNs such that both GPU and CPU memory can simultaneously be utilized for training larger DNNs. Our virtualized DNN (vDNN) reduces the average GPU memory usage of AlexNet by up to 89%, OverFeat by 91%, and GoogLeNet by 95%, a significant reduction in memory requirements of DNNs. Similar experiments on VGG-16, one of the deepest and memory hungry DNNs to date, demonstrate the memory-efficiency of our proposal. vDNN enables VGG-16 with batch size 256 (requiring 28 GB of memory) to be trained on a single NVIDIA Titan X GPU card containing 12 GB of memory, with 18% performance loss compared to a hypothetical, oracular GPU with enough memory to hold the entire DNN.},
+booktitle = {The 49th Annual IEEE/ACM International Symposium on Microarchitecture},
+articleno = {18},
+numpages = {13},
+location = {Taipei, Taiwan},
+series = {MICRO-49}
+}
+
+@inproceedings{KingmaAdam2014,
+  author    = {Diederik P. Kingma and
+               Jimmy Ba},
+  editor    = {Yoshua Bengio and
+               Yann LeCun},
+  title     = {Adam: {A} Method for Stochastic Optimization},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015,
+               San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1412.6980},
+  timestamp = {Thu, 25 Jul 2019 14:25:37 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/KingmaB14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
 @inproceedings{mesh_tf,
  author = {Shazeer, Noam and Cheng, Youlong and Parmar, Niki and Tran, Dustin and Vaswani, Ashish and Koanantakool, Penporn and Hawkins, Peter and Lee, HyoukJoong and Hong, Mingsheng and Young, Cliff and Sepassi, Ryan and Hechtman, Blake},
  booktitle = {Advances in Neural Information Processing Systems},

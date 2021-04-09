@@ -1,4 +1,85 @@
-@inproceedings{40565,
+@article{wikitext-103,
+  author    = {Stephen Merity and
+               Caiming Xiong and
+               James Bradbury and
+               Richard Socher},
+  title     = {Pointer Sentinel Mixture Models},
+  journal   = {CoRR},
+  volume    = {abs/1609.07843},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1609.07843},
+  archivePrefix = {arXiv},
+  eprint    = {1609.07843},
+  timestamp = {Thu, 21 Mar 2019 11:19:44 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/MerityXBS16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{SGDMomentum,
+title = {On the momentum term in gradient descent learning algorithms},
+journal = {Neural Networks},
+volume = {12},
+number = {1},
+pages = {145-151},
+year = {1999},
+issn = {0893-6080},
+doi = {https://doi.org/10.1016/S0893-6080(98)00116-6},
+url = {https://www.sciencedirect.com/science/article/pii/S0893608098001166},
+author = {Ning Qian},
+keywords = {Momentum, Gradient descent learning algorithm, Damped harmonic oscillator, Critical damping, Learning rate, Speed of convergence},
+abstract = {A momentum term is usually included in the simulations of connectionist learning algorithms. Although it is well known that such a term greatly improves the speed of learning, there have been few rigorous studies of its mechanisms. In this paper, I show that in the limit of continuous time, the momentum parameter is analogous to the mass of Newtonian particles that move through a viscous medium in a conservative force field. The behavior of the system near a local minimum is equivalent to a set of coupled and damped harmonic oscillators. The momentum term improves the speed of convergence by bringing some eigen components of the system closer to critical damping. Similar results can be obtained for the discrete time case used in computer simulations. In particular, I derive the bounds for convergence on learning-rate and momentum parameters, and demonstrate that the momentum term can increase the range of learning rate over which the system converges. The optimal condition for convergence is also analyzed.}
+}
+
+@article{weight_pred,
+  title     = {Efficient and Robust Parallel {DNN} Training through Model Parallelism
+               on Multi-GPU Platform},
+  journal   = {CoRR},
+  volume    = {abs/1809.02839},
+  year      = {2018},
+  note      = {Withdrawn.},
+  url       = {http://arxiv.org/abs/1809.02839},
+  archivePrefix = {arXiv},
+  eprint    = {1809.02839},
+  timestamp = {Fri, 04 Jan 2019 10:57:56 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1809-02839.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{amoebanet,
+  author    = {Esteban Real and
+               Alok Aggarwal and
+               Yanping Huang and
+               Quoc V. Le},
+  title     = {Regularized Evolution for Image Classifier Architecture Search},
+  journal   = {CoRR},
+  volume    = {abs/1802.01548},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1802.01548},
+  archivePrefix = {arXiv},
+  eprint    = {1802.01548},
+  timestamp = {Mon, 13 Aug 2018 16:48:15 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1802-01548.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{GEMS,
+author = {Jain, Arpan and Awan, Ammar Ahmad and Aljuhani, Asmaa M. and Hashmi, Jahanzeb Maqbool and Anthony, Quentin G. and Subramoni, Hari and Panda, Dhableswar K. and Machiraju, Raghu and Parwani, Anil},
+title = {GEMS: GPU-ENabled MEmory-Aware Model-Parallelism SYstem for Distributed DNN Training},
+year = {2020},
+isbn = {9781728199986},
+publisher = {IEEE Press},
+abstract = {Data-parallelism has become an established paradigm to train DNNs that fit inside GPU memory on large-scale HPC systems. However, model-parallelism is required to train out-of-core DNNs. In this paper, we deal with emerging requirements brought forward by very large DNNs being trained using high-resolution images common in digital pathology. To address these, we propose, design, and implement GEMS; a GPU-Enabled Memory-Aware Model-Parallelism System. We present several design schemes like GEMS-MAST, GEMS-MASTER, and GEMS-Hybrid that offer excellent speedups over state-of-the-art systems like Mesh-TensorFlow and FlexFlow. Furthermore, we combine model-parallelism and data-parallelism to train a 1000-layer ResNet-1k model using 1,024 Volta V100 GPUs with 97.32% scaling-efficiency. For the real-world histopathology whole-slide-image (WSI) of 100,000 x 100,000 pixels, we train custom ResNet-110-v2 on image tiles of size 1024 x 1024 and reduce the training time from seven hours to 28 minutes.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {45},
+numpages = {15},
+keywords = {MPI, TensorFlow, model parallelism, DNN, eager execution, keras},
+location = {Atlanta, Georgia},
+series = {SC '20}
+}
+
+
+
+@inproceedings{downpourSGD,
 title	= {Large Scale Distributed Deep Networks},
 author	= {Jeffrey Dean and Greg S. Corrado and Rajat Monga and Kai Chen and Matthieu Devin and Quoc V. Le and Mark Z. Mao and Marc’Aurelio Ranzato and Andrew Senior and Paul Tucker and Ke Yang and Andrew Y. Ng},
 year	= {2012},

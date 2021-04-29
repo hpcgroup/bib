@@ -124,19 +124,33 @@ abstract = {A momentum term is usually included in the simulations of connection
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
+@article{amoebanet-aaai, 
+  title={Regularized Evolution for Image Classifier Architecture Search}, 
+  volume={33}, 
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/4405}, 
+  DOI={10.1609/aaai.v33i01.33014780}, 
+  abstractNote={&lt;p&gt;The effort devoted to hand-crafting neural network image classifiers has motivated the use of architecture search to discover them automatically. Although evolutionary algorithms have been repeatedly applied to neural network topologies, the image classifiers thus discovered have remained inferior to human-crafted ones. Here, we evolve an image classifier— &lt;em&gt;AmoebaNet-A&lt;/em&gt;—that surpasses hand-designs for the first time. To do this, we modify the tournament selection evolutionary algorithm by introducing an age property to favor the younger genotypes. Matching size, AmoebaNet-A has comparable accuracy to current state-of-the-art ImageNet models discovered with more complex architecture-search methods. Scaled to larger size, AmoebaNet-A sets a new state-of-theart 83.9% top-1 / 96.6% top-5 ImageNet accuracy. In a controlled comparison against a well known reinforcement learning algorithm, we give evidence that evolution can obtain results faster with the same hardware, especially at the earlier stages of the search. This is relevant when fewer compute resources are available. Evolution is, thus, a simple method to effectively discover high-quality architectures.&lt;/p&gt;}, 
+  number={01}, 
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+  author={Real, Esteban and Aggarwal, Alok and Huang, Yanping and Le, Quoc V.}, 
+  year={2019}, 
+  month={Jul.}, 
+  pages={4780-4789} 
+}
+
 @inproceedings{GEMS,
-author = {Jain, Arpan and Awan, Ammar Ahmad and Aljuhani, Asmaa M. and Hashmi, Jahanzeb Maqbool and Anthony, Quentin G. and Subramoni, Hari and Panda, Dhableswar K. and Machiraju, Raghu and Parwani, Anil},
-title = {GEMS: GPU-ENabled MEmory-Aware Model-Parallelism SYstem for Distributed DNN Training},
-year = {2020},
-isbn = {9781728199986},
-publisher = {IEEE Press},
-abstract = {Data-parallelism has become an established paradigm to train DNNs that fit inside GPU memory on large-scale HPC systems. However, model-parallelism is required to train out-of-core DNNs. In this paper, we deal with emerging requirements brought forward by very large DNNs being trained using high-resolution images common in digital pathology. To address these, we propose, design, and implement GEMS; a GPU-Enabled Memory-Aware Model-Parallelism System. We present several design schemes like GEMS-MAST, GEMS-MASTER, and GEMS-Hybrid that offer excellent speedups over state-of-the-art systems like Mesh-TensorFlow and FlexFlow. Furthermore, we combine model-parallelism and data-parallelism to train a 1000-layer ResNet-1k model using 1,024 Volta V100 GPUs with 97.32% scaling-efficiency. For the real-world histopathology whole-slide-image (WSI) of 100,000 x 100,000 pixels, we train custom ResNet-110-v2 on image tiles of size 1024 x 1024 and reduce the training time from seven hours to 28 minutes.},
-booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
-articleno = {45},
-numpages = {15},
-keywords = {MPI, TensorFlow, model parallelism, DNN, eager execution, keras},
-location = {Atlanta, Georgia},
-series = {SC '20}
+  author = {Jain, Arpan and Awan, Ammar Ahmad and Aljuhani, Asmaa M. and Hashmi, Jahanzeb Maqbool and Anthony, Quentin G. and Subramoni, Hari and Panda, Dhableswar K. and Machiraju, Raghu and Parwani, Anil},
+  title = {GEMS: GPU-ENabled MEmory-Aware Model-Parallelism SYstem for Distributed DNN Training},
+  year = {2020},
+  isbn = {9781728199986},
+  publisher = {IEEE Press},
+  abstract = {Data-parallelism has become an established paradigm to train DNNs that fit inside GPU memory on large-scale HPC systems. However, model-parallelism is required to train out-of-core DNNs. In this paper, we deal with emerging requirements brought forward by very large DNNs being trained using high-resolution images common in digital pathology. To address these, we propose, design, and implement GEMS; a GPU-Enabled Memory-Aware Model-Parallelism System. We present several design schemes like GEMS-MAST, GEMS-MASTER, and GEMS-Hybrid that offer excellent speedups over state-of-the-art systems like Mesh-TensorFlow and FlexFlow. Furthermore, we combine model-parallelism and data-parallelism to train a 1000-layer ResNet-1k model using 1,024 Volta V100 GPUs with 97.32% scaling-efficiency. For the real-world histopathology whole-slide-image (WSI) of 100,000 x 100,000 pixels, we train custom ResNet-110-v2 on image tiles of size 1024 x 1024 and reduce the training time from seven hours to 28 minutes.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {45},
+  numpages = {15},
+  keywords = {MPI, TensorFlow, model parallelism, DNN, eager execution, keras},
+  location = {Atlanta, Georgia},
+  series = {SC '20}
 }
 
 
@@ -171,6 +185,19 @@ month = oct,
       archivePrefix={arXiv},
       primaryClass={math.OC}
 }
+
+@inproceedings{niu2011hogwild-nips,
+  author = {Recht, Benjamin and Re, Christopher and Wright, Stephen and Niu, Feng},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {J. Shawe-Taylor and R. Zemel and P. Bartlett and F. Pereira and K. Q. Weinberger},
+  pages = {},
+  publisher = {Curran Associates, Inc.},
+  title = {Hogwild!: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent},
+  url = {https://proceedings.neurips.cc/paper/2011/file/218a0aefd1d1a4be65601cc6ddc1520e-Paper.pdf},
+  volume = {24},
+  year = {2011}
+}
+
 
 @ARTICLE{MoDNN,
   author={X. {Chen} and D. Z. {Chen} and Y. {Han} and X. S. {Hu}},
@@ -231,6 +258,21 @@ archivePrefix={arXiv},
 primaryClass={cs.DC}
 }
 
+@inproceedings{tensorflowosdi2016,
+  author = {Abadi, Mart\'{\i}n and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and Kudlur, Manjunath and Levenberg, Josh and Monga, Rajat and Moore, Sherry and Murray, Derek G. and Steiner, Benoit and Tucker, Paul and Vasudevan, Vijay and Warden, Pete and Wicke, Martin and Yu, Yuan and Zheng, Xiaoqiang},
+  title = {TensorFlow: A System for Large-Scale Machine Learning},
+  year = {2016},
+  isbn = {9781931971331},
+  publisher = {USENIX Association},
+  address = {USA},
+  abstract = {TensorFlow is a machine learning system that operates at large scale and in heterogeneous environments. Tensor-Flow uses dataflow graphs to represent computation, shared state, and the operations that mutate that state. It maps the nodes of a dataflow graph across many machines in a cluster, and within a machine across multiple computational devices, including multicore CPUs, general-purpose GPUs, and custom-designed ASICs known as Tensor Processing Units (TPUs). This architecture gives flexibility to the application developer: whereas in previous "parameter server" designs the management of shared state is built into the system, TensorFlow enables developers to experiment with novel optimizations and training algorithms. TensorFlow supports a variety of applications, with a focus on training and inference on deep neural networks. Several Google services use TensorFlow in production, we have released it as an open-source project, and it has become widely used for machine learning research. In this paper, we describe the TensorFlow dataflow model and demonstrate the compelling performance that TensorFlow achieves for several real-world applications.},
+  booktitle = {Proceedings of the 12th USENIX Conference on Operating Systems Design and Implementation},
+  pages = {265–283},
+  numpages = {19},
+  location = {Savannah, GA, USA},
+  series = {OSDI'16}
+}
+
 
 @misc{sergeev2018horovod,
       title={Horovod: fast and easy distributed deep learning in TensorFlow}, 
@@ -256,6 +298,24 @@ primaryClass={cs.DC}
       eprint={1709.05011},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+
+@inproceedings{you2018imagenet-icpp,
+  author = {You, Yang and Zhang, Zhao and Hsieh, Cho-Jui and Demmel, James and Keutzer, Kurt},
+  title = {ImageNet Training in Minutes},
+  year = {2018},
+  isbn = {9781450365109},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3225058.3225069},
+  doi = {10.1145/3225058.3225069},
+  abstract = {In this paper, we investigate large scale computers' capability of speeding up deep neural networks (DNN) training. Our approach is to use large batch size, powered by the Layer-wise Adaptive Rate Scaling (LARS) algorithm, for efficient usage of massive computing resources. Our approach is generic, as we empirically evaluate the effectiveness on two neural networks: AlexNet and ResNet-50 trained with the ImageNet-1k dataset while preserving the state-of-the-art test accuracy. Compared to the baseline of a previous study from a group of researchers at Facebook, our approach shows higher test accuracy on batch sizes that are larger than 16K. Using 2,048 Intel Xeon Platinum 8160 processors, we reduce the 100-epoch AlexNet training time from hours to 11 minutes. With 2,048 Intel Xeon Phi 7250 Processors, we reduce the 90-epoch ResNet-50 training time from hours to 20 minutes. Our implementation is open source and has been released in the Intel distribution of Caffe v1.0.7.},
+  booktitle = {Proceedings of the 47th International Conference on Parallel Processing},
+  articleno = {1},
+  numpages = {10},
+  keywords = {Fast Deep Neural Networks Training, Distributed Machine Learning},
+  location = {Eugene, OR, USA},
+  series = {ICPP 2018}
 }
 
 @misc{you2017large,
@@ -292,6 +352,21 @@ primaryClass={cs.DC}
     eprint={2008.11421},
     archivePrefix={arXiv},
     primaryClass={cs.DC}
+}
+
+@inproceedings{wahib2020scaling-sc,
+  author = {Wahib, Mohamed and Zhang, Haoyu and Nguyen, Truong Thao and Drozd, Aleksandr and Domke, Jens and Zhang, Lingqi and Takano, Ryousei and Matsuoka, Satoshi},
+  title = {Scaling Distributed Deep Learning Workloads beyond the Memory Capacity with KARMA},
+  year = {2020},
+  isbn = {9781728199986},
+  publisher = {IEEE Press},
+  abstract = {The dedicated memory of hardware accelerators can be insufficient to store all weights and/or intermediate states of large deep learning models. Although model parallelism is a viable approach to reduce the memory pressure issue, significant modification of the source code and considerations for algorithms are required. An alternative solution is to use out-of-core methods instead of, or in addition to, data parallelism.We propose a performance model based on the concurrency analysis of out-of-core training behavior, and derive a strategy that combines layer swapping and redundant recomputing. We achieve an average of 1.52x speedup in six different models over the state-of-the-art out-of-core methods. We also introduce the first method to solve the challenging problem of out-of-core multi-node training by carefully pipelining gradient exchanges and performing the parameter updates on the host. Our data parallel out-of-core solution can outperform complex hybrid model parallelism in training large models, e.g. Megatron-LM and Turning-NLG.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {19},
+  numpages = {15},
+  keywords = {deep neural networks, out-of-core, GPUs},
+  location = {Atlanta, Georgia},
+  series = {SC '20}
 }
 
 @misc{you2019large,
@@ -421,6 +496,18 @@ http://proceedings.mlr.press/v37/schulman15.html
       primaryClass={cs.LG}
 }
 
+@inproceedings{paszke2019pytorch-nips,
+  author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages = {},
+  publisher = {Curran Associates, Inc.},
+  title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+  url = {https://proceedings.neurips.cc/paper/2019/file/bdbca288fee7f92f2bfa9f7012727740-Paper.pdf},
+  volume = {32},
+  year = {2019}
+}
+
 @misc{sinha2017introspection,
       title={Introspection: Accelerating Neural Network Training By Learning Weight Evolution}, 
       author={Abhishek Sinha and Mausoom Sarkar and Aahitagni Mukherjee and Balaji Krishnamurthy},
@@ -465,6 +552,20 @@ http://proceedings.mlr.press/v37/schulman15.html
       primaryClass={cs.CL}
 }
 
+@article{nikolentzos2019message-aaai, 
+  title={Message Passing Attention Networks for Document Understanding}, 
+  volume={34}, 
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/6376}, 
+  DOI={10.1609/aaai.v34i05.6376}, 
+  abstractNote={&lt;p&gt;Graph neural networks have recently emerged as a very effective framework for processing graph-structured data. These models have achieved state-of-the-art performance in many tasks. Most graph neural networks can be described in terms of message passing, vertex update, and readout functions. In this paper, we represent documents as word co-occurrence networks and propose an application of the message passing framework to NLP, the Message Passing Attention network for Document understanding (MPAD). We also propose several hierarchical variants of MPAD. Experiments conducted on 10 standard text classification datasets show that our architectures are competitive with the state-of-the-art. Ablation studies reveal further insights about the impact of the different components on performance. Code is publicly available at: https://github.com/giannisnik/mpad.&lt;/p&gt;}, 
+  number={05}, 
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+  author={Nikolentzos, Giannis and Tixier, Antoine and Vazirgiannis, Michalis}, 
+  year={2020}, 
+  month={Apr.}, 
+  pages={8544-8551} 
+}
+
 @article{nmt,
 title	= {Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation},
 author	= {Yonghui Wu and Mike Schuster and Zhifeng Chen and Quoc V. Le and Mohammad Norouzi and Wolfgang Macherey and Maxim Krikun and Yuan Cao and Qin Gao and Klaus Macherey and Jeff Klingner and Apurva Shah and Melvin Johnson and Xiaobing Liu and Łukasz Kaiser and Stephan Gouws and Yoshikiyo Kato and Taku Kudo and Hideto Kazawa and Keith Stevens and George Kurian and Nishant Patil and Wei Wang and Cliff Young and Jason Smith and Jason Riesa and Alex Rudnick and Oriol Vinyals and Greg Corrado and Macduff Hughes and Jeffrey Dean},
@@ -492,6 +593,17 @@ volume	= {abs/1609.08144}
       eprint={1807.05511},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+
+@ARTICLE{zhao2019object-tnnls,  
+  author={Zhao, Zhong-Qiu and Zheng, Peng and Xu, Shou-Tao and Wu, Xindong},  
+  journal={IEEE Transactions on Neural Networks and Learning Systems},   
+  title={Object Detection With Deep Learning: A Review},   
+  year={2019},  
+  volume={30},  
+  number={11},  
+  pages={3212-3232},  
+  doi={10.1109/TNNLS.2018.2876865}
 }
 
 @misc{tao2020hierarchical,
@@ -539,6 +651,28 @@ series = {SC '19}
   timestamp = {Fri, 03 Jan 2020 16:10:45 +0100},
   biburl    = {https://dblp.org/rec/journals/corr/abs-1912-11370.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@InProceedings{BiT-resnet-eccv,
+  author="Kolesnikov, Alexander
+  and Beyer, Lucas
+  and Zhai, Xiaohua
+  and Puigcerver, Joan
+  and Yung, Jessica
+  and Gelly, Sylvain
+  and Houlsby, Neil",
+  editor="Vedaldi, Andrea
+  and Bischof, Horst
+  and Brox, Thomas
+  and Frahm, Jan-Michael",
+  title="Big Transfer (BiT): General Visual Representation Learning",
+  booktitle="Computer Vision -- ECCV 2020",
+  year="2020",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="491--507",
+  abstract="Transfer of pre-trained representations improves sample efficiency and simplifies hyperparameter tuning when training deep neural networks for vision. We revisit the paradigm of pre-training on large supervised datasets and fine-tuning the model on a target task. We scale up pre-training, and propose a simple recipe that we call Big Transfer (BiT). By combining a few carefully selected components, and transferring using a simple heuristic, we achieve strong performance on over 20 datasets. BiT performs well across a surprisingly wide range of data regimes---from 1 example per class to 1M total examples. BiT achieves 87.5{\%} top-1 accuracy on ILSVRC-2012, 99.4{\%} on CIFAR-10, and 76.3{\%} on the 19 task Visual Task Adaptation Benchmark (VTAB). On small datasets, BiT attains 76.8{\%} on ILSVRC-2012 with 10 examples per class, and 97.0{\%} on CIFAR-10 with 10 examples per class. We conduct detailed analysis of the main components that lead to high transfer performance.",
+  isbn="978-3-030-58558-7"
 }
 
 @article{yanyou-large-batch,
@@ -611,6 +745,18 @@ series = {SC '19}
       primaryClass={cs.CV}
 }
 
+@inproceedings{huang2019gpipe_nips,
+  author = {Huang, Yanping and Cheng, Youlong and Bapna, Ankur and Firat, Orhan and Chen, Dehao and Chen, Mia and Lee, HyoukJoong and Ngiam, Jiquan and Le, Quoc V and Wu, Yonghui and Chen, zhifeng},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages = {},
+  publisher = {Curran Associates, Inc.},
+  title = {GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism},
+  url = {https://proceedings.neurips.cc/paper/2019/file/093f65e080a295f8076b1c5722a46aa2-Paper.pdf},
+  volume = {32},
+  year = {2019}
+}
+
 @article{transformer,
   author    = {Ashish Vaswani and
                Noam Shazeer and
@@ -673,6 +819,19 @@ series = {SC '19}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
+@inproceedings{wait-free-backprop-usenix,
+  author = {Hao Zhang and Zeyu Zheng and Shizhen Xu and Wei Dai and Qirong Ho and Xiaodan Liang and Zhiting Hu and Jinliang Wei and Pengtao Xie and Eric P. Xing},
+  title = {Poseidon: An Efficient Communication Architecture for Distributed Deep Learning on {GPU} Clusters},
+  booktitle = {2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)},
+  year = {2017},
+  isbn = {978-1-931971-38-6},
+  address = {Santa Clara, CA},
+  pages = {181--193},
+  url = {https://www.usenix.org/conference/atc17/technical-sessions/presentation/zhang},
+  publisher = {{USENIX} Association},
+  month = jul,
+}
+
 @misc{pytorchdist,
       title={PyTorch Distributed: Experiences on Accelerating Data Parallel
       Training},
@@ -683,6 +842,24 @@ series = {SC '19}
       eprint={2006.15704},
       archivePrefix={arXiv},
       primaryClass={cs.DC}
+}
+
+@article{pytorchdist-vldb,
+  author = {Li, Shen and Zhao, Yanli and Varma, Rohan and Salpekar, Omkar and Noordhuis, Pieter and Li, Teng and Paszke, Adam and Smith, Jeff and Vaughan, Brian and Damania, Pritam and Chintala, Soumith},
+  title = {PyTorch Distributed: Experiences on Accelerating Data Parallel Training},
+  year = {2020},
+  issue_date = {August 2020},
+  publisher = {VLDB Endowment},
+  volume = {13},
+  number = {12},
+  issn = {2150-8097},
+  url = {https://doi.org/10.14778/3415478.3415530},
+  doi = {10.14778/3415478.3415530},
+  abstract = {This paper presents the design, implementation, and evaluation of the PyTorch distributed data parallel module. Py-Torch is a widely-adopted scientific computing package used in deep learning research and applications. Recent advances in deep learning argue for the value of large datasets and large models, which necessitates the ability to scale out model training to more computational resources. Data parallelism has emerged as a popular solution for distributed training thanks to its straightforward principle and broad applicability. In general, the technique of distributed data parallelism replicates the model on every computational resource to generate gradients independently and then communicates those gradients at each iteration to keep model replicas consistent. Despite the conceptual simplicity of the technique, the subtle dependencies between computation and communication make it non-trivial to optimize the distributed training efficiency. As of v1.5, PyTorch natively provides several techniques to accelerate distributed data parallel, including bucketing gradients, overlapping computation with communication, and skipping gradient synchronization. Evaluations show that, when configured appropriately, the PyTorch distributed data parallel module attains near-linear scalability using 256 GPUs.},
+  journal = {Proc. VLDB Endow.},
+  month = aug,
+  pages = {3005–3018},
+  numpages = {14}
 }
 
 @misc{megatronlm,
@@ -750,6 +927,20 @@ url =
       primaryClass={cs.LG}
 }
 
+@inproceedings{sc2020zero,
+  author = {Rajbhandari, Samyam and Rasley, Jeff and Ruwase, Olatunji and He, Yuxiong},
+  title = {ZeRO: Memory Optimizations toward Training Trillion Parameter Models},
+  year = {2020},
+  isbn = {9781728199986},
+  publisher = {IEEE Press},
+  abstract = {Large deep learning models offer significant accuracy gains, but training billions to trillions of parameters is challenging. Existing solutions such as data and model parallelisms exhibit fundamental limitations to fit these models into limited device memory, while obtaining computation, communication and development efficiency. We develop a novel solution, Zero Redundancy Optimizer (ZeRO), to optimize memory, vastly improving training speed while increasing the model size that can be efficiently trained. ZeRO eliminates memory redundancies in data- and model-parallel training while retaining low communication volume and high computational granularity, allowing us to scale the model size proportional to the number of devices with sustained high efficiency. Our analysis on memory requirements and communication volume demonstrates: ZeRO has the potential to scale beyond 1 Trillion parameters using today's hardware.We implement and evaluate ZeRO: it trains large models of over 100B parameter with super-linear speedup on 400 GPUs, achieving throughput of 15 Petaflops. This represents an 8x increase in model size and 10x increase in achievable performance over state-of-the-art. In terms of usability, ZeRO can train large models of up to 13B parameters (e.g., larger than Megatron GPT 8.3B and T5 11B) without requiring model parallelism which is harder for scientists to apply. Last but not the least, researchers have used the system breakthroughs of ZeRO to create Turing-NLG, the world's largest language model at the time (17B parameters) with record breaking accuracy.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {20},
+  numpages = {16},
+  location = {Atlanta, Georgia},
+  series = {SC '20}
+}
+
 @misc{resnet,
       title={Deep Residual Learning for Image Recognition}, 
       author={Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
@@ -759,6 +950,17 @@ url =
       primaryClass={cs.CV}
 }
 
+@INPROCEEDINGS{resnetCVPR,
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},  
+  booktitle={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},   
+  title={Deep Residual Learning for Image Recognition},   
+  year={2016},  
+  volume={},  
+  number={},  
+  pages={770-778},  
+  doi={10.1109/CVPR.2016.90}
+}
+
 @misc{vgg16,
       title={Very Deep Convolutional Networks for Large-Scale Image Recognition}, 
       author={Karen Simonyan and Andrew Zisserman},
@@ -766,6 +968,21 @@ url =
       eprint={1409.1556},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+
+@inproceedings{vgg16-iclr,
+  author    = {Karen Simonyan and
+                Andrew Zisserman},
+  editor    = {Yoshua Bengio and
+                Yann LeCun},
+  title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015,
+                San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1409.1556},
+  timestamp = {Wed, 17 Jul 2019 10:40:54 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/SimonyanZ14a.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @article{gpt-2,

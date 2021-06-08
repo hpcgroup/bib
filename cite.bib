@@ -2739,6 +2739,17 @@ year = {2015}
   series = {SC '17}
 }
 
+@INPROCEEDINGS{ml-backfilling-sc15,  
+  author={Gaussier, Eric and Glesser, David and Reis, Valentin and Trystram, Denis},  
+  booktitle={SC '15: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},   
+  title={Improving backfilling by using machine learning to predict running times},   
+  year={2015},  
+  volume={},  
+  number={},  
+  pages={1-10},  
+  doi={10.1145/2807591.2807646}
+}
+
 @inproceedings{rl-sched,
   author = {Zhang, Di and Dai, Dong and He, Youbiao and Bao, Forrest Sheng and Xie, Bing},
   title = {RLScheduler: An Automated HPC Batch Job Scheduler Using Reinforcement Learning},
@@ -2752,6 +2763,20 @@ year = {2015}
   location = {Atlanta, Georgia},
   series = {SC '20}
 }
+
+@misc{lsf_documentation, 
+  title={IBM Spectrum LSF Session Scheduler}, 
+  url={https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=lsf-session-scheduler}, 
+  journal={Platform LSF Session Scheduler}, 
+  year={2021}
+}
+
+@misc{slurm_documentation, 
+  title={Slurm Workload Manager}, 
+  url={https://slurm.schedmd.com/documentation.html}, 
+  journal={Slurm Workload Manager - Documentation}, 
+  year={2020}
+} 
 
 @INPROCEEDINGS{flux,  
   author={Ahn, Dong H. and Bass, Ned and Chu, Albert and Garlick, Jim and Grondona, Mark and Herbein, Stephen and Koning, Joseph and Patki, Tapasya and Scogland, Thomas R. W. and Springmeyer, Becky and Taufer, Michela},  
@@ -2782,4 +2807,43 @@ year = {2015}
   series = {PEARC '19}
 }
 
+@inproceedings{li-ross19,
+  author = {Li, Boyang and Chunduri, Sudheer and Harms, Kevin and Fan, Yuping and Lan, Zhiling},
+  title = {The Effect of System Utilization on Application Performance Variability},
+  year = {2019},
+  isbn = {9781450367554},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3322789.3328743},
+  doi = {10.1145/3322789.3328743},
+  abstract = {Application performance variability caused by network contention is a major issue on dragonfly based systems. This work-in-progress study makes two contributions. First, we analyze real workload logs and conduct application experiments on the production system Theta at Argonne to evaluate application performance variability. We find a strong correlation between system utilization and performance variability where a high system utilization (e.g., above 95%) can cause up to 21% degradation in application performance. Next, driven by this key finding, we investigate a scheduling policy to mitigate workload interference by leveraging the fact that production systems often exhibit diurnal utilization behavior and not all users are in a hurry for job completion. Preliminary results show that this scheduling design is capable of improving system productivity (measured by scheduling makespan) as well as improving user-level scheduling metrics such as user wait time and job slowdown.},
+  booktitle = {Proceedings of the 9th International Workshop on Runtime and Operating Systems for Supercomputers},
+  pages = {11–18},
+  numpages = {8},
+  keywords = {job scheduling, dragonfly network, system utilization, performance variability, application experiments},
+  location = {Phoenix, AZ, USA},
+  series = {ROSS '19}
+}
+
+@article{patke-arxiv2020,
+  author    = {Archit Patke and
+               Saurabh Jha and
+               Haoran Qiu and
+               Jim M. Brandt and
+               Ann C. Gentile and
+               Joe Greenseid and
+               Zbigniew Kalbarczyk and
+               Ravishankar K. Iyer},
+  title     = {Application-aware Congestion Mitigation forHigh-Performance Computing
+               Systems},
+  journal   = {CoRR},
+  volume    = {abs/2012.07755},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2012.07755},
+  archivePrefix = {arXiv},
+  eprint    = {2012.07755},
+  timestamp = {Sat, 02 Jan 2021 15:43:30 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2012-07755.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 

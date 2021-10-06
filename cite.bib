@@ -1,3 +1,20 @@
+@article{vit,
+  title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and  Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  journal={ICLR},
+  year={2021}
+}
+
+@ARTICLE{mpi4py,
+  author={Dalcin, Lisandro and Fang, Yao-Lung L.},
+  journal={Computing in Science   Engineering}, 
+  title={mpi4py: Status Update After 12 Years of Development}, 
+  year={2021},
+  volume={23},
+  number={4},
+  pages={47-54},
+  doi={10.1109/MCSE.2021.3083216}}
+
 @article{Rumelhart:1986backprop,
   added-at = {2019-05-21T10:10:49.000+0200},
   author = {Rumelhart, David E. and Hinton, Geoffrey E. and Williams, Ronald J.},
@@ -16,7 +33,23 @@
   year = 1986
 }
 
-
+@inproceedings{rannc,
+  author    = {Masahiro Tanaka and
+               Kenjiro Taura and
+               Toshihiro Hanawa and
+               Kentaro Torisawa},
+  title     = {Automatic Graph Partitioning for Very Large-scale Deep Learning},
+  booktitle = {35th {IEEE} International Parallel and Distributed Processing Symposium,
+               {IPDPS} 2021, Portland, OR, USA, May 17-21, 2021},
+  pages     = {1004--1013},
+  publisher = {{IEEE}},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/IPDPS49936.2021.00109},
+  doi       = {10.1109/IPDPS49936.2021.00109},
+  timestamp = {Fri, 02 Jul 2021 14:10:40 +0200},
+  biburl    = {https://dblp.org/rec/conf/ipps/TanakaTHT21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 
 
 @article{the_pile,
@@ -414,15 +447,6 @@ abstract = {A momentum term is usually included in the simulations of connection
 
 
 
-@inproceedings{downpourSGD,
-title	= {Large Scale Distributed Deep Networks},
-author	= {Jeffrey Dean and Greg S. Corrado and Rajat Monga and Kai Chen and Matthieu Devin and Quoc V. Le and Mark Z. Mao and Marc’Aurelio Ranzato and Andrew Senior and Paul Tucker and Ke Yang and Andrew Y. Ng},
-year	= {2012},
-booktitle	= {NIPS}
-}
-
-
-
 @inproceedings {projectadam,
 author = {Trishul Chilimbi and Yutaka Suzue and Johnson Apacible and Karthik Kalyanaraman},
 title = {Project Adam: Building an Efficient and Scalable Deep Learning Training System},
@@ -595,14 +619,14 @@ primaryClass={cs.DC}
       primaryClass={cs.DC}
 }
 
-@misc{chen2016revisiting,
-    title={Revisiting Distributed Synchronous SGD},
-    author={Jianmin Chen and Xinghao Pan and Rajat Monga and Samy Bengio and Rafal Jozefowicz},
-    year={2016},
-    eprint={1604.00981},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+@inproceedings{chen2016revisiting,
+title	= {Revisiting Distributed Synchronous SGD},
+author	= {Jianmin Chen and Rajat Monga and Samy Bengio and Rafal Jozefowicz},
+year	= {2016},
+URL	= {https://arxiv.org/abs/1604.00981},
+booktitle	= {International Conference on Learning Representations Workshop Track}
 }
+
 
 @misc{wahib2020scaling,
     title={Scaling Distributed Deep Learning Workloads beyond the Memory Capacity with KARMA},
@@ -629,7 +653,7 @@ primaryClass={cs.DC}
 }
 
 @misc{you2019large,
-    title={Large Batch Optimization for Deep Learning: Training BERT in 76 minutes},
+    title={Large Batch Optimization for Deep Learning: Training BERT in 76 minutes },
     author={Yang You and Jing Li and Sashank Reddi and Jonathan Hseu and Sanjiv Kumar and Srinadh Bhojanapalli and Xiaodan Song and James Demmel and Kurt Keutzer and Cho-Jui Hsieh},
     year={2019},
     eprint={1904.00962},
@@ -1196,6 +1220,17 @@ year = {2019},
 month = {October},
 url =
 {https://www.microsoft.com/en-us/research/publication/pipedream-generalized-pipeline-parallelism-for-dnn-training/},
+}
+
+@inproceedings{pipemare,
+ author = {Yang, Bowen and Zhang, Jian and Li, Jonathan  and Re, Christopher and Aberger, Christopher and De Sa, Christopher},
+ booktitle = {Proceedings of Machine Learning and Systems},
+ editor = {A. Smola and A. Dimakis and I. Stoica},
+ pages = {269--296},
+ title = {PipeMare: Asynchronous Pipeline Parallel DNN Training},
+ url = {https://proceedings.mlsys.org/paper/2021/file/6c8349cc7260ae62e3b1396831a8398f-Paper.pdf},
+ volume = {3},
+ year = {2021}
 }
 
 @misc{vaswaniTransformer,

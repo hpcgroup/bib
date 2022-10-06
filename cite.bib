@@ -1,3 +1,41 @@
+@INPROCEEDINGS{guo2008hpcIOarch,
+  author={Guo, Yu-Feng and Li, Qiong and Liu, Guang-Ming and Cao, Yue-Sheng and Zhang, Lei},
+  booktitle={Fifth International Conference on Information Technology: New Generations (itng 2008)}, 
+  title={A Distributed Shared Parallel IO System for HPC}, 
+  year={2008},
+  volume={},
+  number={},
+  pages={229-234},
+  doi={10.1109/ITNG.2008.7}}
+
+@inproceedings{cao2017bbarch,
+author = {Cao, Lei and Settlemyer, Bradley W. and Bent, John},
+title = {To Share or Not to Share: Comparing Burst Buffer Architectures},
+year = {2017},
+isbn = {9781510838222},
+publisher = {Society for Computer Simulation International},
+address = {San Diego, CA, USA},
+abstract = {Modern high performance computing platforms employ burst buffers to overcome the I/O bottleneck that limits the scale and efficiency of large-scale parallel computations. Currently there are two competing burst buffer architectures. One is to treat burst buffers as a dedicated shared resource, The other is to integrate burst buffer hardware into each compute node. In this paper we examine the design tradeoffs associated with local and shared, dedicated burst buffer architectures through modeling. By seeding our simulation with realistic workloads, we are able to systematically evaluate the resulting performance of both designs. Our studies validate previous results indicating that storage systems without parity protection can reduce overall time to solution, and further determine that shared burst buffer organizations can result in a 3.5\texttimes{} greater average application I/O throughput compared to local burst buffer configurations.},
+booktitle = {Proceedings of the 25th High Performance Computing Symposium},
+articleno = {4},
+numpages = {10},
+keywords = {storage systems, file systems, I/O, checkpoint-restart, burst buffers},
+location = {Virginia Beach, Virginia},
+series = {HPC '17}
+}
+
+
+@online{lcsierrasystem,
+  title={Using LC's Sierra Systems},
+  url={hpc.llnl.gov/documentation/tutorials/using-lc-s-sierra-systems}
+}
+
+@inproceedings{Landsteiner2016ArchitectureAD,
+  title={Architecture and Design of Cray DataWarp},
+  author={Benjamin R. Landsteiner and Dave Henseler and Douglas Petesch and Nicholas J. Wright},
+  year={2016}
+}
+
 @INPROCEEDINGS{teng2016burstbuffer,
   author={Wang, Teng and Mohror, Kathryn and Moody, Adam and Sato, Kento and Yu, Weikuan},
   booktitle={SC '16: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}, 
@@ -606,7 +644,7 @@ keywords = {parallel file systems, I/O characterization}
 
 
 
-@INPROCEEDINGS{6846437,
+@INPROCEEDINGS{sato2014checkpointing2,
   author={Sato, Kento and Mohror, Kathryn and Moody, Adam and Gamblin, Todd and Supinski, Bronis R. de and Maruyama, Naoya and Matsuoka, Satoshi},
   booktitle={2014 14th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing}, 
   title={A User-Level InfiniBand-Based File System and Checkpoint Strategy for Burst Buffers}, 
@@ -616,7 +654,7 @@ keywords = {parallel file systems, I/O characterization}
   pages={21-30},
   doi={10.1109/CCGrid.2014.24}}
 
-@INPROCEEDINGS{8821049,
+@INPROCEEDINGS{nicolae2019veloc,
   author={Nicolae, Bogdan and Moody, Adam and Gonsiorowski, Elsa and Mohror, Kathryn and Cappello, Franck},
   booktitle={2019 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
   title={VeloC: Towards High Performance Adaptive Asynchronous Checkpointing at Large Scale}, 
@@ -626,7 +664,7 @@ keywords = {parallel file systems, I/O characterization}
   pages={911-920},
   doi={10.1109/IPDPS.2019.00099}}
 
-@INPROCEEDINGS{6468461,
+@INPROCEEDINGS{sato2012checkpointing,
   author={Sato, Kento and Maruyama, Naoya and Mohror, Kathryn and Moody, Adam and Gamblin, Todd and de Supinski, Bronis R. and Matsuoka, Satoshi},
   booktitle={SC '12: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis}, 
   title={Design and modeling of a non-blocking checkpointing system}, 
@@ -636,7 +674,7 @@ keywords = {parallel file systems, I/O characterization}
   pages={1-10},
   doi={10.1109/SC.2012.46}}
 
-@INPROCEEDINGS{7836560,
+@INPROCEEDINGS{ovsyannikov2016nerscBB,
   author={Ovsyannikov, Andrey and Romanus, Melissa and Van Straalen, Brian and Weber, Gunther H. and Trebotich, David},
   booktitle={2016 1st Joint International Workshop on Parallel Data Storage and data Intensive Scalable Computing Systems (PDSW-DISCS)}, 
   title={Scientific Workflows at DataWarp-Speed: Accelerated Data-Intensive Science Using NERSC's Burst Buffer}, 
@@ -656,7 +694,7 @@ keywords = {parallel file systems, I/O characterization}
   pages={92-103},
   doi={10.1109/CLUSTER49012.2020.00019}}
 
-@article{osti_1393591,
+@article{bhimji2016nerscBB,
 title = {Accelerating Science with the NERSC Burst Buffer Early User Program},
 author = {Bhimji, Wahid and Bard, Debbie and Romanus, Melissa and Paul, David and Ovsyannikov, Andrey and Friesen, Brian and Bryson, Matt and Correa, Joaquin and Lockwood, Glenn K. and Tsulaia, Vakho and Byna, Suren and Farrell, Steve and Gursoy, Doga and Daley, Chris and Beckner, Vince and Van Straalen, Brian and Trebotich, David and Tull, Craig and Weber, Gunther H. and Wright, Nicholas J. and Antypas, Katie and Prabhat, none},
 abstractNote = {NVRAM-based Burst Buffers are an important part of the emerging HPC storage landscape. The National Energy Research Scientific Computing Center (NERSC) at Lawrence Berkeley National Laboratory recently installed one of the first Burst Buffer systems as part of its new Cori supercomputer, collaborating with Cray on the development of the DataWarp software. NERSC has a diverse user base comprised of over 6500 users in 700 different projects spanning a wide variety of scientific computing applications. The use-cases of the Burst Buffer at NERSC are therefore also considerable and diverse. We describe here performance measurements and lessons learned from the Burst Buffer Early User Program at NERSC, which selected a number of research projects to gain early access to the Burst Buffer and exercise its capability to enable new scientific advancements. To the best of our knowledge this is the first time a Burst Buffer has been stressed at scale by diverse, real user workloads and therefore these lessons will be of considerable benefit to shaping the developing use of Burst Buffers at HPC centers.},

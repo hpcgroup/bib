@@ -1,3 +1,307 @@
+@misc{yellick-graph,
+  doi = {10.48550/ARXIV.2005.03300},
+  
+  url = {https://arxiv.org/abs/2005.03300},
+  
+  author = {Tripathy, Alok and Yelick, Katherine and Buluc, Aydin},
+  
+  keywords = {Machine Learning (cs.LG), Distributed, Parallel, and Cluster Computing (cs.DC), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Reducing Communication in Graph Neural Network Training},
+  
+  publisher = {arXiv},
+  
+  year = {2020},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@misc{you-3d,
+  doi = {10.48550/ARXIV.2105.14450},
+  
+  url = {https://arxiv.org/abs/2105.14450},
+  
+  author = {Bian, Zhengda and Xu, Qifan and Wang, Boxiang and You, Yang},
+  
+  keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), Machine Learning (cs.LG), Performance (cs.PF), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Maximizing Parallelism in Distributed Training for Huge Neural Networks},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@inproceedings{you-2.5d,
+	doi = {10.1145/3545008.3545087},
+  
+	url = {https://doi.org/10.1145%2F3545008.3545087},
+  
+	year = 2022,
+	month = {aug},
+  
+	publisher = {{ACM}},
+  
+	author = {Boxiang Wang and Qifan Xu and Zhengda Bian and Yang You},
+  
+	title = {Tesseract: Parallelize the Tensor Parallelism Efficiently},
+  
+	booktitle = {Proceedings of the 51st International Conference on Parallel Processing}
+}
+
+@misc{you-2d,
+  doi = {10.48550/ARXIV.2104.05343},
+  
+  url = {https://arxiv.org/abs/2104.05343},
+  
+  author = {Xu, Qifan and Li, Shenggui and Gong, Chaoyu and You, Yang},
+  
+  keywords = {Machine Learning (cs.LG), Distributed, Parallel, and Cluster Computing (cs.DC), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {An Efficient 2D Method for Training Super-Large Deep Learning Models},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@misc{spatial-parallel-cnn-dryden,
+  doi = {10.48550/ARXIV.1903.06681},
+  
+  url = {https://arxiv.org/abs/1903.06681},
+  
+  author = {Dryden, Nikoli and Maruyama, Naoya and Benson, Tom and Moon, Tim and Snir, Marc and Van Essen, Brian},
+  
+  keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Improving Strong-Scaling of CNN Training by Exploiting Finer-Grained Parallelism},
+  
+  publisher = {arXiv},
+  
+  year = {2019},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@inproceedings{channel-filter-parallel-cnn-dryden,
+author = {Dryden, Nikoli and Maruyama, Naoya and Moon, Tim and Benson, Tom and Snir, Marc and Van Essen, Brian},
+title = {Channel and Filter Parallelism for Large-Scale CNN Training},
+year = {2019},
+isbn = {9781450362290},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3295500.3356207},
+doi = {10.1145/3295500.3356207},
+abstract = {Accelerating large-scale CNN training is needed to keep training times reasonable as datasets grow larger and models become more complex. Existing frameworks primarily scale using data-parallelism, but this is limited by the mini-batch size, which cannot grow arbitrarily. We introduce three algorithms that partition channel or filter data to exploit parallelism beyond the sample dimension. Further, they partition the parameters of convolutional layers, replacing global all reduces with segmented allreduces---smaller, concurrent allreduces among disjoint processor sets. These algorithms enable strong scaling, reduced communication overhead, and reduced memory pressure, enabling training of very wide CNNs.We demonstrate improved strong and weak scaling, including up to 4.1x reductions in training time for residual networks and 4x reductions in allreduce overhead. We also show that wider models provide improved accuracy on ImageNet. We study the current limitations of our algorithms and provide a direction for future optimizations of large-scale deep learning frameworks.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {10},
+numpages = {20},
+keywords = {algorithms, CNN, deep learning, convolution, scaling},
+location = {Denver, Colorado},
+series = {SC '19}
+}
+
+
+@misc{fb-moe,
+  doi = {10.48550/ARXIV.2112.10684},
+  
+  url = {https://arxiv.org/abs/2112.10684},
+  
+  author = {Artetxe, Mikel and Bhosale, Shruti and Goyal, Naman and Mihaylov, Todor and Ott, Myle and Shleifer, Sam and Lin, Xi Victoria and Du, Jingfei and Iyer, Srinivasan and Pasunuru, Ramakanth and Anantharaman, Giri and Li, Xian and Chen, Shuohui and Akin, Halil and Baines, Mandeep and Martin, Louis and Zhou, Xing and Koura, Punit Singh and O'Horo, Brian and Wang, Jeff and Zettlemoyer, Luke and Diab, Mona and Kozareva, Zornitsa and Stoyanov, Ves},
+  
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Efficient Large Scale Language Modeling with Mixtures of Experts},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@misc{hetu-moe,
+  doi = {10.48550/ARXIV.2203.14685},
+  
+  url = {https://arxiv.org/abs/2203.14685},
+  
+  author = {Nie, Xiaonan and Zhao, Pinxue and Miao, Xupeng and Zhao, Tong and Cui, Bin},
+  
+  keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {HetuMoE: An Efficient Trillion-scale Mixture-of-Expert Distributed Training System},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+@misc{fairscale,
+  author =       {FairScale authors},
+  title =        {FairScale:  A general purpose modular PyTorch library for high performance and large scale training},
+  howpublished = {\url{https://github.com/facebookresearch/fairscale}},
+  year =         {2021}
+}
+
+@misc{se-moe,
+  doi = {10.48550/ARXIV.2205.10034},
+  
+  url = {https://arxiv.org/abs/2205.10034},
+  
+  author = {Shen, Liang and Wu, Zhihua and Gong, WeiBao and Hao, Hongxiang and Bai, Yangfan and Wu, HuaChao and Wu, Xinxuan and Xiong, Haoyi and Yu, Dianhai and Ma, Yanjun},
+  
+  keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {SE-MoE: A Scalable and Efficient Mixture-of-Experts Distributed Training and Inference System},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{ds-moe-systems,
+  doi = {10.48550/ARXIV.2201.05596},
+  
+  url = {https://arxiv.org/abs/2201.05596},
+  
+  author = {Rajbhandari, Samyam and Li, Conglong and Yao, Zhewei and Zhang, Minjia and Aminabadi, Reza Yazdani and Awan, Ammar Ahmad and Rasley, Jeff and He, Yuxiong},
+  
+  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Distributed, Parallel, and Cluster Computing (cs.DC), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+@misc{ds-moe-ml,
+  doi = {10.48550/ARXIV.2109.10465},
+  
+  url = {https://arxiv.org/abs/2109.10465},
+  
+  author = {Kim, Young Jin and Awan, Ammar Ahmad and Muzio, Alexandre and Salinas, Andres Felipe Cruz and Lu, Liyang and Hendy, Amr and Rajbhandari, Samyam and He, Yuxiong and Awadalla, Hany Hassan},
+  
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Scalable and Efficient MoE Training for Multitask Multilingual Models},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@misc{scaling-laws,
+  doi = {10.48550/ARXIV.2001.08361},
+  
+  url = {https://arxiv.org/abs/2001.08361},
+  
+  author = {Kaplan, Jared and McCandlish, Sam and Henighan, Tom and Brown, Tom B. and Chess, Benjamin and Child, Rewon and Gray, Scott and Radford, Alec and Wu, Jeffrey and Amodei, Dario},
+  
+  keywords = {Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Scaling Laws for Neural Language Models},
+  
+  publisher = {arXiv},
+  
+  year = {2020},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{t5-transformer,
+  doi = {10.48550/ARXIV.1910.10683},
+  
+  url = {https://arxiv.org/abs/1910.10683},
+  
+  author = {Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J.},
+  
+  keywords = {Machine Learning (cs.LG), Computation and Language (cs.CL), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer},
+  
+  publisher = {arXiv},
+  
+  year = {2019},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@misc{g-shard,
+  doi = {10.48550/ARXIV.2006.16668},
+  
+  url = {https://arxiv.org/abs/2006.16668},
+  
+  author = {Lepikhin, Dmitry and Lee, HyoukJoong and Xu, Yuanzhong and Chen, Dehao and Firat, Orhan and Huang, Yanping and Krikun, Maxim and Shazeer, Noam and Chen, Zhifeng},
+  
+  keywords = {Computation and Language (cs.CL), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding},
+  
+  publisher = {arXiv},
+  
+  year = {2020},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{og-moe,
+  doi = {10.48550/ARXIV.1701.06538},
+  
+  url = {https://arxiv.org/abs/1701.06538},
+  
+  author = {Shazeer, Noam and Mirhoseini, Azalia and Maziarz, Krzysztof and Davis, Andy and Le, Quoc and Hinton, Geoffrey and Dean, Jeff},
+  
+  keywords = {Machine Learning (cs.LG), Computation and Language (cs.CL), Neural and Evolutionary Computing (cs.NE), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer},
+  
+  publisher = {arXiv},
+  
+  year = {2017},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@misc{switch-transformer,
+  doi = {10.48550/ARXIV.2101.03961},
+  
+  url = {https://arxiv.org/abs/2101.03961},
+  
+  author = {Fedus, William and Zoph, Barret and Shazeer, Noam},
+  
+  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
 @article{sgd-momentum,
 title = {On the momentum term in gradient descent learning algorithms},
 journal = {Neural Networks},
@@ -4742,18 +5046,6 @@ year = {2015}
   keywords = {compiler optimizations, heterogeneous systems, LLVM, intermediate representations, representation learning}
 }
 
-@misc{code2vec,
-  doi = {10.48550/ARXIV.1803.09473},
-  url = {https://arxiv.org/abs/1803.09473},
-  author = {Alon, Uri and Zilberstein, Meital and Levy, Omer and Yahav, Eran},
-  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Programming Languages (cs.PL), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {code2vec: Learning Distributed Representations of Code},
-  publisher = {arXiv},
-  year = {2018},
-  copyright = {arXiv.org perpetual, non-exclusive license}
-}
-
-
 @INPROCEEDINGS{bert_regression_testing_2010,  
   author={Jin, Wei and Orso, Alessandro and Xie, Tao},  
   booktitle={2010 Third International Conference on Software Testing, Verification and Validation},   
@@ -5029,100 +5321,3 @@ year = {2015}
   howpublished = {\url{https://huggingface.co/}},
   note = {Accessed: 2022}
 }
-
-@misc{ml_for_code,
-  title= {ML4Code},
-  howpublished = {\url{https://ml4code.github.io/}},
-  note = {Accessed: 2022}
-}
-
-@article{Dderlein2022PilotingCA,
-  title={Piloting Copilot and Codex: Hot Temperature, Cold Prompts, or Black Magic?},
-  author={Jean-Baptiste D{\"o}derlein and Mathieu Acher and Djamel Eddine Khelladi and Beno{\^i}t Combemale},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2210.14699}
-}
-
-@article{Barke2022GroundedCH,
-  title={Grounded Copilot: How Programmers Interact with Code-Generating Models},
-  author={Shraddha Barke and Michael B. James and Nadia Polikarpova},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2206.15000}
-}
-
-@article{Sarkar2022WhatII,
-  title={What is it like to program with artificial intelligence?},
-  author={Advait Sarkar and Andrew D. Gordon and Carina Negreanu and Christian Poelitz and Sruti Srinivasa Ragavan and Benjamin G. Zorn},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2208.06213}
-}
-
-@article{Gu2022AssembleFM,
-  title={Assemble Foundation Models for Automatic Code Summarization},
-  author={Jian Gu and Pasquale Salza and Harald C. Gall},
-  journal={2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
-  year={2022},
-  pages={935-946}
-}
-
-@article{Ahmed2022LearningCS,
-  title={Learning code summarization from a small and local dataset},
-  author={Toufique Ahmed and Prem Devanbu},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2206.00804}
-}
-
-@article{Haque2022SemanticSM,
-  title={Semantic Similarity Metrics for Evaluating Source Code Summarization},
-  author={Sakib Haque and Zachary Eberhart and Aakash Bansal and Collin McMillan},
-  journal={2022 IEEE/ACM 30th International Conference on Program Comprehension (ICPC)},
-  year={2022},
-  pages={36-47}
-}
-
-@article{Ahmad2020ATA,
-  title={A Transformer-based Approach for Source Code Summarization},
-  author={Wasi Uddin Ahmad and Saikat Chakraborty and Baishakhi Ray and Kai-Wei Chang},
-  journal={ArXiv},
-  year={2020},
-  volume={abs/2005.00653}
-}
-
-@article{Richter2022CanWL,
-  title={Can we learn from developer mistakes? Learning to localize and repair real bugs from real bug fixes},
-  author={Cedric Richter and Heike Wehrheim},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2207.00301}
-}
-
-@article{Kharkar2022LearningTR,
-  title={Learning to Reduce False Positives in Analytic Bug Detectors},
-  author={Anant Kharkar and Roshanak Zilouchian Moghaddam and Matthew Jin and Xiaoyu Liu and Xin Shi and Colin B. Clement and Neel Sundaresan},
-  journal={2022 IEEE/ACM 44th International Conference on Software Engineering (ICSE)},
-  year={2022},
-  pages={1307-1316}
-}
-
-@article{Garg2022DeepDevPERFAD,
-  title={DeepDev-PERF: a deep learning-based approach for improving software performance},
-  author={Spandan Garg and Roshanak Zilouchian Moghaddam and Colin B. Clement and Neel Sundaresan and Chen Wu},
-  journal={Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
-  year={2022}
-}
-
-@misc{bart,
-  doi = {10.48550/ARXIV.1910.13461},
-  url = {https://arxiv.org/abs/1910.13461},
-  author = {Lewis, Mike and Liu, Yinhan and Goyal, Naman and Ghazvininejad, Marjan and Mohamed, Abdelrahman and Levy, Omer and Stoyanov, Ves and Zettlemoyer, Luke},
-  keywords = {Computation and Language (cs.CL), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension},
-  publisher = {arXiv},
-  year = {2019},
-  copyright = {arXiv.org perpetual, non-exclusive license}
-}
-

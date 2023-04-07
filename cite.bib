@@ -5790,3 +5790,70 @@ year = {2015}
   location  = {San Francisco, California, USA},
   series    = {KDD '16}
 }
+
+@inproceedings{prep_icpp2021,
+  author = {Zhou, Longfang and Zhang, Xiaorong and Yang, Wenxiang and Han, Yongguo and Wang, Fang and Wu, Yadong and Yu, Jie},
+  title = {PREP: Predicting Job Runtime with Job Running Path on Supercomputers},
+  year = {2021},
+  isbn = {9781450390682},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3472456.3473521},
+  doi = {10.1145/3472456.3473521},
+  abstract = {Supercomputers serve a lot of parallel jobs by scheduling jobs and allocating computing resources. One popular scheduling strategy is First Come First Serve (FCFS). However, there are always some idle resources not being effectively utilized, since they are not enough and are reserved for the head job in the waiting queue. To improve resource utilization, a common solution is to use backfilling, which allocates the reserved computing resources to a small, short job selected from the queue, on the premise of not delaying the original head job. Unfortunately, the estimated job runtime provided by users is often overestimated. Previous studies extract features from historical job logs and predict runtime based on machine learning. However, traditional features (e.g. CPU, user, submitting time, etc.) are insufficient to describe the characteristics of jobs. In this paper, we propose a novel runtime prediction framework called PREP. It explores a new feature named job running path, which encodes important implications about the job’s characteristics, such as the project it belongs to, data sets and parameters it uses, etc. As there is a strong correlation between job runtime and its running path. PREP groups jobs into separate clusters according to their running paths and trains a runtime prediction model for each job cluster. Final results demonstrate that adding the new feature can achieve high prediction accuracy of 88% and has a better prediction effect than other methods, such as Last-2 and IRPA.},
+  booktitle = {Proceedings of the 50th International Conference on Parallel Processing},
+  articleno = {16},
+  numpages = {10},
+  keywords = {backfilling, runtime prediction, machine learning., running path},
+  location = {Lemont, IL, USA},
+  series = {ICPP '21}
+}
+
+@inproceedings{prionn_icpp2018,
+  author = {Wyatt, Michael R. and Herbein, Stephen and Gamblin, Todd and Moody, Adam and Ahn, Dong H. and Taufer, Michela},
+  title = {PRIONN: Predicting Runtime and IO Using Neural Networks},
+  year = {2018},
+  isbn = {9781450365109},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3225058.3225091},
+  doi = {10.1145/3225058.3225091},
+  abstract = {For job allocation decision, current batch schedulers have access to and use only information on the number of nodes and runtime because it is readily available at submission time from user job scripts. User-provided runtimes are typically inaccurate because users overestimate or lack understanding of job resource requirements. Beyond the number of nodes and runtime, other system resources, including IO and network, are not available but play a key role in system performance. There is the need for automatic, general, and scalable tools that provide accurate resource usage information to schedulers so that, by becoming resource-aware, they can better manage system resources.We tackle this need by presenting a tool for Predicting Runtime and IO using Neural Networks (PRIONN). PRIONN automates prediction of per-job runtime and IO resource usage, enabling IO-aware scheduling on HPC systems. The novelty of our tool is the input of whole job scripts into deep learning models that allows complete automation of runtime and IO resource predictions. We demonstrate the power of PRIONN with runtime and IO resource predictions applied to IO-aware scheduling for real HPC data. Specifically, we achieve over 75% mean and 98% median accuracy for runtime and IO predictions across 300,000 jobs from a real HPC machine. We combine our per-job runtime and IO predictions with queue and system simulations to predict future system IO usage accurately. We predict over 50% of IO bursts in advance on a real HPC system.},
+  booktitle = {Proceedings of the 47th International Conference on Parallel Processing},
+  articleno = {46},
+  numpages = {12},
+  keywords = {Convolutional Neural Network, IO-Aware Scheduler, IO Prediction},
+  location = {Eugene, OR, USA},
+  series = {ICPP '18}
+}
+
+
+@inproceedings{power_springer2019,
+  author    = {Borghesi, Andrea
+               and Bartolini, Andrea
+               and Lombardi, Michele
+               and Milano, Michela
+               and Benini, Luca},
+  editor    = {Kunkel, Julian M.
+               and Balaji, Pavan
+               and Dongarra, Jack},
+  title     = {Predictive Modeling for Job Power Consumption in HPC Systems},
+  booktitle = {High Performance Computing},
+  year      = {2016},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {181--199},
+  abstract  = {Power consumption is a critical aspect for next generation High Performance Computing systems: Supercomputers are expected to reach Exascale in 2023 but this will require a significant improvement in terms of energy efficiency. In this domain, power-capping can significant increase the final energy-efficiency by cutting cooling effort and worst-case design margins. A key aspect for an optimal implementation of power capping is the ability to estimate the power consumption of HPC applications before they run on the real system. In this paper we propose a Machine-Learning approach, based on the user and application resource request, to accurately predict the power consumption of typical supercomputer workloads. We demonstrate our method on real production workloads executed on the Eurora supercomputer hosted at CINECA computing center in Bologna and we provide useful insights to apply our technique in other installations.},
+  isbn      = {978-3-319-41321-1}
+}
+
+@inproceedings{ml_pmbs2018,
+  author    = {Malakar, Preeti and Balaprakash, Prasanna and Vishwanath, Venkatram and Morozov, Vitali and Kumaran, Kalyan},
+  booktitle = {2018 IEEE/ACM Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)},
+  title     = {Benchmarking Machine Learning Methods for Performance Modeling of Scientific Applications},
+  year      = {2018},
+  volume    = {},
+  number    = {},
+  pages     = {33-44},
+  doi       = {10.1109/PMBS.2018.8641686}
+}

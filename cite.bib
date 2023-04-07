@@ -5649,6 +5649,24 @@ year = {2015}
   doi       = {10.1073/pnas.2113297119}
 }
 
+@inproceedings{mummi_sc21,
+  author = {Bhatia, Harsh and Di Natale, Francesco and Moon, Joseph Y. and Zhang, Xiaohua and Chavez, Joseph R. and Aydin, Fikret and Stanley, Chris and Oppelstrup, Tomas and Neale, Chris and Schumacher, Sara Kokkila and Ahn, Dong H. and Herbein, Stephen and Carpenter, Timothy S. and Gnanakaran, Sandrasegaram and Bremer, Peer-Timo and Glosli, James N. and Lightstone, Felice C. and Ing\'{o}lfsson, Helgi I.},
+  title = {Generalizable Coordination of Large Multiscale Workflows: Challenges and Learnings at Scale},
+  year = {2021},
+  isbn = {9781450384421},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3458817.3476210},
+  doi = {10.1145/3458817.3476210},
+  abstract = {The advancement of machine learning techniques and the heterogeneous architectures of most current supercomputers are propelling the demand for large multiscale simulations that can automatically and autonomously couple diverse components and map them to relevant resources to solve complex problems at multiple scales. Nevertheless, despite the recent progress in workflow technologies, current capabilities are limited to coupling two scales. In the first-ever demonstration of using three scales of resolution, we present a scalable and generalizable framework that couples pairs of models using machine learning and in situ feedback. We expand upon the massively parallel Multiscale Machine-Learned Modeling Infrastructure (MuMMI), a recent, award-winning workflow, and generalize the framework beyond its original design. We discuss the challenges and learnings in executing a massive multiscale simulation campaign that utilized over 600,000 node hours on Summit and achieved more than 98% GPU occupancy for more than 83% of the time. We present innovations to enable several orders of magnitude scaling, including simultaneously coordinating 24,000 jobs, and managing several TBs of new data per day and over a billion files in total. Finally, we describe the generalizability of our framework and, with an upcoming open-source release, discuss how the presented framework may be used for new applications.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {10},
+  numpages = {16},
+  keywords = {heterogenous architecture, machine learning, adaptive simulations, massively parallel, cancer research, multiscale simulations},
+  location = {St. Louis, Missouri},
+  series = {SC '21}
+}
+
 @article{perumalla-simulation12,
     title = {Discrete event modeling and massively parallel execution of epidemic outbreak phenomena},
     author = {Kalyan S Perumalla and Sudip K Seal},
@@ -5808,6 +5826,24 @@ year = {2015}
   location = {Lemont, IL, USA},
   series = {ICPP '21}
 }
+
+@inproceedings{fcfs-easy,
+  author    = {Lelong, J{\'e}r{\^o}me
+               and Reis, Valentin
+               and Trystram, Denis},
+  editor    = {Klus{\'a}{\v{c}}ek, Dalibor
+               and Cirne, Walfredo
+               and Desai, Narayan},
+  title     = {Tuning EASY-Backfilling Queues},
+  booktitle = {Job Scheduling Strategies for Parallel Processing},
+  year      = {2018},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {43--61},
+  abstract  = {EASY-Backfilling is a popular scheduling heuristic for allocating jobs in large scale High Performance Computing platforms. While its aggressive reservation mechanism is fast and prevents job starvation, it does not try to optimize any scheduling objective per se. We consider in this work the problem of tuning EASY using queue reordering policies. More precisely, we propose to tune the reordering using a simulation-based methodology. For a given system, we choose the policy in order to minimize the average waiting time. This methodology departs from the First-Come, First-Serve rule and introduces a risk on the maximum values of the waiting time, which we control using a queue thresholding mechanism. This new approach is evaluated through a comprehensive experimental campaign on five production logs. In particular, we show that the behavior of the systems under study is stable enough to learn a heuristic that generalizes in a train/test fashion. Indeed, the average waiting time can be reduced consistently (between 11{\%} to 42{\%} for the logs used) compared to EASY, with almost no increase in maximum waiting times. This work departs from previous learning-based approaches and shows that scheduling heuristics for HPC can be learned directly in a policy space.},
+  isbn      = {978-3-319-77398-8}
+}
+
 
 @inproceedings{prionn_icpp2018,
   author = {Wyatt, Michael R. and Herbein, Stephen and Gamblin, Todd and Moody, Adam and Ahn, Dong H. and Taufer, Michela},

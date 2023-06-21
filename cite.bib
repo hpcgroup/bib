@@ -1,3 +1,36 @@
+@article{alpa,
+  author    = {Lianmin Zheng and
+               Zhuohan Li and
+               Hao Zhang and
+               Yonghao Zhuang and
+               Zhifeng Chen and
+               Yanping Huang and
+               Yida Wang and
+               Yuanzhong Xu and
+               Danyang Zhuo and
+               Joseph E. Gonzalez and
+               Ion Stoica},
+  title     = {Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed
+               Deep Learning},
+  journal   = {CoRR},
+  volume    = {abs/2201.12023},
+  year      = {2022},
+  url       = {https://arxiv.org/abs/2201.12023},
+  eprinttype = {arXiv},
+  eprint    = {2201.12023},
+  timestamp = {Wed, 02 Feb 2022 15:00:01 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2201-12023.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{jangda2022breaking,
+      title={Breaking the Computation and Communication Abstraction Barrier in Distributed Machine Learning Workloads}, 
+      author={Abhinav Jangda and Jun Huang and Guodong Liu and Amir Hossein Nodehi Sabet and Saeed Maleki and Youshan Miao and Madanlal Musuvathi and Todd Mytkowicz and Olli Sarikivi},
+      year={2022},
+      eprint={2105.05720},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
+}
 @misc{afhq-dataset,
       title={StarGAN v2: Diverse Image Synthesis for Multiple Domains}, 
       author={Yunjey Choi and Youngjung Uh and Jaejun Yoo and Jung-Woo Ha},
@@ -804,6 +837,23 @@ url="https://ior.readthedocs.io/en/latest/index.html"
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
+@misc{xu2015empirical,
+      title={Empirical Evaluation of Rectified Activations in Convolutional Network}, 
+      author={Bing Xu and Naiyan Wang and Tianqi Chen and Mu Li},
+      year={2015},
+      eprint={1505.00853},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{gelu,
+      title={Gaussian Error Linear Units (GELUs)}, 
+      author={Dan Hendrycks and Kevin Gimpel},
+      year={2020},
+      eprint={1606.08415},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 
 @article{rethink,
   author    = {Chiyuan Zhang and
@@ -903,7 +953,7 @@ terms= {}
 
 @article{belkin:double-descent,
 author = {Mikhail Belkin  and Daniel Hsu  and Siyuan Ma  and Soumik Mandal },
-title = {Reconciling modern machine-learning practice and the classical bias\&\#x2013;variance trade-off},
+title = {Reconciling modern machine-learning practice and the classical bias-variance trade-off},
 journal = {Proceedings of the National Academy of Sciences},
 volume = {116},
 number = {32},
@@ -5649,6 +5699,24 @@ year = {2015}
   doi       = {10.1073/pnas.2113297119}
 }
 
+@inproceedings{mummi_sc21,
+  author = {Bhatia, Harsh and Di Natale, Francesco and Moon, Joseph Y. and Zhang, Xiaohua and Chavez, Joseph R. and Aydin, Fikret and Stanley, Chris and Oppelstrup, Tomas and Neale, Chris and Schumacher, Sara Kokkila and Ahn, Dong H. and Herbein, Stephen and Carpenter, Timothy S. and Gnanakaran, Sandrasegaram and Bremer, Peer-Timo and Glosli, James N. and Lightstone, Felice C. and Ing\'{o}lfsson, Helgi I.},
+  title = {Generalizable Coordination of Large Multiscale Workflows: Challenges and Learnings at Scale},
+  year = {2021},
+  isbn = {9781450384421},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3458817.3476210},
+  doi = {10.1145/3458817.3476210},
+  abstract = {The advancement of machine learning techniques and the heterogeneous architectures of most current supercomputers are propelling the demand for large multiscale simulations that can automatically and autonomously couple diverse components and map them to relevant resources to solve complex problems at multiple scales. Nevertheless, despite the recent progress in workflow technologies, current capabilities are limited to coupling two scales. In the first-ever demonstration of using three scales of resolution, we present a scalable and generalizable framework that couples pairs of models using machine learning and in situ feedback. We expand upon the massively parallel Multiscale Machine-Learned Modeling Infrastructure (MuMMI), a recent, award-winning workflow, and generalize the framework beyond its original design. We discuss the challenges and learnings in executing a massive multiscale simulation campaign that utilized over 600,000 node hours on Summit and achieved more than 98% GPU occupancy for more than 83% of the time. We present innovations to enable several orders of magnitude scaling, including simultaneously coordinating 24,000 jobs, and managing several TBs of new data per day and over a billion files in total. Finally, we describe the generalizability of our framework and, with an upcoming open-source release, discuss how the presented framework may be used for new applications.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {10},
+  numpages = {16},
+  keywords = {heterogenous architecture, machine learning, adaptive simulations, massively parallel, cancer research, multiscale simulations},
+  location = {St. Louis, Missouri},
+  series = {SC '21}
+}
+
 @article{perumalla-simulation12,
     title = {Discrete event modeling and massively parallel execution of epidemic outbreak phenomena},
     author = {Kalyan S Perumalla and Sudip K Seal},
@@ -5846,4 +5914,195 @@ year = {2015}
   journal={ArXiv},
   year={2022},
   volume={abs/2208.06213}
+}
+
+@misc{uta:modeling,
+  title = {UT Austin COVID-19 Modeling Consortium},
+  url = {https://covid-19.tacc.utexas.edu/},
+  publisher = {Texas Advanced Computing Center}
+}
+
+@misc{vdh:modeling,
+  title = {COVID-19 Modeling},
+  url = {https://www.vdh.virginia.gov/coronavirus/see-the-numbers/covid-19-modeling/},
+  publisher = {Virginia Department of Health}
+}
+
+@article{law2019stumpy,
+  author  = {Law, Sean M.},
+  title   = {{STUMPY: A Powerful and Scalable Python Library for Time Series Data Mining}},
+  journal = {{The Journal of Open Source Software}},
+  volume  = {4},
+  number  = {39},
+  pages   = {1504},
+  year    = {2019}
+}
+
+@INPROCEEDINGS{matrix_profile,
+  author={Yeh, Chin-Chia Michael and Zhu, Yan and Ulanova, Liudmila and Begum, Nurjahan and Ding, Yifei and Dau, Hoang Anh and Silva, Diego Furtado and Mueen, Abdullah and Keogh, Eamonn},
+  booktitle={2016 IEEE 16th International Conference on Data Mining (ICDM)}, 
+  title={Matrix Profile I: All Pairs Similarity Joins for Time Series: A Unifying View That Includes Motifs, Discords and Shapelets}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={1317-1322},
+  doi={10.1109/ICDM.2016.0179}}
+
+@inproceedings{xgboost,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {XGBoost: A Scalable Tree Boosting System},
+  year      = {2016},
+  isbn      = {9781450342322},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/2939672.2939785},
+  doi       = {10.1145/2939672.2939785},
+  abstract  = {Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable end-to-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems.},
+  booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  pages     = {785–794},
+  numpages  = {10},
+  keywords  = {large-scale machine learning},
+  location  = {San Francisco, California, USA},
+  series    = {KDD '16}
+}
+
+@inproceedings{prep_icpp2021,
+  author = {Zhou, Longfang and Zhang, Xiaorong and Yang, Wenxiang and Han, Yongguo and Wang, Fang and Wu, Yadong and Yu, Jie},
+  title = {PREP: Predicting Job Runtime with Job Running Path on Supercomputers},
+  year = {2021},
+  isbn = {9781450390682},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3472456.3473521},
+  doi = {10.1145/3472456.3473521},
+  abstract = {Supercomputers serve a lot of parallel jobs by scheduling jobs and allocating computing resources. One popular scheduling strategy is First Come First Serve (FCFS). However, there are always some idle resources not being effectively utilized, since they are not enough and are reserved for the head job in the waiting queue. To improve resource utilization, a common solution is to use backfilling, which allocates the reserved computing resources to a small, short job selected from the queue, on the premise of not delaying the original head job. Unfortunately, the estimated job runtime provided by users is often overestimated. Previous studies extract features from historical job logs and predict runtime based on machine learning. However, traditional features (e.g. CPU, user, submitting time, etc.) are insufficient to describe the characteristics of jobs. In this paper, we propose a novel runtime prediction framework called PREP. It explores a new feature named job running path, which encodes important implications about the job’s characteristics, such as the project it belongs to, data sets and parameters it uses, etc. As there is a strong correlation between job runtime and its running path. PREP groups jobs into separate clusters according to their running paths and trains a runtime prediction model for each job cluster. Final results demonstrate that adding the new feature can achieve high prediction accuracy of 88% and has a better prediction effect than other methods, such as Last-2 and IRPA.},
+  booktitle = {Proceedings of the 50th International Conference on Parallel Processing},
+  articleno = {16},
+  numpages = {10},
+  keywords = {backfilling, runtime prediction, machine learning., running path},
+  location = {Lemont, IL, USA},
+  series = {ICPP '21}
+}
+
+@inproceedings{fcfs-easy,
+  author    = {Lelong, J{\'e}r{\^o}me
+               and Reis, Valentin
+               and Trystram, Denis},
+  editor    = {Klus{\'a}{\v{c}}ek, Dalibor
+               and Cirne, Walfredo
+               and Desai, Narayan},
+  title     = {Tuning EASY-Backfilling Queues},
+  booktitle = {Job Scheduling Strategies for Parallel Processing},
+  year      = {2018},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {43--61},
+  abstract  = {EASY-Backfilling is a popular scheduling heuristic for allocating jobs in large scale High Performance Computing platforms. While its aggressive reservation mechanism is fast and prevents job starvation, it does not try to optimize any scheduling objective per se. We consider in this work the problem of tuning EASY using queue reordering policies. More precisely, we propose to tune the reordering using a simulation-based methodology. For a given system, we choose the policy in order to minimize the average waiting time. This methodology departs from the First-Come, First-Serve rule and introduces a risk on the maximum values of the waiting time, which we control using a queue thresholding mechanism. This new approach is evaluated through a comprehensive experimental campaign on five production logs. In particular, we show that the behavior of the systems under study is stable enough to learn a heuristic that generalizes in a train/test fashion. Indeed, the average waiting time can be reduced consistently (between 11{\%} to 42{\%} for the logs used) compared to EASY, with almost no increase in maximum waiting times. This work departs from previous learning-based approaches and shows that scheduling heuristics for HPC can be learned directly in a policy space.},
+  isbn      = {978-3-319-77398-8}
+}
+
+
+@inproceedings{prionn_icpp2018,
+  author = {Wyatt, Michael R. and Herbein, Stephen and Gamblin, Todd and Moody, Adam and Ahn, Dong H. and Taufer, Michela},
+  title = {PRIONN: Predicting Runtime and IO Using Neural Networks},
+  year = {2018},
+  isbn = {9781450365109},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3225058.3225091},
+  doi = {10.1145/3225058.3225091},
+  abstract = {For job allocation decision, current batch schedulers have access to and use only information on the number of nodes and runtime because it is readily available at submission time from user job scripts. User-provided runtimes are typically inaccurate because users overestimate or lack understanding of job resource requirements. Beyond the number of nodes and runtime, other system resources, including IO and network, are not available but play a key role in system performance. There is the need for automatic, general, and scalable tools that provide accurate resource usage information to schedulers so that, by becoming resource-aware, they can better manage system resources.We tackle this need by presenting a tool for Predicting Runtime and IO using Neural Networks (PRIONN). PRIONN automates prediction of per-job runtime and IO resource usage, enabling IO-aware scheduling on HPC systems. The novelty of our tool is the input of whole job scripts into deep learning models that allows complete automation of runtime and IO resource predictions. We demonstrate the power of PRIONN with runtime and IO resource predictions applied to IO-aware scheduling for real HPC data. Specifically, we achieve over 75% mean and 98% median accuracy for runtime and IO predictions across 300,000 jobs from a real HPC machine. We combine our per-job runtime and IO predictions with queue and system simulations to predict future system IO usage accurately. We predict over 50% of IO bursts in advance on a real HPC system.},
+  booktitle = {Proceedings of the 47th International Conference on Parallel Processing},
+  articleno = {46},
+  numpages = {12},
+  keywords = {Convolutional Neural Network, IO-Aware Scheduler, IO Prediction},
+  location = {Eugene, OR, USA},
+  series = {ICPP '18}
+}
+
+
+@inproceedings{power_springer2019,
+  author    = {Borghesi, Andrea
+               and Bartolini, Andrea
+               and Lombardi, Michele
+               and Milano, Michela
+               and Benini, Luca},
+  editor    = {Kunkel, Julian M.
+               and Balaji, Pavan
+               and Dongarra, Jack},
+  title     = {Predictive Modeling for Job Power Consumption in HPC Systems},
+  booktitle = {High Performance Computing},
+  year      = {2016},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {181--199},
+  abstract  = {Power consumption is a critical aspect for next generation High Performance Computing systems: Supercomputers are expected to reach Exascale in 2023 but this will require a significant improvement in terms of energy efficiency. In this domain, power-capping can significant increase the final energy-efficiency by cutting cooling effort and worst-case design margins. A key aspect for an optimal implementation of power capping is the ability to estimate the power consumption of HPC applications before they run on the real system. In this paper we propose a Machine-Learning approach, based on the user and application resource request, to accurately predict the power consumption of typical supercomputer workloads. We demonstrate our method on real production workloads executed on the Eurora supercomputer hosted at CINECA computing center in Bologna and we provide useful insights to apply our technique in other installations.},
+  isbn      = {978-3-319-41321-1}
+}
+
+@inproceedings{ml_pmbs2018,
+  author    = {Malakar, Preeti and Balaprakash, Prasanna and Vishwanath, Venkatram and Morozov, Vitali and Kumaran, Kalyan},
+  booktitle = {2018 IEEE/ACM Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)},
+  title     = {Benchmarking Machine Learning Methods for Performance Modeling of Scientific Applications},
+  year      = {2018},
+  volume    = {},
+  number    = {},
+  pages     = {33-44},
+  doi       = {10.1109/PMBS.2018.8641686}
+}
+
+@misc{ardalani2019static,
+  title         = {A Static Analysis-based Cross-Architecture Performance Prediction Using Machine Learning},
+  author        = {Newsha Ardalani and Urmish Thakker and Aws Albarghouthi and Karu Sankaralingam},
+  year          = {2019},
+  eprint        = {1906.07840},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.DC}
+}
+
+@inproceedings{xapp_micro2015,
+  author = {Ardalani, Newsha and Lestourgeon, Clint and Sankaralingam, Karthikeyan and Zhu, Xiaojin},
+  title = {Cross-Architecture Performance Prediction (XAPP) Using CPU Code to Predict GPU Performance},
+  year = {2015},
+  isbn = {9781450340342},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2830772.2830780},
+  doi = {10.1145/2830772.2830780},
+  abstract = {GPUs have become prevalent and more general purpose, but GPU programming remains challenging and time consuming for the majority of programmers. In addition, it is not always clear which codes will benefit from getting ported to GPU. Therefore, having a tool to estimate GPU performance for a piece of code before writing a GPU implementation is highly desirable. To this end, we propose Cross-Architecture Performance Prediction (XAPP), a machine-learning based technique that uses only single-threaded CPU implementation to predict GPU performance.Our paper is built on the two following insights: i) Execution time on GPU is a function of program properties and hardware characteristics. ii) By examining a vast array of previously implemented GPU codes along with their CPU counterparts, we can use established machine learning techniques to learn this correlation between program properties, hardware characteristics and GPU execution time. We use an adaptive two-level machine learning solution. Our results show that our tool is robust and accurate: we achieve 26.9% average error on a set of 24 real-world kernels. We also discuss practical usage scenarios for XAPP.},
+  booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+  pages = {725–737},
+  numpages = {13},
+  keywords = {machine learning, cross-platform prediction, GPU, performance modeling},
+  location = {Waikiki, Hawaii},
+  series = {MICRO-48}
+}
+
+@article{taskshaping_ipdps2022,
+  place        = {Country unknown/Code not available},
+  title        = {Dynamic Task Shaping for High Throughput Data Analysis Applications in High Energy Physics},
+  url          = {https://par.nsf.gov/biblio/10356916},
+  doi          = {10.1109/IPDPS53621.2022.00041},
+  abstractnote = {Distributed data analysis frameworks are widely used for processing large datasets generated by instruments in scientific fields such as astronomy, genomics, and particle physics. Such frameworks partition petabyte-size datasets into chunks and execute many parallel tasks to search for common patterns, locate unusual signals, or compute aggregate properties. When well-configured, such frameworks make it easy to churn through large quantities of data on large clusters. However, configuring frameworks presents a challenge for end users, who must select a variety of parameters such as the blocking of the input data, the number of tasks, the resources allocated to each task, and the size of nodes on which they run. If poorly configured, the result may perform many orders of magnitude worse than optimal, or the application may even fail to make progress at all. Even if a good configuration is found through painstaking observations, the performance may change drastically when the input data or analysis kernel changes. This paper considers the problem of automatically configuring a data analysis application for high energy physics (TopEFT) built upon standard frameworks for physics analysis (Coffea) and distributed tasking (Work Queue). We observe the inherent variability within the application, demonstrate the problems of poor configuration, and then develop several techniques for automatically sizing tasks to meet goals of resource consumption, and overall application completion.},
+  journal      = {IPDPS International Parallel and Distributed Processing Symposium},
+  author       = {Tovar, Ben and Lyons, Ben and Mohrman, Kelci and Sly-Delgado, Barry and Lannon, Kevin and Thain, Douglas}
+}
+
+@inproceedings{tasks_ipdps2022,
+  author    = {Nesi, Lucas Leandro and Schnorr, Lucas Mello and Legrand, Arnaud},
+  booktitle = {2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  title     = {Multi-Phase Task-Based HPC Applications: Quickly Learning how to Run Fast},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {357-367},
+  doi       = {10.1109/IPDPS53621.2022.00042}
+}
+
+@techreport{kale:sc2011,
+  author = {Kale, Laxmikant V. and Arya, Anshu and Bhatele, Abhinav and Gupta, Abhishek and Jain, Nikhil and Jetley, Pritish and Lifflander, Jonathan and Miller, Phil and Sun, Yanhua and Venkataraman, Ramprasad and Wesolowski, Lukasz and Zheng, Gengbin},
+  title = {Charm++ for Productivity and Performance: A Submission to the 2011 {HPC} {C}lass {II} {C}hallenge},
+  month = nov,
+  year = 2011,
+  institution = {Dept. of Computer Science, University of Illinois},
 }

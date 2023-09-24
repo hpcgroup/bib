@@ -1,3 +1,143 @@
+@misc{mozaffari2023mkor,
+      title={MKOR: Momentum-Enabled Kronecker-Factor-Based Optimizer Using Rank-1 Updates}, 
+      author={Mohammad Mozaffari and Sikan Li and Zhao Zhang and Maryam Mehri Dehnavi},
+      year={2023},
+      eprint={2306.01685},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{shi2023distributed,
+      title={A Distributed Data-Parallel PyTorch Implementation of the Distributed Shampoo Optimizer for Training Neural Networks At-Scale}, 
+      author={Hao-Jun Michael Shi and Tsung-Hsien Lee and Shintaro Iwasaki and Jose Gallego-Posada and Zhijing Li and Kaushik Rangadurai and Dheevatsa Mudigere and Michael Rabbat},
+      year={2023},
+      eprint={2309.06497},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{shi2021accelerating,
+      title={Accelerating Distributed K-FAC with Smart Parallelism of Computing and Communication Tasks}, 
+      author={Shaohuai Shi and Lin Zhang and Bo Li},
+      year={2021},
+      eprint={2107.06533},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
+}
+
+@inproceedings{ueno2020rich,
+author = {Ueno, Yuichiro and Osawa, Kazuki and Tsuji, Yohei and Naruse, Akira and Yokota, Rio},
+title = {Rich Information is Affordable: A Systematic Performance Analysis of Second-Order Optimization Using K-FAC},
+year = {2020},
+isbn = {9781450379984},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3394486.3403265},
+doi = {10.1145/3394486.3403265},
+abstract = {Rich information matrices from first and second-order derivatives have many potential applications in both theoretical and practical problems in deep learning. However, computing these information matrices is extremely expensive and this enormous cost is currently limiting its application to important problems regarding generalization, hyperparameter tuning, and optimization of deep neural networks. One of the most challenging use cases of information matrices is their use as a preconditioner for the optimizers, since the information matrices need to be updated every step. In this work, we conduct a step-by-step performance analysis when computing the Fisher information matrix during training of ResNet-50 on ImageNet, and show that the overhead can be reduced to the same amount as the cost of performing a single SGD step. We also show that the resulting Fisher preconditioned optimizer can converge in 1/3 the number of epochs compared to SGD, while achieving the same Top-1 validation accuracy. This is the first work to achieve such accuracy with K-FAC while reducing the training time to match that of SGD.},
+booktitle = {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+pages = {2145–2153},
+numpages = {9},
+keywords = {distributed training, information matrix, performance optimization},
+location = {Virtual Event, CA, USA},
+series = {KDD '20}
+}
+
+
+
+@misc{osawa2020scalable,
+      title={Scalable and Practical Natural Gradient for Large-Scale Deep Learning}, 
+      author={Kazuki Osawa and Yohei Tsuji and Yuichiro Ueno and Akira Naruse and Chuan-Sheng Foo and Rio Yokota},
+      year={2020},
+      eprint={2002.06015},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{osawa2019largescale,
+      title={Large-Scale Distributed Second-Order Optimization Using Kronecker-Factored Approximate Curvature for Deep Convolutional Neural Networks}, 
+      author={Kazuki Osawa and Yohei Tsuji and Yuichiro Ueno and Akira Naruse and Rio Yokota and Satoshi Matsuoka},
+      year={2019},
+      eprint={1811.12019},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{pauloski-2020-kfac,
+    author = {Pauloski, J. Gregory and Zhang, Zhao and Huang, Lei and Xu, Weijia and Foster, Ian T.},
+    title = {Convolutional {N}eural {N}etwork {T}raining with {D}istributed {K}-{FAC}},
+    year = {2020},
+    isbn = {9781728199986},
+    publisher = {IEEE Press},
+    booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+    articleno = {94},
+    numpages = {14},
+    location = {Atlanta, Georgia},
+    series = {SC '20},
+    doi = {10.5555/3433701.3433826}
+}
+
+@inproceedings{pauloski-kaisa-2021,
+	doi = {10.1145/3458817.3476152},
+  
+	url = {https://doi.org/10.1145%2F3458817.3476152},
+  
+	year = 2021,
+	month = {nov},
+  
+	publisher = {{ACM}
+},
+  
+	author = {J. Gregory Pauloski and Qi Huang and Lei Huang and Shivaram Venkataraman and Kyle Chard and Ian Foster and Zhao Zhang},
+  
+	title = {{KAISA}},
+  
+	booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}
+}
+
+@InProceedings{agarwal-ggt-2019,
+  title = 	 {Efficient Full-Matrix Adaptive Regularization},
+  author =       {Agarwal, Naman and Bullins, Brian and Chen, Xinyi and Hazan, Elad and Singh, Karan and Zhang, Cyril and Zhang, Yi},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {102--110},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/agarwal19b/agarwal19b.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/agarwal19b.html},
+  abstract = 	 {Adaptive regularization methods pre-multiply a descent direction by a preconditioning matrix. Due to the large number of parameters of machine learning problems, full-matrix preconditioning methods are prohibitively expensive. We show how to modify full-matrix adaptive regularization in order to make it practical and effective. We also provide a novel theoretical analysis for adaptive regularization in <em>non-convex</em> optimization settings. The core of our algorithm, termed GGT, consists of the efficient computation of the inverse square root of a low-rank matrix. Our preliminary experiments show improved iteration-wise convergence rates across synthetic tasks and standard deep learning benchmarks, and that the more carefully-preconditioned steps sometimes lead to a better solution.}
+}
+
+
+@inproceedings{hessian-free-rnn,
+author = {Martens, James and Sutskever, Ilya},
+title = {Learning Recurrent Neural Networks with Hessian-Free Optimization},
+year = {2011},
+isbn = {9781450306195},
+publisher = {Omnipress},
+address = {Madison, WI, USA},
+abstract = {In this work we resolve the long-outstanding problem of how to effectively train recurrent neural networks (RNNs) on complex and difficult sequence modeling problems which may contain long-term data dependencies. Utilizing recent advances in the Hessian-free optimization approach (Martens, 2010), together with a novel damping scheme, we successfully train RNNs on two sets of challenging problems. First, a collection of pathological synthetic datasets which are known to be impossible for standard optimization approaches (due to their extremely long-term dependencies), and second, on three natural and highly complex real-world sequence datasets where we find that our method significantly outperforms the previous state-of-the-art method for training neural sequence models: the Long Short-term Memory approach of Hochreiter and Schmidhuber (1997). Additionally, we offer a new interpretation of the generalized Gauss-Newton matrix of Schraudolph (2002) which is used within the HF approach of Martens.},
+booktitle = {Proceedings of the 28th International Conference on International Conference on Machine Learning},
+pages = {1033–1040},
+numpages = {8},
+location = {Bellevue, Washington, USA},
+series = {ICML'11}
+}
+
+
+
+@misc{grosse2016kfacconvolution,
+      title={A Kronecker-factored approximate Fisher matrix for convolution layers}, 
+      author={Roger Grosse and James Martens},
+      year={2016},
+      eprint={1602.01407},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
 @misc{zhu2019anisotropic,
       title={The Anisotropic Noise in Stochastic Gradient Descent: Its Behavior of Escaping from Sharp Minima and Regularization Effects}, 
       author={Zhanxing Zhu and Jingfeng Wu and Bing Yu and Lei Wu and Jinwen Ma},
@@ -6866,6 +7006,15 @@ series = {MSR '22}
   numpages = {6},
   location = {Hyderabad, India},
   series = {IJCAI'07}
+}
+
+@article{goldfarb2020practical,
+  title={Practical quasi-newton methods for training deep neural networks},
+  author={Goldfarb, Donald and Ren, Yi and Bahamou, Achraf},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={2386--2396},
+  year={2020}
 }
 
 @article{pennycook2021navigating,

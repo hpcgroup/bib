@@ -1,3 +1,345 @@
+@misc{mozaffari2023mkor,
+      title={MKOR: Momentum-Enabled Kronecker-Factor-Based Optimizer Using Rank-1 Updates}, 
+      author={Mohammad Mozaffari and Sikan Li and Zhao Zhang and Maryam Mehri Dehnavi},
+      year={2023},
+      eprint={2306.01685},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{shi2023distributed,
+      title={A Distributed Data-Parallel PyTorch Implementation of the Distributed Shampoo Optimizer for Training Neural Networks At-Scale}, 
+      author={Hao-Jun Michael Shi and Tsung-Hsien Lee and Shintaro Iwasaki and Jose Gallego-Posada and Zhijing Li and Kaushik Rangadurai and Dheevatsa Mudigere and Michael Rabbat},
+      year={2023},
+      eprint={2309.06497},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{shi2021accelerating,
+      title={Accelerating Distributed K-FAC with Smart Parallelism of Computing and Communication Tasks}, 
+      author={Shaohuai Shi and Lin Zhang and Bo Li},
+      year={2021},
+      eprint={2107.06533},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
+}
+
+@inproceedings{ueno2020rich,
+author = {Ueno, Yuichiro and Osawa, Kazuki and Tsuji, Yohei and Naruse, Akira and Yokota, Rio},
+title = {Rich Information is Affordable: A Systematic Performance Analysis of Second-Order Optimization Using K-FAC},
+year = {2020},
+isbn = {9781450379984},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3394486.3403265},
+doi = {10.1145/3394486.3403265},
+abstract = {Rich information matrices from first and second-order derivatives have many potential applications in both theoretical and practical problems in deep learning. However, computing these information matrices is extremely expensive and this enormous cost is currently limiting its application to important problems regarding generalization, hyperparameter tuning, and optimization of deep neural networks. One of the most challenging use cases of information matrices is their use as a preconditioner for the optimizers, since the information matrices need to be updated every step. In this work, we conduct a step-by-step performance analysis when computing the Fisher information matrix during training of ResNet-50 on ImageNet, and show that the overhead can be reduced to the same amount as the cost of performing a single SGD step. We also show that the resulting Fisher preconditioned optimizer can converge in 1/3 the number of epochs compared to SGD, while achieving the same Top-1 validation accuracy. This is the first work to achieve such accuracy with K-FAC while reducing the training time to match that of SGD.},
+booktitle = {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+pages = {2145–2153},
+numpages = {9},
+keywords = {distributed training, information matrix, performance optimization},
+location = {Virtual Event, CA, USA},
+series = {KDD '20}
+}
+
+
+
+@misc{osawa2020scalable,
+      title={Scalable and Practical Natural Gradient for Large-Scale Deep Learning}, 
+      author={Kazuki Osawa and Yohei Tsuji and Yuichiro Ueno and Akira Naruse and Chuan-Sheng Foo and Rio Yokota},
+      year={2020},
+      eprint={2002.06015},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{osawa2019largescale,
+      title={Large-Scale Distributed Second-Order Optimization Using Kronecker-Factored Approximate Curvature for Deep Convolutional Neural Networks}, 
+      author={Kazuki Osawa and Yohei Tsuji and Yuichiro Ueno and Akira Naruse and Rio Yokota and Satoshi Matsuoka},
+      year={2019},
+      eprint={1811.12019},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{pauloski-2020-kfac,
+    author = {Pauloski, J. Gregory and Zhang, Zhao and Huang, Lei and Xu, Weijia and Foster, Ian T.},
+    title = {Convolutional {N}eural {N}etwork {T}raining with {D}istributed {K}-{FAC}},
+    year = {2020},
+    isbn = {9781728199986},
+    publisher = {IEEE Press},
+    booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+    articleno = {94},
+    numpages = {14},
+    location = {Atlanta, Georgia},
+    series = {SC '20},
+    doi = {10.5555/3433701.3433826}
+}
+
+@inproceedings{pauloski-kaisa-2021,
+	doi = {10.1145/3458817.3476152},
+  
+	url = {https://doi.org/10.1145%2F3458817.3476152},
+  
+	year = 2021,
+	month = {nov},
+  
+	publisher = {{ACM}
+},
+  
+	author = {J. Gregory Pauloski and Qi Huang and Lei Huang and Shivaram Venkataraman and Kyle Chard and Ian Foster and Zhao Zhang},
+  
+	title = {{KAISA}},
+  
+	booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}
+}
+
+@InProceedings{agarwal-ggt-2019,
+  title = 	 {Efficient Full-Matrix Adaptive Regularization},
+  author =       {Agarwal, Naman and Bullins, Brian and Chen, Xinyi and Hazan, Elad and Singh, Karan and Zhang, Cyril and Zhang, Yi},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {102--110},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/agarwal19b/agarwal19b.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/agarwal19b.html},
+  abstract = 	 {Adaptive regularization methods pre-multiply a descent direction by a preconditioning matrix. Due to the large number of parameters of machine learning problems, full-matrix preconditioning methods are prohibitively expensive. We show how to modify full-matrix adaptive regularization in order to make it practical and effective. We also provide a novel theoretical analysis for adaptive regularization in <em>non-convex</em> optimization settings. The core of our algorithm, termed GGT, consists of the efficient computation of the inverse square root of a low-rank matrix. Our preliminary experiments show improved iteration-wise convergence rates across synthetic tasks and standard deep learning benchmarks, and that the more carefully-preconditioned steps sometimes lead to a better solution.}
+}
+
+
+@inproceedings{hessian-free-rnn,
+author = {Martens, James and Sutskever, Ilya},
+title = {Learning Recurrent Neural Networks with Hessian-Free Optimization},
+year = {2011},
+isbn = {9781450306195},
+publisher = {Omnipress},
+address = {Madison, WI, USA},
+abstract = {In this work we resolve the long-outstanding problem of how to effectively train recurrent neural networks (RNNs) on complex and difficult sequence modeling problems which may contain long-term data dependencies. Utilizing recent advances in the Hessian-free optimization approach (Martens, 2010), together with a novel damping scheme, we successfully train RNNs on two sets of challenging problems. First, a collection of pathological synthetic datasets which are known to be impossible for standard optimization approaches (due to their extremely long-term dependencies), and second, on three natural and highly complex real-world sequence datasets where we find that our method significantly outperforms the previous state-of-the-art method for training neural sequence models: the Long Short-term Memory approach of Hochreiter and Schmidhuber (1997). Additionally, we offer a new interpretation of the generalized Gauss-Newton matrix of Schraudolph (2002) which is used within the HF approach of Martens.},
+booktitle = {Proceedings of the 28th International Conference on International Conference on Machine Learning},
+pages = {1033–1040},
+numpages = {8},
+location = {Bellevue, Washington, USA},
+series = {ICML'11}
+}
+
+
+
+@misc{grosse2016kfacconvolution,
+      title={A Kronecker-factored approximate Fisher matrix for convolution layers}, 
+      author={Roger Grosse and James Martens},
+      year={2016},
+      eprint={1602.01407},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@misc{zhu2019anisotropic,
+      title={The Anisotropic Noise in Stochastic Gradient Descent: Its Behavior of Escaping from Sharp Minima and Regularization Effects}, 
+      author={Zhanxing Zhu and Jingfeng Wu and Bing Yu and Lei Wu and Jinwen Ma},
+      year={2019},
+      eprint={1803.00195},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@misc{sagun2018empirical,
+      title={Empirical Analysis of the Hessian of Over-Parametrized Neural Networks}, 
+      author={Levent Sagun and Utku Evci and V. Ugur Guney and Yann Dauphin and Leon Bottou},
+      year={2018},
+      eprint={1706.04454},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{jastrzebski2018factors,
+      title={Three Factors Influencing Minima in SGD}, 
+      author={Stanislaw Jastrzebski and Zachary Kenton and Devansh Arpit and Nicolas Ballas and Asja Fischer and Yoshua Bengio and Amos Storkey},
+      year={2018},
+      eprint={1711.04623},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{duchi:jmlr2011,
+  author  = {John Duchi and Elad Hazan and Yoram Singer},
+  title   = {Adaptive Subgradient Methods for Online Learning and Stochastic Optimization},
+  journal = {Journal of Machine Learning Research},
+  year    = {2011},
+  volume  = {12},
+  number  = {61},
+  pages   = {2121--2159},
+  url     = {http://jmlr.org/papers/v12/duchi11a.html}
+}
+
+@article{martens:jmlr2020,
+author = {Martens, James},
+title = {New Insights and Perspectives on the Natural Gradient Method},
+year = {2020},
+issue_date = {January 2020},
+publisher = {JMLR.org},
+volume = {21},
+number = {1},
+issn = {1532-4435},
+abstract = {Natural gradient descent is an optimization method traditionally motivated from the perspective of information geometry, and works well for many applications as an alternative to stochastic gradient descent. In this paper we critically analyze this method and its properties, and show how it can be viewed as a type of 2nd-order optimization method, with the Fisher information matrix acting as a substitute for the Hessian. In many important cases, the Fisher information matrix is shown to be equivalent to the Generalized Gauss-Newton matrix, which both approximates the Hessian, but also has certain properties that favor its use over the Hessian. This perspective turns out to have significant implications for the design of a practical and robust natural gradient optimizer, as it motivates the use of techniques like trust regions and Tikhonov regularization. Additionally, we make a series of contributions to the understanding of natural gradient and 2nd-order methods, including: a thorough analysis of the convergence speed of stochastic natural gradient descent (and more general stochastic 2nd-order methods) as applied to convex quadratics, a critical examination of the oft-used "empirical" approximation of the Fisher matrix, and an analysis of the (approximate) parameterization invariance property possessed by natural gradient methods (which we show also holds for certain other curvature matrices, but notably not the Hessian).},
+journal = {J. Mach. Learn. Res.},
+month = {jan},
+articleno = {146},
+numpages = {76},
+keywords = {neural networks, convergence rate, parameterization invariance, natural gradient methods, 2nd-order optimization}
+}
+
+
+
+@inproceedings{kunstner:neurips2019,
+ author = {Kunstner, Frederik and Hennig, Philipp and Balles, Lukas},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Limitations of the empirical Fisher approximation for natural gradient descent},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/46a558d97954d0692411c861cf78ef79-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+@inproceedings{tonga,
+ author = {Roux, Nicolas and Manzagol, Pierre-antoine and Bengio, Yoshua},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {J. Platt and D. Koller and Y. Singer and S. Roweis},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Topmoumoute Online Natural Gradient Algorithm},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2007/file/9f61408e3afb633e50cdf1b20de6f466-Paper.pdf},
+ volume = {20},
+ year = {2007}
+}
+
+@inproceedings{Desjardins:nips2015,
+ author = {Desjardins, Guillaume and Simonyan, Karen and Pascanu, Razvan and kavukcuoglu, koray},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Natural Neural Networks},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2015/file/2de5d16682c3c35007e4e92982f1a2ba-Paper.pdf},
+ volume = {28},
+ year = {2015}
+}
+
+
+@article{Park2000AdaptiveNG,
+  title={Adaptive natural gradient learning algorithms for various stochastic models},
+  author={Hyeyoung Park and Shun‐ichi Amari and Kenji Fukumizu},
+  journal={Neural networks : the official journal of the International Neural Network Society},
+  year={2000},
+  volume={13 7},
+  pages={
+          755-64
+        },
+  url={https://api.semanticscholar.org/CorpusID:6471036}
+}
+
+@article{ngd-og,
+    author = {Amari, Shun-ichi},
+    title = "{Natural Gradient Works Efficiently in Learning}",
+    journal = {Neural Computation},
+    volume = {10},
+    number = {2},
+    pages = {251-276},
+    year = {1998},
+    month = {02},
+    abstract = "{When a parameter space has a certain underlying structure, the ordinary gradient of a function does not represent its steepest direction, but the natural gradient does. Information geometry is used for calculating the natural gradients in the parameter space of perceptrons, the space of matrices (for blind source separation), and the space of linear dynamical systems (for blind source deconvolution). The dynamical behavior of natural gradient online learning is analyzed and is proved to be Fisher efficient, implying that it has asymptotically the same performance as the optimal batch estimation of parameters. This suggests that the plateau phenomenon, which appears in the backpropagation learning algorithm of multilayer perceptrons, might disappear or might not be so serious when the natural gradient is used. An adaptive method of updating the learning rate is proposed and analyzed.}",
+    issn = {0899-7667},
+    doi = {10.1162/089976698300017746},
+    url = {https://doi.org/10.1162/089976698300017746},
+    eprint = {https://direct.mit.edu/neco/article-pdf/10/2/251/813415/089976698300017746.pdf},
+}
+
+
+
+@InProceedings{botev-practical-17,
+  title = 	 {Practical {G}auss-{N}ewton Optimisation for Deep Learning},
+  author =       {Aleksandar Botev and Hippolyt Ritter and David Barber},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {557--565},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/botev17a/botev17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/botev17a.html},
+  abstract = 	 {We present an efficient block-diagonal approximation to the Gauss-Newton matrix for feedforward neural networks. Our resulting algorithm is competitive against state-of-the-art first-order optimisation methods, with sometimes significant improvement in optimisation performance. Unlike first-order methods, for which hyperparameter tuning of the optimisation parameters is often a laborious process, our approach can provide good performance even when used with default settings. A side result of our work is that for piecewise linear transfer functions, the network objective function can have no differentiable local maxima, which may partially explain why such transfer functions facilitate effective optimisation.}
+}
+
+
+@InProceedings{krylov-subspace-descent,
+  title = 	 {Krylov Subspace Descent for Deep Learning},
+  author = 	 {Vinyals, Oriol and Povey, Daniel},
+  booktitle = 	 {Proceedings of the Fifteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {1261--1268},
+  year = 	 {2012},
+  editor = 	 {Lawrence, Neil D. and Girolami, Mark},
+  volume = 	 {22},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {La Palma, Canary Islands},
+  month = 	 {21--23 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v22/vinyals12/vinyals12.pdf},
+  url = 	 {https://proceedings.mlr.press/v22/vinyals12.html},
+  abstract = 	 {In this paper, we propose a second order optimization method to learn models where both the dimensionality of the parameter space and the number of training samples is high.  In our method, we construct on each iteration a Krylov subspace formed by the gradient and an approximation to the Hessian matrix, and then use a subset of the training data samples to optimize over this subspace.  As with the Hessian Free (HF) method of Martens (2010), the Hessian matrix is never explicitly constructed, and is computed using a subset of data.  In practice, as in HF, we typically use a positive definite substitute for the Hessian matrix such as the Gauss-Newton matrix.  We investigate the effectiveness of our proposed method on deep neural networks, and compare its performance to widely used methods such as stochastic gradient descent, conjugate gradient descent and L-BFGS, and also to HF. Our method leads to faster convergence than either L-BFGS or HF, and generally performs better than either of them in cross-validation accuracy.  It is also simpler and more general than HF, as it does not require a positive semidefinite approximation of the Hessian matrix to work well nor the setting of a damping parameter.  The chief drawback versus HF is the need for memory to store a basis for the Krylov subspace.}
+}
+
+
+@inproceedings{hessian-free-optimization,
+  added-at = {2011-07-08T14:11:15.000+0200},
+  author = {Martens, James},
+  biburl = {https://www.bibsonomy.org/bibtex/2af0029f21446a26c04f2e4650ec1fbf1/gromgull},
+  booktitle = {ICML},
+  editor = {Fürnkranz, Johannes and Joachims, Thorsten},
+  ee = {http://www.icml2010.org/papers/458.pdf},
+  interhash = {1d6577ca73270732c2cc1e3c2cce6cdb},
+  intrahash = {af0029f21446a26c04f2e4650ec1fbf1},
+  keywords = {machinelearning neural-networks optimisation recurrent-neural-networks},
+  pages = {735-742},
+  publisher = {Omnipress},
+  timestamp = {2011-07-08T14:11:15.000+0200},
+  title = {Deep learning via Hessian-free optimization.},
+  url = {http://dblp.uni-trier.de/db/conf/icml/icml2010.html#Martens10},
+  year = 2010
+}
+
+
+
+
+@article{schraudolphGGN,
+author = {Schraudolph, Nicol N.},
+title = {Fast Curvature Matrix-Vector Products for Second-Order Gradient Descent},
+year = {2002},
+issue_date = {July 2002},
+publisher = {MIT Press},
+address = {Cambridge, MA, USA},
+volume = {14},
+number = {7},
+issn = {0899-7667},
+url = {https://doi.org/10.1162/08997660260028683},
+doi = {10.1162/08997660260028683},
+abstract = {We propose a generic method for iteratively approximating various second-order gradient steps--Newton, Gauss-Newton, Levenberg-Marquardt, and natural gradient--in linear time per iteration, using special curvature matrix-vector products that can be computed in O(n). Two recent acceleration techniques for on-line learning, matrix momentum and stochastic meta-descent (SMD), implement this approach. Since both were originally derived by very different routes, this offers fresh insight into their operation, resulting in further improvements to SMD.},
+journal = {Neural Comput.},
+month = {jul},
+pages = {1723–1738},
+numpages = {16}
+}
+
+
+
 @inproceedings{loshchilov2017sgdr,
 title={{SGDR}: Stochastic Gradient Descent with Warm Restarts},
 author={Ilya Loshchilov and Frank Hutter},
@@ -79,6 +421,16 @@ url={https://openreview.net/forum?id=Skq89Scxx}
   title = {ImageNet Classification with Deep Convolutional Neural Networks},
   url = {http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf},
   year = 2012
+}
+
+@article{sgd-nesterov,
+  title={A method for solving the convex programming problem with convergence rate $\mathcal{O}(1/k^2)$},
+  author={Yurii Nesterov},
+  journal={Proceedings of the USSR Academy of Sciences},
+  year={1983},
+  volume={269},
+  pages={543-547},
+  url={https://api.semanticscholar.org/CorpusID:145918791}
 }
 
 @article{sgd-momentum,
@@ -6654,6 +7006,15 @@ series = {MSR '22}
   numpages = {6},
   location = {Hyderabad, India},
   series = {IJCAI'07}
+}
+
+@article{goldfarb2020practical,
+  title={Practical quasi-newton methods for training deep neural networks},
+  author={Goldfarb, Donald and Ren, Yi and Bahamou, Achraf},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={2386--2396},
+  year={2020}
 }
 
 @article{pennycook2021navigating,

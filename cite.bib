@@ -1,3 +1,53 @@
+@article{lamport,
+author = {Lamport, Leslie},
+title = {Time, clocks, and the ordering of events in a distributed system},
+year = {1978},
+issue_date = {July 1978},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {21},
+number = {7},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/359545.359563},
+doi = {10.1145/359545.359563},
+abstract = {The concept of one event happening before another in a distributed system is examined, and is shown to define a partial ordering of the events. A distributed algorithm is given for synchronizing a system of logical clocks which can be used to totally order the events. The use of the total ordering is illustrated with a method for solving synchronization problems. The algorithm is then specialized for synchronizing physical clocks, and a bound is derived on how far out of synchrony the clocks can become.},
+journal = {Commun. ACM},
+month = {jul},
+pages = {558–565},
+numpages = {8},
+keywords = {multiprocess systems, distributed systems, computer networks, clock synchronization}
+}
+
+@ARTICLE{lateness,
+  author={Isaacs, Katherine E. and Gamblin, Todd and Bhatele, Abhinav and Schulz, Martin and Hamann, Bernd and Bremer, Peer-Timo},
+  journal={IEEE Transactions on Parallel and Distributed Systems}, 
+  title={Ordering Traces Logically to Identify Lateness in Message Passing Programs}, 
+  year={2016},
+  volume={27},
+  number={3},
+  pages={829-840},
+  keywords={Visualization;Partitioning algorithms;Merging;Message passing;Delays;Trace analysis;performance;Trace analysis;performance},
+  doi={10.1109/TPDS.2015.2417531}}
+
+
+@inproceedings{trace-vis-task-dependencies,
+author = {Haugen, Blake and Richmond, Stephen and Kurzak, Jakub and Steed, Chad A. and Dongarra, Jack},
+title = {Visualizing execution traces with task dependencies},
+year = {2015},
+isbn = {9781450340137},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2835238.2835240},
+doi = {10.1145/2835238.2835240},
+abstract = {Task-based scheduling has emerged as one method to reduce the complexity of parallel computing. When using task-based schedulers, developers must frame their computation as a series of tasks with various data dependencies. The scheduler can take these tasks, along with their input and output dependencies, and schedule the task in parallel across a node or cluster. While these schedulers simplify the process of parallel software development, they can obfuscate the performance characteristics of the execution of an algorithm.The execution trace has been used for many years to give developers a visual representation of how their computations are performed. These methods can be employed to visualize when and where each of the tasks in a task-based algorithm is scheduled. In addition, the task dependencies can be used to create a directed acyclic graph (DAG) that can also be visualized to demonstrate the dependencies of the various tasks that make up a workload. The work presented here aims to combine these two data sets and extend execution trace visualization to better suit task-based workloads.This paper presents a brief description of task-based schedulers and the performance data they produce. It will then describe an interactive extension to the current trace visualization methods that combines the trace and DAG data sets. This new tool allows users to gain a greater understanding of how their tasks are scheduled. It also provides a simplified way for developers to evaluate and debug the performance of their scheduler.},
+booktitle = {Proceedings of the 2nd Workshop on Visual Performance Analysis},
+articleno = {2},
+numpages = {8},
+keywords = {task-based scheduling, execution trace, data movement, DAG},
+location = {Austin, Texas},
+series = {VPA '15}
+}
+
 @Inproceedings{Zhang2023,
  author = {Zhen Zhang and Shuai Zheng and Yida Wang and Justin Chiu and George Karypis and Trishul Chilimbi and Mu Li and Xin Jin},
  title = {MiCS: Near linear scaling for training gigantic model on public cloud},

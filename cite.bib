@@ -48,6 +48,29 @@ location = {Austin, Texas},
 series = {VPA '15}
 }
 
+@misc{litgpt-2023,
+  author       = {Lightning AI},
+  title        = {LitGPT},
+  howpublished = {\url{https://github.com/Lightning-AI/litgpt}},
+  year         = {2023},
+}
+
+@InProceedings{rabenseifner-2004,
+author="Rabenseifner, Rolf",
+editor="Bubak, Marian
+and van Albada, Geert Dick
+and Sloot, Peter M. A.
+and Dongarra, Jack",
+title="Optimization of Collective Reduction Operations",
+booktitle="Computational Science - ICCS 2004",
+year="2004",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="1--9",
+abstract="A 5-year-profiling in production mode at the University of Stuttgart has shown that more than 40{\%} of the execution time of Message Passing Interface (MPI) routines is spent in the collective communication routines MPI{\_}Allreduce and MPI{\_}Reduce. Although MPI implementations are now available for about 10 years and all vendors are committed to this Message Passing Interface standard, the vendors' and publicly available reduction algorithms could be accelerated with new algorithms by a factor between 3 (IBM, sum) and 100 (Cray T3E, maxloc) for long vectors. This paper presents five algorithms optimized for different choices of vector size and number of processes. The focus is on bandwidth dominated protocols for power-of-two and non-power-of-two number of processes, optimizing the load balance in communication and computation.",
+isbn="978-3-540-24685-5"
+}
+
 @Inproceedings{Zhang2023,
  author = {Zhen Zhang and Shuai Zheng and Yida Wang and Justin Chiu and George Karypis and Trishul Chilimbi and Mu Li and Xin Jin},
  title = {MiCS: Near linear scaling for training gigantic model on public cloud},
@@ -8674,4 +8697,48 @@ series = {ASPLOS 2023}
   pages={465--471},
   year={2012},
   organization={IEEE}
+}
+
+@inproceedings{koskela2023principles,
+  title={Principles for automated and reproducible benchmarking},
+  author={Koskela, Tuomas and Christidi, Ilektra and Giordano, Mos{\`e} and Dubrovska, Emily and Quinn, Jamie and Maynard, Christopher and Case, Dave and Olgu, Kaan and Deakin, Tom},
+  booktitle={Proceedings of the SC'23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis},
+  pages={609--618},
+  year={2023}
+}
+
+@misc{valerolara2023comparing,
+      title={Comparing Llama-2 and GPT-3 LLMs for HPC kernels generation}, 
+      author={Pedro Valero-Lara and Alexis Huante and Mustafa Al Lail and William F. Godoy and Keita Teranishi and Prasanna Balaprakash and Jeffrey S. Vetter},
+      year={2023},
+      eprint={2309.07103},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
+}
+
+@misc{naveed2024comprehensive,
+      title={A Comprehensive Overview of Large Language Models}, 
+      author={Humza Naveed and Asad Ullah Khan and Shi Qiu and Muhammad Saqib and Saeed Anwar and Muhammad Usman and Naveed Akhtar and Nick Barnes and Ajmal Mian},
+      year={2024},
+      eprint={2307.06435},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{schulman2017proximal,
+      title={Proximal Policy Optimization Algorithms}, 
+      author={John Schulman and Filip Wolski and Prafulla Dhariwal and Alec Radford and Oleg Klimov},
+      year={2017},
+      eprint={1707.06347},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{wang2023helpsteer,
+      title={HelpSteer: Multi-attribute Helpfulness Dataset for SteerLM}, 
+      author={Zhilin Wang and Yi Dong and Jiaqi Zeng and Virginia Adams and Makesh Narsimhan Sreedhar and Daniel Egert and Olivier Delalleau and Jane Polak Scowcroft and Neel Kant and Aidan Swope and Oleksii Kuchaiev},
+      year={2023},
+      eprint={2311.09528},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }

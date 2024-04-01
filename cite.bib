@@ -5,7 +5,7 @@
   year         = {2023},
 }
 
-@InProceedings{rabenseifner-2004,
+@InProceedings{rabenseifneroptimization2004,
 author="Rabenseifner, Rolf",
 editor="Bubak, Marian
 and van Albada, Geert Dick
@@ -20,6 +20,23 @@ pages="1--9",
 abstract="A 5-year-profiling in production mode at the University of Stuttgart has shown that more than 40{\%} of the execution time of Message Passing Interface (MPI) routines is spent in the collective communication routines MPI{\_}Allreduce and MPI{\_}Reduce. Although MPI implementations are now available for about 10 years and all vendors are committed to this Message Passing Interface standard, the vendors' and publicly available reduction algorithms could be accelerated with new algorithms by a factor between 3 (IBM, sum) and 100 (Cray T3E, maxloc) for long vectors. This paper presents five algorithms optimized for different choices of vector size and number of processes. The focus is on bandwidth dominated protocols for power-of-two and non-power-of-two number of processes, optimizing the load balance in communication and computation.",
 isbn="978-3-540-24685-5"
 }
+
+@InProceedings{thakurimproving2003,
+author="Thakur, Rajeev
+and Gropp, William D.",
+editor="Dongarra, Jack
+and Laforenza, Domenico
+and Orlando, Salvatore",
+title="Improving the Performance of Collective Operations in MPICH",
+booktitle="Recent Advances in Parallel Virtual Machine and Message Passing Interface",
+year="2003",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="257--267",
+abstract="We report on our work on improving the performance of collective operations in MPICH on clusters connected by switched networks. For each collective operation, we use multiple algorithms depending on the message size, with the goal of minimizing latency for short messages and minimizing bandwidth usage for long messages. Although we have implemented new algorithms for all MPI collective operations, because of limited space we describe only the algorithms for allgather, broadcast, reduce-scatter, and reduce. We present performance results using the SKaMPI benchmark on a Myrinet-connected Linux cluster and an IBM SP. In all cases, the new algorithms significantly outperform the old algorithms used in MPICH on the Myrinet cluster, and, in many cases, they outperform the algorithms used in IBM's MPI on the SP.",
+isbn="978-3-540-39924-7"
+}
+
 
 @Inproceedings{Zhang2023,
  author = {Zhen Zhang and Shuai Zheng and Yida Wang and Justin Chiu and George Karypis and Trishul Chilimbi and Mu Li and Xin Jin},

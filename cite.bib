@@ -9044,3 +9044,87 @@ series = {ASPLOS 2023}
   doi       = {10.1109/MCSE.2007.55},
   year      = 2007
 }
+
+@misc{selene,
+  title = {NVIDIA Selene Supercomputer},
+  howpublished = {\url{https://www.top500.org/system/179842/}},
+}
+
+@inproceedings{colossalai2023unified,
+author = {Li, Shenggui and Liu, Hongxin and Bian, Zhengda and Fang, Jiarui and Huang, Haichen and Liu, Yuliang and Wang, Boxiang and You, Yang},
+title = {Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training},
+year = {2023},
+isbn = {9798400708435},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3605573.3605613},
+doi = {10.1145/3605573.3605613},
+abstract = {The success of Transformer models has pushed the deep learning model scale to billions of parameters, but the memory limitation of a single GPU has led to an urgent need for training on multi-GPU clusters. However, the best practice for choosing the optimal parallel strategy is still lacking, as it requires domain expertise in both deep learning and parallel computing. The Colossal-AI system addressed the above challenge by introducing a unified interface to scale your sequential code of model training to distributed environments. It supports parallel training methods such as data, pipeline, tensor, and sequence parallelism and is integrated with heterogeneous training and zero redundancy optimizer. Compared to the baseline system, Colossal-AI can achieve up to 2.76 times training speedup on large-scale models.},
+booktitle = {Proceedings of the 52nd International Conference on Parallel Processing},
+pages = {766–775},
+numpages = {10},
+keywords = {datasets, gaze detection, neural networks, text tagging},
+location = {, Salt Lake City, UT, USA, },
+series = {ICPP '23}
+}
+
+@misc{touvron2023llama1,
+  title={LLaMA: Open and Efficient Foundation Language Models}, 
+  author={Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
+  year={2023},
+  eprint={2302.13971},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{jiang2024megascale,
+  title={MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs}, 
+  author={Ziheng Jiang and Haibin Lin and Yinmin Zhong and Qi Huang and Yangrui Chen and Zhi Zhang and Yanghua Peng and Xiang Li and Cong Xie and Shibiao Nong and Yulu Jia and Sun He and Hongmin Chen and Zhihao Bai and Qi Hou and Shipeng Yan and Ding Zhou and Yiyao Sheng and Zhuo Jiang and Haohan Xu and Haoran Wei and Zhang Zhang and Pengfei Nie and Leqi Zou and Sida Zhao and Liang Xiang and Zherui Liu and Zhe Li and Xiaoying Jia and Jianxi Ye and Xin Jin and Xin Liu},
+  year={2024},
+  eprint={2402.15627},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@inproceedings{yin2023forge,
+  author = {Yin, Junqi and Dash, Sajal and Wang, Feiyi and Shankar, Mallikarjun},
+  title = {FORGE: Pre-Training Open Foundation Models for Science},
+  year = {2023},
+  isbn = {9798400701092},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3581784.3613215},
+  doi = {10.1145/3581784.3613215},
+  abstract = {Large language models (LLMs) are poised to revolutionize the way we conduct scientific research. However, both model complexity and pre-training cost are impeding effective adoption for the wider science community. Identifying suitable scientific use cases, finding the optimal balance between model and data sizes, and scaling up model training are among the most pressing issues that need to be addressed. In this study, we provide practical solutions for building and using LLM-based foundation models targeting scientific research use cases. We present an end-to-end examination of the effectiveness of LLMs in scientific research, including their scaling behavior and computational requirements on Frontier, the first Exascale supercomputer. We have also developed for release to the scientific community a suite of open foundation models called FORGE with up to 26B parameters using 257B tokens from over 200M scientific articles, with performance either on par or superior to other state-of-the-art comparable models. We have demonstrated the use and effectiveness of FORGE on scientific downstream tasks. Our research establishes best practices that can be applied across various fields to take advantage of LLMs for scientific discovery.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {81},
+  numpages = {13},
+  location = {<conf-loc>, <city>Denver</city>, <state>CO</state>, <country>USA</country>, </conf-loc>},
+  series = {SC '23}
+}
+
+@inproceedings{frontier2023,
+  author = {Atchley, Scott and Zimmer, Christopher and Lange, John and Bernholdt, David and Melesse Vergara, Veronica and Beck, Thomas and Brim, Michael and Budiardja, Reuben and Chandrasekaran, Sunita and Eisenbach, Markus and Evans, Thomas and Ezell, Matthew and Frontiere, Nicholas and Georgiadou, Antigoni and Glenski, Joe and Grete, Philipp and Hamilton, Steven and Holmen, John and Huebl, Axel and Jacobson, Daniel and Joubert, Wayne and Mcmahon, Kim and Merzari, Elia and Moore, Stan and Myers, Andrew and Nichols, Stephen and Oral, Sarp and Papatheodore, Thomas and Perez, Danny and Rogers, David M. and Schneider, Evan and Vay, Jean-Luc and Yeung, P. K.},
+  title = {Frontier: Exploring Exascale},
+  year = {2023},
+  isbn = {9798400701092},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3581784.3607089},
+  doi = {10.1145/3581784.3607089},
+  abstract = {As the US Department of Energy (DOE) computing facilities began deploying petascale systems in 2008, DOE was already setting its sights on exascale. In that year, DARPA published a report on the feasibility of reaching exascale. The report authors identified several key challenges in the pursuit of exascale including power, memory, concurrency, and resiliency. That report informed the DOE's computing strategy for reaching exascale. With the deployment of Oak Ridge National Laboratory's Frontier supercomputer, we have officially entered the exascale era. In this paper, we discuss Frontier's architecture, how it addresses those challenges, and describe some early application results from Oak Ridge Leadership Computing Facility's Center of Excellence and the Exascale Computing Project.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {52},
+  numpages = {16},
+  location = {<conf-loc>, <city>Denver</city>, <state>CO</state>, <country>USA</country>, </conf-loc>},
+  series = {SC '23}
+}
+
+@misc{dash2023optimizing,
+  title={Optimizing Distributed Training on Frontier for Large Language Models}, 
+  author={Sajal Dash and Isaac Lyngaas and Junqi Yin and Xiao Wang and Romain Egele and Guojing Cong and Feiyi Wang and Prasanna Balaprakash},
+  year={2023},
+  eprint={2312.12705},
+  archivePrefix={arXiv},
+  primaryClass={cs.DC}
+}

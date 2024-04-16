@@ -890,12 +890,8 @@ URL = {https://doi.org/10.1214/aoms/1177729586}
   journal   = {CoRR},
   volume    = {abs/2201.12023},
   year      = {2022},
-  url       = {https://arxiv.org/abs/2201.12023},
   eprinttype = {arXiv},
   eprint    = {2201.12023},
-  timestamp = {Wed, 02 Feb 2022 15:00:01 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2201-12023.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @misc{jangda2022breaking,
@@ -1126,8 +1122,6 @@ abstract = {In this paper, we give a straight forward, highly efficient, scalabl
 
 @inproceedings{you-2.5d,
 	doi = {10.1145/3545008.3545087},
-
-	url = {https://doi.org/10.1145%2F3545008.3545087},
 
 	year = 2022,
 	month = {aug},
@@ -2383,12 +2377,11 @@ keywords = {Direct numerical simulation, Shock capturing, Bandwidth optimization
 
 @inproceedings{zero_infinity,
 author = {Rajbhandari, Samyam and Ruwase, Olatunji and Rasley, Jeff and Smith, Shaden and He, Yuxiong},
-title = {ZeRO-Infinity: Breaking the GPU Memory Wall for Extreme Scale Deep Learning},
+title = {{ZeRO-Infinity}: Breaking the GPU Memory Wall for Extreme Scale Deep Learning},
 year = {2021},
 isbn = {9781450384421},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3458817.3476205},
 doi = {10.1145/3458817.3476205},
 articleno = {59},
 numpages = {14},
@@ -2454,7 +2447,6 @@ series = {SC '21}
   journal   = {CoRR},
   volume    = {abs/2104.04473},
   year      = {2021},
-  url       = {https://arxiv.org/abs/2104.04473},
   archivePrefix = {arXiv},
   eprint    = {2104.04473},
   timestamp = {Tue, 13 Apr 2021 16:46:17 +0200},
@@ -3401,7 +3393,7 @@ series = {SC '19}
 }
 
 @misc{huang2019gpipe,
-      title={GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism},
+      title={{GPipe}: Efficient Training of Giant Neural Networks using Pipeline Parallelism},
       author={Yanping Huang and Youlong Cheng and Ankur Bapna and Orhan Firat and Mia Xu Chen and Dehao Chen and HyoukJoong Lee and Jiquan Ngiam and Quoc V. Le and Yonghui Wu and Zhifeng Chen},
       year={2019},
       eprint={1811.06965},
@@ -3412,11 +3404,9 @@ series = {SC '19}
 @inproceedings{huang2019gpipe_nips,
   author = {Huang, Yanping and Cheng, Youlong and Bapna, Ankur and Firat, Orhan and Chen, Dehao and Chen, Mia and Lee, HyoukJoong and Ngiam, Jiquan and Le, Quoc V and Wu, Yonghui and Chen, zhifeng},
   booktitle = {Advances in Neural Information Processing Systems},
-  editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
   pages = {},
   publisher = {Curran Associates, Inc.},
-  title = {GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism},
-  url = {https://proceedings.neurips.cc/paper/2019/file/093f65e080a295f8076b1c5722a46aa2-Paper.pdf},
+  title = {{GPipe:} Efficient Training of Giant Neural Networks using Pipeline Parallelism},
   volume = {32},
   year = {2019}
 }
@@ -3520,8 +3510,6 @@ series = {SC '19}
 @misc{megatron-turing-nlg-530b,
   doi = {10.48550/ARXIV.2201.11990},
 
-  url = {https://arxiv.org/abs/2201.11990},
-
   author = {Smith, Shaden and Patwary, Mostofa and Norick, Brandon and LeGresley, Patrick and Rajbhandari, Samyam and Casper, Jared and Liu, Zhun and Prabhumoye, Shrimai and Zerveas, George and Korthikanti, Vijay and Zhang, Elton and Child, Rewon and Aminabadi, Reza Yazdani and Bernauer, Julie and Song, Xia and Shoeybi, Mohammad and He, Yuxiong and Houston, Michael and Tiwary, Saurabh and Catanzaro, Bryan},
 
   keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
@@ -3579,8 +3567,6 @@ title = {PipeDream: Generalized Pipeline Parallelism for DNN Training},
 booktitle = {ACM Symposium on Operating Systems Principles (SOSP 2019)},
 year = {2019},
 month = {October},
-url =
-{https://www.microsoft.com/en-us/research/publication/pipedream-generalized-pipeline-parallelism-for-dnn-training/},
 }
 
 @inproceedings{pipemare,
@@ -3628,7 +3614,6 @@ url =
   year = {2020},
   isbn = {9781728199986},
   publisher = {IEEE Press},
-  abstract = {Large deep learning models offer significant accuracy gains, but training billions to trillions of parameters is challenging. Existing solutions such as data and model parallelisms exhibit fundamental limitations to fit these models into limited device memory, while obtaining computation, communication and development efficiency. We develop a novel solution, Zero Redundancy Optimizer (ZeRO), to optimize memory, vastly improving training speed while increasing the model size that can be efficiently trained. ZeRO eliminates memory redundancies in data- and model-parallel training while retaining low communication volume and high computational granularity, allowing us to scale the model size proportional to the number of devices with sustained high efficiency. Our analysis on memory requirements and communication volume demonstrates: ZeRO has the potential to scale beyond 1 Trillion parameters using today's hardware.We implement and evaluate ZeRO: it trains large models of over 100B parameter with super-linear speedup on 400 GPUs, achieving throughput of 15 Petaflops. This represents an 8x increase in model size and 10x increase in achievable performance over state-of-the-art. In terms of usability, ZeRO can train large models of up to 13B parameters (e.g., larger than Megatron GPT 8.3B and T5 11B) without requiring model parallelism which is harder for scientists to apply. Last but not the least, researchers have used the system breakthroughs of ZeRO to create Turing-NLG, the world's largest language model at the time (17B parameters) with record breaking accuracy.},
   booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
   articleno = {20},
   numpages = {16},
@@ -5339,11 +5324,7 @@ year = {2015}
   pages     = {5:1--5:6},
   publisher = {{ACM}},
   year      = {2015},
-  url       = {https://doi.org/10.1145/2834892.2834897},
   doi       = {10.1145/2834892.2834897},
-  timestamp = {Tue, 06 Nov 2018 16:59:29 +0100},
-  biburl    = {https://dblp.org/rec/conf/sc/EssenKPBC15.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @ARTICLE{sze2017efficientdnn,
@@ -7020,7 +7001,6 @@ publisher = {VLDB Endowment},
 volume = {16},
 number = {12},
 issn = {2150-8097},
-url = {https://doi.org/10.14778/3611540.3611569},
 doi = {10.14778/3611540.3611569},
 journal = {Proc. VLDB Endow.},
 month = {aug},
@@ -9032,14 +9012,12 @@ series = {ASPLOS 2023}
 
 @inproceedings{colossalai2023unified,
 author = {Li, Shenggui and Liu, Hongxin and Bian, Zhengda and Fang, Jiarui and Huang, Haichen and Liu, Yuliang and Wang, Boxiang and You, Yang},
-title = {Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training},
+title = {{Colossal-AI:} A Unified Deep Learning System For Large-Scale Parallel Training},
 year = {2023},
 isbn = {9798400708435},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3605573.3605613},
 doi = {10.1145/3605573.3605613},
-abstract = {The success of Transformer models has pushed the deep learning model scale to billions of parameters, but the memory limitation of a single GPU has led to an urgent need for training on multi-GPU clusters. However, the best practice for choosing the optimal parallel strategy is still lacking, as it requires domain expertise in both deep learning and parallel computing. The Colossal-AI system addressed the above challenge by introducing a unified interface to scale your sequential code of model training to distributed environments. It supports parallel training methods such as data, pipeline, tensor, and sequence parallelism and is integrated with heterogeneous training and zero redundancy optimizer. Compared to the baseline system, Colossal-AI can achieve up to 2.76 times training speedup on large-scale models.},
 booktitle = {Proceedings of the 52nd International Conference on Parallel Processing},
 pages = {766–775},
 numpages = {10},
@@ -9073,9 +9051,7 @@ series = {ICPP '23}
   isbn = {9798400701092},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3581784.3613215},
   doi = {10.1145/3581784.3613215},
-  abstract = {Large language models (LLMs) are poised to revolutionize the way we conduct scientific research. However, both model complexity and pre-training cost are impeding effective adoption for the wider science community. Identifying suitable scientific use cases, finding the optimal balance between model and data sizes, and scaling up model training are among the most pressing issues that need to be addressed. In this study, we provide practical solutions for building and using LLM-based foundation models targeting scientific research use cases. We present an end-to-end examination of the effectiveness of LLMs in scientific research, including their scaling behavior and computational requirements on Frontier, the first Exascale supercomputer. We have also developed for release to the scientific community a suite of open foundation models called FORGE with up to 26B parameters using 257B tokens from over 200M scientific articles, with performance either on par or superior to other state-of-the-art comparable models. We have demonstrated the use and effectiveness of FORGE on scientific downstream tasks. Our research establishes best practices that can be applied across various fields to take advantage of LLMs for scientific discovery.},
   booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
   articleno = {81},
   numpages = {13},
@@ -9090,9 +9066,7 @@ series = {ICPP '23}
   isbn = {9798400701092},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3581784.3607089},
   doi = {10.1145/3581784.3607089},
-  abstract = {As the US Department of Energy (DOE) computing facilities began deploying petascale systems in 2008, DOE was already setting its sights on exascale. In that year, DARPA published a report on the feasibility of reaching exascale. The report authors identified several key challenges in the pursuit of exascale including power, memory, concurrency, and resiliency. That report informed the DOE's computing strategy for reaching exascale. With the deployment of Oak Ridge National Laboratory's Frontier supercomputer, we have officially entered the exascale era. In this paper, we discuss Frontier's architecture, how it addresses those challenges, and describe some early application results from Oak Ridge Leadership Computing Facility's Center of Excellence and the Exascale Computing Project.},
   booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
   articleno = {52},
   numpages = {16},
@@ -9111,7 +9085,7 @@ series = {ICPP '23}
 
 @software{gpt-neox-library,
   title = {{GPT-NeoX: Large Scale Autoregressive Language Modeling in PyTorch}},
-  author = {Andonian, Alex and Anthony, Quentin and Biderman, Stella and Black, Sid and Gali, Preetham and Gao, Leo and Hallahan, Eric and Levy-Kramer, Josh and Leahy, Connor and Nestler, Lucas and Parker, Kip and Pieler, Michael and Phang, Jason and Purohit, Shivanshu and Schoelkopf, Hailey and Stander, Dashiell and Songz, Tri and Tigges, Curt and Thérien, Benjamin and Wang, Phil and Weinbach, Samuel},
+  author = {Andonian, Alex and others}, 
   url = {https://www.github.com/eleutherai/gpt-neox},
   doi = {10.5281/zenodo.5879544},
   month = {9},

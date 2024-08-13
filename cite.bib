@@ -1,12 +1,14 @@
-@misc{shi2017tnvnn,
-      title={Supervised Learning Based Algorithm Selection for Deep Neural Networks}, 
-      author={Shaohuai Shi and Pengfei Xu and Xiaowen Chu},
-      year={2017},
-      eprint={1702.03192},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC},
-      url={https://arxiv.org/abs/1702.03192}, 
-}
+@inproceedings{shi2017tnvnn,
+  author={Shi, Shaohuai and Xu, Pengfei and Chu, Xiaowen},
+  booktitle={2017 IEEE 23rd International Conference on Parallel and Distributed Systems (ICPADS)}, 
+  title={Supervised Learning Based Algorithm Selection for Deep Neural Networks}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={344-351},
+  keywords={Graphics processing units;Kernel;Artificial neural networks;Machine learning;Libraries;Machine learning algorithms;Linear Algebra;Matrix Multiplication;Transpose;GPU;Deep Neural Networks},
+  doi={10.1109/ICPADS.2017.00053}}
+
 
 @Manual{bokeh,
 title = {Bokeh: Python library for interactive visualization},
@@ -2939,15 +2941,22 @@ URL = {https://arxiv.org/abs/1604.00981},
 booktitle = {International Conference on Learning Representations Workshop Track}
 }
 
-@misc{chen2016training,
-      title={Training Deep Nets with Sublinear Memory Cost},
-      author={Tianqi Chen and Bing Xu and Chiyuan Zhang and Carlos Guestrin},
-      year={2016},
-      eprint={1604.06174},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{chen2016training,
+  author       = {Tianqi Chen and
+                  Bing Xu and
+                  Chiyuan Zhang and
+                  Carlos Guestrin},
+  title        = {Training Deep Nets with Sublinear Memory Cost},
+  journal      = {CoRR},
+  volume       = {abs/1604.06174},
+  year         = {2016},
+  url          = {http://arxiv.org/abs/1604.06174},
+  eprinttype    = {arXiv},
+  eprint       = {1604.06174},
+  timestamp    = {Sat, 17 Dec 2022 01:15:28 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/ChenXZG16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
-
 
 
 @misc{wahib2020scaling,
@@ -3542,7 +3551,7 @@ series = {SC '19}
 }
 
 
-@misc{megatronlm,
+@techreport{megatronlm,
       title={Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism},
       author={Mohammad Shoeybi and Mostofa Patwary and Raul Puri and Patrick LeGresley and Jared Casper and Bryan Catanzaro},
       year={2020},
@@ -7724,7 +7733,7 @@ series = {MSR '22}
       primaryClass={cs.CL}
 }
 
-@misc{touvron2023llama,
+@techreport{touvron2023llama,
       title={Llama 2: Open Foundation and Fine-Tuned Chat Models},
       author={Hugo Touvron and others}, 
       year={2023},
@@ -9053,14 +9062,19 @@ series = {ICPP '23}
   primaryClass={cs.CL}
 }
 
-@misc{jiang2024megascale,
-  title={MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs}, 
-  author={Ziheng Jiang and Haibin Lin and Yinmin Zhong and Qi Huang and Yangrui Chen and Zhi Zhang and Yanghua Peng and Xiang Li and Cong Xie and Shibiao Nong and Yulu Jia and Sun He and Hongmin Chen and Zhihao Bai and Qi Hou and Shipeng Yan and Ding Zhou and Yiyao Sheng and Zhuo Jiang and Haohan Xu and Haoran Wei and Zhang Zhang and Pengfei Nie and Leqi Zou and Sida Zhao and Liang Xiang and Zherui Liu and Zhe Li and Xiaoying Jia and Jianxi Ye and Xin Jin and Xin Liu},
-  year={2024},
-  eprint={2402.15627},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG}
+@inproceedings{jiang2024megascale,
+author = {Ziheng Jiang and Haibin Lin and Yinmin Zhong and Qi Huang and Yangrui Chen and Zhi Zhang and Yanghua Peng and Xiang Li and Cong Xie and Shibiao Nong and Yulu Jia and Sun He and Hongmin Chen and Zhihao Bai and Qi Hou and Shipeng Yan and Ding Zhou and Yiyao Sheng and Zhuo Jiang and Haohan Xu and Haoran Wei and Zhang Zhang and Pengfei Nie and Leqi Zou and Sida Zhao and Liang Xiang and Zherui Liu and Zhe Li and Xiaoying Jia and Jianxi Ye and Xin Jin and Xin Liu},
+title = {{MegaScale}: Scaling Large Language Model Training to More Than 10,000 {GPUs}},
+booktitle = {21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)},
+year = {2024},
+isbn = {978-1-939133-39-7},
+address = {Santa Clara, CA},
+pages = {745--760},
+url = {https://www.usenix.org/conference/nsdi24/presentation/jiang-ziheng},
+publisher = {USENIX Association},
+month = apr
 }
+
 
 @inproceedings{yin2023forge,
   author = {Yin, Junqi and Dash, Sajal and Wang, Feiyi and Shankar, Mallikarjun},
@@ -9092,14 +9106,17 @@ series = {ICPP '23}
   series = {SC '23}
 }
 
-@misc{dash2023optimizing,
+@inproceedings{dash2023optimizing,
+  author={Dash, Sajal and Lyngaas, Isaac R and Yin, Junqi and Wang, Xiao and Egele, Romain and Ellis, J. Austin and Maiterth, Matthias and Cong, Guojing and Wang, Feiyi and Balaprakash, Prasanna},
+  booktitle={ISC High Performance 2024 Research Paper Proceedings (39th International Conference)}, 
   title={Optimizing Distributed Training on Frontier for Large Language Models}, 
-  author={Sajal Dash and Isaac Lyngaas and Junqi Yin and Xiao Wang and Romain Egele and Guojing Cong and Feiyi Wang and Prasanna Balaprakash},
-  year={2023},
-  eprint={2312.12705},
-  archivePrefix={arXiv},
-  primaryClass={cs.DC}
-}
+  year={2024},
+  volume={},
+  number={},
+  pages={1-11},
+  keywords={Training;Tensors;Computational modeling;Pipelines;Parallel processing;Throughput;Data models},
+  doi={10.23919/ISC.2024.10528939}}
+
 
 @software{gpt-neox-library,
   title = {{GPT-NeoX: Large Scale Autoregressive Language Modeling in PyTorch}},
@@ -9111,13 +9128,12 @@ series = {ICPP '23}
   version = {2.0.0},
 }
 
-@misc{wang2023zero,
-      title={ZeRO++: Extremely Efficient Collective Communication for Giant Model Training}, 
-      author={Guanhua Wang and Heyang Qin and Sam Ade Jacobs and Connor Holmes and Samyam Rajbhandari and Olatunji Ruwase and Feng Yan and Lei Yang and Yuxiong He},
-      year={2023},
-      eprint={2306.10209},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC}
+@inproceedings{wang2023zero,
+  title={Ze{RO}++: Extremely Efficient Collective Communication for Large Model Training},
+  author={Guanhua Wang and Heyang Qin and Sam Ade Jacobs and Xiaoxia Wu and Connor Holmes and Zhewei Yao and Samyam Rajbhandari and Olatunji Ruwase and Feng Yan and Lei Yang and Yuxiong He},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=gx2BT0a9MQ}
 }
 
 @misc{gcloudscaletraining,
@@ -9191,7 +9207,7 @@ series = {ICPP '23}
   organization={PMLR}
 }
 
-@article{zhang2024tinyllama,
+@techreport{zhang2024tinyllama,
   title={Tinyllama: An open-source small language model},
   author={Zhang, Peiyuan and Zeng, Guangtao and Wang, Tianduo and Lu, Wei},
   journal={arXiv preprint arXiv:2401.02385},
@@ -9705,7 +9721,7 @@ series = {ICPP '23}
   url = {https://ai.meta.com/blog/meta-llama-3/},
 }
 
-@article{dubey2024llama,
+@techreport{dubey2024llama,
   title={The Llama 3 Herd of Models},
   author={Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelten, Alan and Yang, Amy and Fan, Angela and others},
   journal={arXiv preprint arXiv:2407.21783},

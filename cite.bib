@@ -1,3 +1,15 @@
+@inproceedings{shi2017tnvnn,
+  author={Shi, Shaohuai and Xu, Pengfei and Chu, Xiaowen},
+  booktitle={2017 IEEE 23rd International Conference on Parallel and Distributed Systems (ICPADS)}, 
+  title={Supervised Learning Based Algorithm Selection for Deep Neural Networks}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={344-351},
+  keywords={Graphics processing units;Kernel;Artificial neural networks;Machine learning;Libraries;Machine learning algorithms;Linear Algebra;Matrix Multiplication;Transpose;GPU;Deep Neural Networks},
+  doi={10.1109/ICPADS.2017.00053}}
+
+
 @Manual{bokeh,
 title = {Bokeh: Python library for interactive visualization},
 author = {{Bokeh Development Team}},
@@ -13,6 +25,14 @@ pages = {},
 title = {PARAVER: A tool to visualize and analyze parallel code},
 volume = {44},
 journal = {WoTUG-18}
+}
+
+@article{grynbaum2023times,
+  title={The times sues openai and microsoft over ai use of copyrighted work},
+  author={Grynbaum, Michael M and Mac, Ryan},
+  journal={The New York Times},
+  volume={27},
+  year={2023}
 }
 
 @misc{parmar2024nemotron4,
@@ -120,7 +140,7 @@ series = {VPA '15}
 }
 
 @misc{litgpt-2023,
-  author       = {Lightning AI},
+  author       = {{Lightning AI}},
   title        = {LitGPT},
   howpublished = {\url{https://github.com/Lightning-AI/litgpt}},
   year         = {2023},
@@ -1018,6 +1038,11 @@ keywords = {Collective communication, All-reduce, Tree topology, Cluster of work
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
+@misc@{stability-ai-control,
+  howpublished = {\url{https://platform.stability.ai/docs/api-reference#tag/Control}},
+  author = {{Stability AI}},
+  title = {{Stability AI REST API} (v2beta)},
+}
 
 @misc{dall-e-2,
   doi = {10.48550/ARXIV.2204.06125},
@@ -2921,15 +2946,22 @@ URL = {https://arxiv.org/abs/1604.00981},
 booktitle = {International Conference on Learning Representations Workshop Track}
 }
 
-@misc{chen2016training,
-      title={Training Deep Nets with Sublinear Memory Cost},
-      author={Tianqi Chen and Bing Xu and Chiyuan Zhang and Carlos Guestrin},
-      year={2016},
-      eprint={1604.06174},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{chen2016training,
+  author       = {Tianqi Chen and
+                  Bing Xu and
+                  Chiyuan Zhang and
+                  Carlos Guestrin},
+  title        = {Training Deep Nets with Sublinear Memory Cost},
+  journal      = {CoRR},
+  volume       = {abs/1604.06174},
+  year         = {2016},
+  url          = {http://arxiv.org/abs/1604.06174},
+  eprinttype    = {arXiv},
+  eprint       = {1604.06174},
+  timestamp    = {Sat, 17 Dec 2022 01:15:28 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/ChenXZG16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
-
 
 
 @misc{wahib2020scaling,
@@ -3507,7 +3539,7 @@ series = {SC '19}
   numpages = {14}
 }
 
-@misc{megatron-turing-nlg-530b,
+@techreport{megatron-turing-nlg-530b,
   doi = {10.48550/ARXIV.2201.11990},
 
   author = {Smith, Shaden and Patwary, Mostofa and Norick, Brandon and LeGresley, Patrick and Rajbhandari, Samyam and Casper, Jared and Liu, Zhun and Prabhumoye, Shrimai and Zerveas, George and Korthikanti, Vijay and Zhang, Elton and Child, Rewon and Aminabadi, Reza Yazdani and Bernauer, Julie and Song, Xia and Shoeybi, Mohammad and He, Yuxiong and Houston, Michael and Tiwary, Saurabh and Catanzaro, Bryan},
@@ -3524,7 +3556,7 @@ series = {SC '19}
 }
 
 
-@misc{megatronlm,
+@techreport{megatronlm,
       title={Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism},
       author={Mohammad Shoeybi and Mostofa Patwary and Raul Puri and Patrick LeGresley and Jared Casper and Bryan Catanzaro},
       year={2020},
@@ -3692,7 +3724,7 @@ month = {October},
   month = May
 }
 
-@article{gpt-2,
+@techreport{gpt-2,
   title={Language Models are Unsupervised Multitask Learners},
   author={Radford, Alec and Wu, Jeff and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
   year={2019}
@@ -7045,6 +7077,14 @@ numpages = {13}
   urldate = {2024-03-12}
 }
 
+@misc{top500jun2024,
+  author = {TOP500.org},
+  title = {June 2024 TOP500},
+  year = 2024,
+  url = {https://www.top500.org/lists/top500/2024/06/},
+  urldate = {2024-08-13}
+}
+
 @article{pennycook2019implications,
   title={Implications of a metric for performance portability},
   author={Pennycook, Simon J and Sewall, Jason D and Lee, Victor W},
@@ -7706,7 +7746,7 @@ series = {MSR '22}
       primaryClass={cs.CL}
 }
 
-@misc{touvron2023llama,
+@techreport{touvron2023llama,
       title={Llama 2: Open Foundation and Fine-Tuned Chat Models},
       author={Hugo Touvron and others}, 
       year={2023},
@@ -9035,14 +9075,19 @@ series = {ICPP '23}
   primaryClass={cs.CL}
 }
 
-@misc{jiang2024megascale,
-  title={MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs}, 
-  author={Ziheng Jiang and Haibin Lin and Yinmin Zhong and Qi Huang and Yangrui Chen and Zhi Zhang and Yanghua Peng and Xiang Li and Cong Xie and Shibiao Nong and Yulu Jia and Sun He and Hongmin Chen and Zhihao Bai and Qi Hou and Shipeng Yan and Ding Zhou and Yiyao Sheng and Zhuo Jiang and Haohan Xu and Haoran Wei and Zhang Zhang and Pengfei Nie and Leqi Zou and Sida Zhao and Liang Xiang and Zherui Liu and Zhe Li and Xiaoying Jia and Jianxi Ye and Xin Jin and Xin Liu},
-  year={2024},
-  eprint={2402.15627},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG}
+@inproceedings{jiang2024megascale,
+author = {Ziheng Jiang and Haibin Lin and Yinmin Zhong and Qi Huang and Yangrui Chen and Zhi Zhang and Yanghua Peng and Xiang Li and Cong Xie and Shibiao Nong and Yulu Jia and Sun He and Hongmin Chen and Zhihao Bai and Qi Hou and Shipeng Yan and Ding Zhou and Yiyao Sheng and Zhuo Jiang and Haohan Xu and Haoran Wei and Zhang Zhang and Pengfei Nie and Leqi Zou and Sida Zhao and Liang Xiang and Zherui Liu and Zhe Li and Xiaoying Jia and Jianxi Ye and Xin Jin and Xin Liu},
+title = {{MegaScale}: Scaling Large Language Model Training to More Than 10,000 {GPUs}},
+booktitle = {21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)},
+year = {2024},
+isbn = {978-1-939133-39-7},
+address = {Santa Clara, CA},
+pages = {745--760},
+url = {https://www.usenix.org/conference/nsdi24/presentation/jiang-ziheng},
+publisher = {USENIX Association},
+month = apr
 }
+
 
 @inproceedings{yin2023forge,
   author = {Yin, Junqi and Dash, Sajal and Wang, Feiyi and Shankar, Mallikarjun},
@@ -9074,14 +9119,17 @@ series = {ICPP '23}
   series = {SC '23}
 }
 
-@misc{dash2023optimizing,
+@inproceedings{dash2023optimizing,
+  author={Dash, Sajal and Lyngaas, Isaac R and Yin, Junqi and Wang, Xiao and Egele, Romain and Ellis, J. Austin and Maiterth, Matthias and Cong, Guojing and Wang, Feiyi and Balaprakash, Prasanna},
+  booktitle={ISC High Performance 2024 Research Paper Proceedings (39th International Conference)}, 
   title={Optimizing Distributed Training on Frontier for Large Language Models}, 
-  author={Sajal Dash and Isaac Lyngaas and Junqi Yin and Xiao Wang and Romain Egele and Guojing Cong and Feiyi Wang and Prasanna Balaprakash},
-  year={2023},
-  eprint={2312.12705},
-  archivePrefix={arXiv},
-  primaryClass={cs.DC}
-}
+  year={2024},
+  volume={},
+  number={},
+  pages={1-11},
+  keywords={Training;Tensors;Computational modeling;Pipelines;Parallel processing;Throughput;Data models},
+  doi={10.23919/ISC.2024.10528939}}
+
 
 @software{gpt-neox-library,
   title = {{GPT-NeoX: Large Scale Autoregressive Language Modeling in PyTorch}},
@@ -9093,13 +9141,12 @@ series = {ICPP '23}
   version = {2.0.0},
 }
 
-@misc{wang2023zero,
-      title={ZeRO++: Extremely Efficient Collective Communication for Giant Model Training}, 
-      author={Guanhua Wang and Heyang Qin and Sam Ade Jacobs and Connor Holmes and Samyam Rajbhandari and Olatunji Ruwase and Feng Yan and Lei Yang and Yuxiong He},
-      year={2023},
-      eprint={2306.10209},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC}
+@inproceedings{wang2023zero,
+  title={Ze{RO}++: Extremely Efficient Collective Communication for Large Model Training},
+  author={Guanhua Wang and Heyang Qin and Sam Ade Jacobs and Xiaoxia Wu and Connor Holmes and Zhewei Yao and Samyam Rajbhandari and Olatunji Ruwase and Feng Yan and Lei Yang and Yuxiong He},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=gx2BT0a9MQ}
 }
 
 @misc{gcloudscaletraining,
@@ -9173,7 +9220,7 @@ series = {ICPP '23}
   organization={PMLR}
 }
 
-@article{zhang2024tinyllama,
+@techreport{zhang2024tinyllama,
   title={Tinyllama: An open-source small language model},
   author={Zhang, Peiyuan and Zeng, Guangtao and Wang, Tianduo and Lu, Wei},
   journal={arXiv preprint arXiv:2401.02385},
@@ -9283,6 +9330,500 @@ series = {ICPP '23}
    year={2023},
    month=aug, collection={ICPP-W 2023} 
 }
+
+@article{liu2023scissorhands,
+  title={Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time},
+  author={Liu, Zichang and Desai, Aditya and Liao, Fangshuo and Wang, Weitao and Xie, Victor and Xu, Zhaozhuo and Kyrillidis, Anastasios and Shrivastava, Anshumali},
+  journal={arXiv preprint arXiv:2305.17118},
+  year={2023}
+}
+
+@misc{ribar2023sparq,
+  title={SparQ Attention: Bandwidth-Efficient LLM Inference}, 
+  author={Luka Ribar and Ivan Chelombiev and Luke Hudlass-Galley and Charlie Blake and Carlo Luschi and Douglas Orr},
+  year={2023},
+  eprint={2312.04985},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@article{zhang2023hH2O,
+  title={H $ \_2 $ O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models},
+  author={Zhang, Zhenyu and Sheng, Ying and Zhou, Tianyi and Chen, Tianlong and Zheng, Lianmin and Cai, Ruisi and Song, Zhao and Tian, Yuandong and R{\'e}, Christopher and Barrett, Clark and others},
+  journal={arXiv preprint arXiv:2306.14048},
+  year={2023}
+}
+
+@article{mishra2021accelerating24sparse,
+  title={Accelerating sparse deep neural networks},
+  author={Mishra, Asit and Latorre, Jorge Albericio and Pool, Jeff and Stosic, Darko and Stosic, Dusan and Venkatesh, Ganesh and Yu, Chong and Micikevicius, Paulius},
+  journal={arXiv preprint arXiv:2104.08378},
+  year={2021}
+}
+
+@misc{wei2022finetuned,
+  title={Finetuned Language Models Are Zero-Shot Learners}, 
+  author={Jason Wei and Maarten Bosma and Vincent Y. Zhao and Kelvin Guu and Adams Wei Yu and Brian Lester and Nan Du and Andrew M. Dai and Quoc V. Le},
+  year={2022},
+  eprint={2109.01652},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{zhu2023multilingual,
+  title={Multilingual Machine Translation with Large Language Models: Empirical Results and Analysis}, 
+  author={Wenhao Zhu and Hongyi Liu and Qingxiu Dong and Jingjing Xu and Shujian Huang and Lingpeng Kong and Jiajun Chen and Lei Li},
+  year={2023},
+  eprint={2304.04675},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{zhong2022dialoglm,
+  title={DialogLM: Pre-trained Model for Long Dialogue Understanding and Summarization}, 
+  author={Ming Zhong and Yang Liu and Yichong Xu and Chenguang Zhu and Michael Zeng},
+  year={2022},
+  eprint={2109.02492},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{pope2022efficiently,
+  title={Efficiently Scaling Transformer Inference}, 
+  author={Reiner Pope and Sholto Douglas and Aakanksha Chowdhery and Jacob Devlin and James Bradbury and Anselm Levskaya and Jonathan Heek and Kefan Xiao and Shivani Agrawal and Jeff Dean},
+  year={2022},
+  eprint={2211.05102},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@misc{zhang2021sparse,
+  title={Sparse Attention with Linear Units}, 
+  author={Biao Zhang and Ivan Titov and Rico Sennrich},
+  year={2021},
+  eprint={2104.07012},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{ge2024model,
+  title={Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs}, 
+  author={Suyu Ge and Yunan Zhang and Liyuan Liu and Minjia Zhang and Jiawei Han and Jianfeng Gao},
+  year={2024},
+  eprint={2310.01801},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@article{xiao2023efficient,
+  title={Efficient streaming language models with attention sinks},
+  author={Xiao, Guangxuan and Tian, Yuandong and Chen, Beidi and Han, Song and Lewis, Mike},
+  journal={arXiv preprint arXiv:2309.17453},
+  year={2023}
+}
+
+@inproceedings{copa:roemmele2011choice,
+  title={Choice of plausible alternatives: An evaluation of commonsense causal reasoning},
+  author={Roemmele, Melissa and Bejan, Cosmin Adrian and Gordon, Andrew S},
+  booktitle={2011 AAAI Spring Symposium Series},
+  year={2011}
+}
+
+@article{mathqa:amini2019mathqa,
+  title={Mathqa: Towards interpretable math word problem solving with operation-based formalisms},
+  author={Amini, Aida and Gabriel, Saadia and Lin, Peter and Koncel-Kedziorski, Rik and Choi, Yejin and Hajishirzi, Hannaneh},
+  journal={arXiv preprint arXiv:1905.13319},
+  year={2019}
+}
+
+@article{openqa:mihaylov2018can,
+  title={Can a suit of armor conduct electricity? a new dataset for open book question answering},
+  author={Mihaylov, Todor and Clark, Peter and Khot, Tushar and Sabharwal, Ashish},
+  journal={arXiv preprint arXiv:1809.02789},
+  year={2018}
+}
+
+@article{hellaswag:zellers2019hellaswag,
+  title={Hellaswag: Can a machine really finish your sentence?},
+  author={Zellers, Rowan and Holtzman, Ari and Bisk, Yonatan and Farhadi, Ali and Choi, Yejin},
+  journal={arXiv preprint arXiv:1905.07830},
+  year={2019}
+}
+
+@article{rte:wang2018glue,
+  title={GLUE: A multi-task benchmark and analysis platform for natural language understanding},
+  author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R},
+  journal={arXiv preprint arXiv:1804.07461},
+  year={2018}
+}
+
+@misc{eval-harness,
+  author       = {Gao, Leo and Tow, Jonathan and Abbasi, Baber and Biderman, Stella and Black, Sid and DiPofi, Anthony and Foster, Charles and Golding, Laurence and Hsu, Jeffrey and Le Noac'h, Alain and Li, Haonan and McDonell, Kyle and Muennighoff, Niklas and Ociepa, Chris and Phang, Jason and Reynolds, Laria and Schoelkopf, Hailey and Skowron, Aviya and Sutawika, Lintang and Tang, Eric and Thite, Anish and Wang, Ben and Wang, Kevin and Zou, Andy},
+  title        = {A framework for few-shot language model evaluation},
+  month        = 12,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v0.4.0},
+  doi          = {10.5281/zenodo.10256836},
+  url          = {https://zenodo.org/records/10256836}
+}
+
+@article{opt:zhang2022opt,
+  title={Opt: Open pre-trained transformer language models},
+  author={Zhang, Susan and Roller, Stephen and Goyal, Naman and Artetxe, Mikel and Chen, Moya and Chen, Shuohui and Dewan, Christopher and Diab, Mona and Li, Xian and Lin, Xi Victoria and others},
+  journal={arXiv preprint arXiv:2205.01068},
+  year={2022}
+}
+
+@article{jiang2023mistral,
+  title={Mistral 7B},
+  author={Jiang, Albert Q and Sablayrolles, Alexandre and Mensch, Arthur and Bamford, Chris and Chaplot, Devendra Singh and Casas, Diego de las and Bressand, Florian and Lengyel, Gianna and Lample, Guillaume and Saulnier, Lucile and others},
+  journal={arXiv preprint arXiv:2310.06825},
+  year={2023}
+}
+
+@article{ge2023model,
+  title={Model tells you what to discard: Adaptive kv cache compression for llms},
+  author={Ge, Suyu and Zhang, Yunan and Liu, Liyuan and Zhang, Minjia and Han, Jiawei and Gao, Jianfeng},
+  journal={arXiv preprint arXiv:2310.01801},
+  year={2023}
+}
+
+@misc{ainslie2023gqa,
+  title={GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints}, 
+  author={Joshua Ainslie and James Lee-Thorp and Michiel de Jong and Yury Zemlyanskiy and Federico Lebrón and Sumit Sanghai},
+  year={2023},
+  eprint={2305.13245},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{zhao2023survey,
+  title={A Survey of Large Language Models}, 
+  author={Wayne Xin Zhao and Kun Zhou and Junyi Li and Tianyi Tang and Xiaolei Wang and Yupeng Hou and Yingqian Min and Beichen Zhang and Junjie Zhang and Zican Dong and Yifan Du and Chen Yang and Yushuo Chen and Zhipeng Chen and Jinhao Jiang and Ruiyang Ren and Yifan Li and Xinyu Tang and Zikang Liu and Peiyu Liu and Jian-Yun Nie and Ji-Rong Wen},
+  year={2023},
+  eprint={2303.18223},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{minaee2024large,
+  title={Large Language Models: A Survey}, 
+  author={Shervin Minaee and Tomas Mikolov and Narjes Nikzad and Meysam Chenaghlu and Richard Socher and Xavier Amatriain and Jianfeng Gao},
+  year={2024},
+  eprint={2402.06196},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@misc{li2018measuring,
+  title={Measuring the Intrinsic Dimension of Objective Landscapes}, 
+  author={Chunyuan Li and Heerad Farkhoor and Rosanne Liu and Jason Yosinski},
+  year={2018},
+  eprint={1804.08838},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@misc{aghajanyan2020intrinsic,
+  title={Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning}, 
+  author={Armen Aghajanyan and Luke Zettlemoyer and Sonal Gupta},
+  year={2020},
+  eprint={2012.13255},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+@misc{wang2020linformer,
+  title={Linformer: Self-Attention with Linear Complexity}, 
+  author={Sinong Wang and Belinda Z. Li and Madian Khabsa and Han Fang and Hao Ma},
+  year={2020},
+  eprint={2006.04768},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@misc{shen2024efficient,
+  title={Efficient Attention: Attention with Linear Complexities}, 
+  author={Zhuoran Shen and Mingyuan Zhang and Haiyu Zhao and Shuai Yi and Hongsheng Li},
+  year={2024},
+  eprint={1812.01243},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+
+@misc{jacob2017quantization,
+  title={Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference}, 
+  author={Benoit Jacob and Skirmantas Kligys and Bo Chen and Menglong Zhu and Matthew Tang and Andrew Howard and Hartwig Adam and Dmitry Kalenichenko},
+  year={2017},
+  eprint={1712.05877},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@misc{nagel2021white,
+  title={A White Paper on Neural Network Quantization}, 
+  author={Markus Nagel and Marios Fournarakis and Rana Ali Amjad and Yelysei Bondarenko and Mart van Baalen and Tijmen Blankevoort},
+  year={2021},
+  eprint={2106.08295},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@article{jolliffe2016principal,
+  title={Principal component analysis: a review and recent developments},
+  author={Jolliffe, Ian T and Cadima, Jorge},
+  journal={Philosophical transactions of the royal society A: Mathematical, Physical and Engineering Sciences},
+  volume={374},
+  number={2065},
+  pages={20150202},
+  year={2016},
+  publisher={the Royal Society publishing}
+}
+
+@misc{su2023roformer,
+  title={RoFormer: Enhanced Transformer with Rotary Position Embedding}, 
+  author={Jianlin Su and Yu Lu and Shengfeng Pan and Ahmed Murtadha and Bo Wen and Yunfeng Liu},
+  year={2023},
+  eprint={2104.09864},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}
+
+@inproceedings{woosuk2023vllm,
+  title={Efficient Memory Management for Large Language Model Serving with PagedAttention},
+  author={Woosuk Kwon and Zhuohan Li and Siyuan Zhuang and Ying Sheng and Lianmin Zheng and Cody Hao Yu and Joseph E. Gonzalez and Hao Zhang and Ion Stoica},
+  booktitle={Proceedings of the ACM SIGOPS 29th Symposium on Operating Systems Principles},
+  year={2023}
+}
+
+@article{topkattention,
+  author       = {Ankit Gupta and
+                  Guy Dar and
+                  Shaya Goodman and
+                  David Ciprut and
+                  Jonathan Berant},
+  title        = {Memory-efficient Transformers via Top-k Attention},
+  journal      = {CoRR},
+  volume       = {abs/2106.06899},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2106.06899},
+  eprinttype    = {arXiv},
+  eprint       = {2106.06899},
+  timestamp    = {Fri, 27 May 2022 16:07:27 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-06899.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{raffel2023exploring,
+      title={Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer}, 
+      author={Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
+      year={2023},
+      eprint={1910.10683},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{zhu2015aligning,
+      title={Aligning Books and Movies: Towards Story-like Visual Explanations by Watching Movies and Reading Books}, 
+      author={Yukun Zhu and Ryan Kiros and Richard Zemel and Ruslan Salakhutdinov and Raquel Urtasun and Antonio Torralba and Sanja Fidler},
+      year={2015},
+      eprint={1506.06724},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{jiang2024mixtral,
+      title={Mixtral of Experts}, 
+      author={Albert Q. Jiang and Alexandre Sablayrolles and Antoine Roux and Arthur Mensch and Blanche Savary and Chris Bamford and Devendra Singh Chaplot and Diego de las Casas and Emma Bou Hanna and Florian Bressand and Gianna Lengyel and Guillaume Bour and Guillaume Lample and Lélio Renard Lavaud and Lucile Saulnier and Marie-Anne Lachaux and Pierre Stock and Sandeep Subramanian and Sophia Yang and Szymon Antoniak and Teven Le Scao and Théophile Gervet and Thibaut Lavril and Thomas Wang and Timothée Lacroix and William El Sayed},
+      year={2024},
+      eprint={2401.04088},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+@misc{open-llm-leaderboard,
+  author = {Edward Beeching and Clémentine Fourrier and Nathan Habib and Sheon Han and Nathan Lambert and Nazneen Rajani and Omar Sanseviero and Lewis Tunstall and Thomas Wolf},
+  title = {Open LLM Leaderboard},
+  year = {2023},
+  publisher = {Hugging Face},
+  howpublished = "\url{https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}",
+  url = {https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard}
+}
+
+
+@article{mcinnes2018umap-software,
+  title={UMAP: Uniform Manifold Approximation and Projection},
+  author={McInnes, Leland and Healy, John and Saul, Nathaniel and Grossberger, Lukas},
+  journal={The Journal of Open Source Software},
+  volume={3},
+  number={29},
+  pages={861},
+  year={2018}
+}
+
+@misc{liu2023ring,
+      title={Ring Attention with Blockwise Transformers for Near-Infinite Context}, 
+      author={Hao Liu and Matei Zaharia and Pieter Abbeel},
+      year={2023},
+      eprint={2310.01889},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{microsoft2024phi3,
+  author       = {Microsoft},
+  howpublished = "\url{https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/}",
+  title        = {Introducing Phi-3: Redefining what’s possible with SLMs},
+  year         = {2024}
+}
+
+@misc{gromov2024unreasonable,
+      title={The Unreasonable Ineffectiveness of the Deeper Layers}, 
+      author={Andrey Gromov and Kushal Tirumala and Hassan Shapourian and Paolo Glorioso and Daniel A. Roberts},
+      year={2024},
+      eprint={2403.17887},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{gsm8k:cobbe2021training,
+  title={Training verifiers to solve math word problems},
+  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and others},
+  journal={arXiv preprint arXiv:2110.14168},
+  year={2021}
+}
+
+@article{mmlu:hendrycks2020measuring,
+  title={Measuring massive multitask language understanding},
+  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Zou, Andy and Mazeika, Mantas and Song, Dawn and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:2009.03300},
+  year={2020}
+}
+
+@article{winogrande:sakaguchi2021winogrande,
+  title={Winogrande: An adversarial winograd schema challenge at scale},
+  author={Sakaguchi, Keisuke and Bras, Ronan Le and Bhagavatula, Chandra and Choi, Yejin},
+  journal={Communications of the ACM},
+  volume={64},
+  number={9},
+  pages={99--106},
+  year={2021},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{arc:Clark2018ThinkYH,
+  title={Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge},
+  author={Peter Clark and Isaac Cowhey and Oren Etzioni and Tushar Khot and Ashish Sabharwal and Carissa Schoenick and Oyvind Tafjord},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1803.05457},
+  url={https://api.semanticscholar.org/CorpusID:3922816}
+}
+
+@article{tqa:lin2021truthfulqa,
+  title={Truthfulqa: Measuring how models mimic human falsehoods},
+  author={Lin, Stephanie and Hilton, Jacob and Evans, Owain},
+  journal={arXiv preprint arXiv:2109.07958},
+  year={2021}
+}
+
+@misc{llama3:blog,
+  title = {Introducing Meta Llama 3: The most capable openly available LLM to date},
+  year = {2024},
+  publisher = {Meta},
+  howpublished = "\url{https://ai.meta.com/blog/meta-llama-3/}",
+  url = {https://ai.meta.com/blog/meta-llama-3/},
+}
+
+@techreport{dubey2024llama,
+  title={The Llama 3 Herd of Models},
+  author={Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelten, Alan and Yang, Amy and Fan, Angela and others},
+  journal={arXiv preprint arXiv:2407.21783},
+  year={2024}
+}
+
+@inproceedings{Yao2023ZeroQuantV2EP,
+  title={ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation},
+  author={Zhewei Yao and Xiaoxia Wu and Cheng Li and Stephen Youn and Yuxiong He},
+  year={2023},
+  url={https://api.semanticscholar.org/CorpusID:258947018}
+}
+
+@misc{triton:openai,
+  title = {Introducing Triton: Open-source GPU programming for neural networks},
+  year = {2021},
+  publisher = {OpenAI},
+  howpublished = "\url{https://openai.com/index/triton/}",
+  url = {https://openai.com/index/triton/},
+}
+
+@misc{xiao2024efficient,
+      title={Efficient Streaming Language Models with Attention Sinks}, 
+      author={Guangxuan Xiao and Yuandong Tian and Beidi Chen and Song Han and Mike Lewis},
+      year={2024},
+      eprint={2309.17453},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{sun2024massive,
+      title={Massive Activations in Large Language Models}, 
+      author={Mingjie Sun and Xinlei Chen and J. Zico Kolter and Zhuang Liu},
+      year={2024},
+      eprint={2402.17762},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{choromanski2022rethinking,
+      title={Rethinking Attention with Performers}, 
+      author={Krzysztof Choromanski and Valerii Likhosherstov and David Dohan and Xingyou Song and Andreea Gane and Tamas Sarlos and Peter Hawkins and Jared Davis and Afroz Mohiuddin and Lukasz Kaiser and David Belanger and Lucy Colwell and Adrian Weller},
+      year={2022},
+      eprint={2009.14794},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{kitaev2020reformer,
+  title={Reformer: The efficient transformer},
+  author={Kitaev, Nikita and Kaiser, {\L}ukasz and Levskaya, Anselm},
+  journal={arXiv preprint arXiv:2001.04451},
+  year={2020}
+}
+
+@article{child2019generating,
+  title={Generating long sequences with sparse transformers},
+  author={Child, Rewon and Gray, Scott and Radford, Alec and Sutskever, Ilya},
+  journal={arXiv preprint arXiv:1904.10509},
+  year={2019}
+}
+
+@article{hans2024goldfish,
+  title={Be like a Goldfish, Don't Memorize! Mitigating Memorization in Generative LLMs},
+  author={Hans, Abhimanyu and Wen, Yuxin and Jain, Neel and Kirchenbauer, John and Kazemi, Hamid and Singhania, Prajwal and Singh, Siddharth and Somepalli, Gowthami and Geiping, Jonas and Bhatele, Abhinav and others},
+  journal={arXiv preprint arXiv:2406.10209},
+  year={2024}
+}
+
+@inproceedings{dehghani2023scaling,
+  title={Scaling vision transformers to 22 billion parameters},
+  author={Dehghani, Mostafa and Djolonga, Josip and Mustafa, Basil and Padlewski, Piotr and Heek, Jonathan and Gilmer, Justin and Steiner, Andreas Peter and Caron, Mathilde and Geirhos, Robert and Alabdulmohsin, Ibrahim and others},
+  booktitle={International Conference on Machine Learning},
+  pages={7480--7512},
+  year={2023},
+  organization={PMLR}
+}
+
+@techreport{optimus2024,
+      title={Optimus: Accelerating Large-Scale Multi-Modal LLM Training by Bubble Exploitation}, 
+      author={Weiqi Feng and Yangrui Chen and Shaoyu Wang and Yanghua Peng and Haibin Lin and Minlan Yu},
+      year={2024},
+      eprint={2408.03505},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2408.03505}, 
+}
+
 
 @misc{llamacpp,
   author = {Georgi Gerganov},

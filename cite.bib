@@ -10125,3 +10125,77 @@ month = jul
     url = "https://www.aclweb.org/anthology/2020.emnlp-demos.6",
     pages = "38--45"
 }
+
+@inproceedings{mou2016aaai,
+  author = {Mou, Lili and Li, Ge and Zhang, Lu and Wang, Tao and Jin, Zhi},
+  title = {Convolutional neural networks over tree structures for programming language processing},
+  year = {2016},
+  publisher = {AAAI Press},
+  abstract = {Programming language processing (similar to natural language processing) is a hot research topic in the field of software engineering; it has also aroused growing interest in the artificial intelligence community. However, different from a natural language sentence, a program contains rich, explicit, and complicated structural information. Hence, traditional NLP models may be inappropriate for programs. In this paper, we propose a novel tree-based convolutional neural network (TBCNN) for programming language processing, in which a convolution kernel is designed over programs' abstract syntax trees to capture structural information. TBCNN is a generic architecture for programming language processing; our experiments show its effectiveness in two different program analysis tasks: classifying programs according to functionality, and detecting code snippets of certain patterns. TBCNN outperforms baseline methods, including several neural models for NLP.},
+  booktitle = {Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence},
+  pages = {1287–1293},
+  numpages = {7},
+  location = {Phoenix, Arizona},
+  series = {AAAI'16}
+}
+
+@inproceedings{allamanis2018learning,
+  title={Learning to Represent Programs with Graphs},
+  author={Miltiadis Allamanis and Marc Brockschmidt and Mahmoud Khademi},
+  booktitle={International Conference on Learning Representations},
+  year={2018},
+  url={https://openreview.net/forum?id=BJOFETxR-},
+}
+
+@inproceedings{steenhoek2024dataflow,
+  author = {Steenhoek, Benjamin and Gao, Hongyang and Le, Wei},
+  title = {Dataflow Analysis-Inspired Deep Learning for Efficient Vulnerability Detection},
+  year = {2024},
+  isbn = {9798400702174},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3597503.3623345},
+  doi = {10.1145/3597503.3623345},
+  abstract = {Deep learning-based vulnerability detection has shown great performance and, in some studies, outperformed static analysis tools. However, the highest-performing approaches use token-based transformer models, which are not the most efficient to capture code semantics required for vulnerability detection. Classical program analysis techniques such as dataflow analysis can detect many types of bugs based on their root causes. In this paper, we propose to combine such causal-based vulnerability detection algorithms with deep learning, aiming to achieve more efficient and effective vulnerability detection. Specifically, we designed DeepDFA, a dataflow analysis-inspired graph learning framework and an embedding technique that enables graph learning to simulate dataflow computation. We show that DeepDFA is both performant and efficient. DeepDFA outperformed all non-transformer baselines. It was trained in 9 minutes, 75x faster than the highest-performing baseline model. When using only 50+ vulnerable and several hundreds of total examples as training data, the model retained the same performance as 100\% of the dataset. DeepDFA also generalized to real-world vulnerabilities in DbgBench; it detected 8.7 out of 17 vulnerabilities on average across folds and was able to distinguish between patched and buggy versions, while the highest-performing baseline models did not detect any vulnerabilities. By combining DeepDFA with a large language model, we surpassed the state-of-the-art vulnerability detection performance on the Big-Vul dataset with 96.46 F1 score, 97.82 precision, and 95.14 recall. Our replication package is located at https://doi.org/10.6084/m9.figshare.21225413.},
+  booktitle = {Proceedings of the IEEE/ACM 46th International Conference on Software Engineering},
+  articleno = {16},
+  numpages = {13},
+  location = {Lisbon, Portugal},
+  series = {ICSE '24}
+}
+
+@inproceedings{jamsaz2024perfograph,
+  author = {Jamsaz, Ali Tehrani and Mahmud, Quazi Ishtiaque and Chen, Le and Ahmed, Nesreen K. and Jannesari, Ali},
+  title = {PERFOGRAPH: a numerical aware program graph representation for performance optimization and program analysis},
+  year = {2024},
+  publisher = {Curran Associates Inc.},
+  address = {Red Hook, NY, USA},
+  abstract = {The remarkable growth and significant success of machine learning have expanded its applications into programming languages and program analysis. However, a key challenge in adopting the latest machine learning methods is the representation of programming languages, which directly impacts the ability of machine learning methods to reason about programs. The absence of numerical awareness, aggregate data structure information, and improper way of presenting variables in previous representation works have limited their performances. To overcome the limitations and challenges of current program representations, we propose a graph-based program representation called PERFOGRAPH. PERFOGRAPH can capture numerical information and the aggregate data structure by introducing new nodes and edges. Furthermore, we propose an adapted embedding method to incorporate numerical awareness. These enhancements make PERFOGRAPH a highly flexible and scalable representation that effectively captures programs' intricate dependencies and semantics. Consequently, it serves as a powerful tool for various applications such as program analysis, performance optimization, and parallelism discovery. Our experimental results demonstrate that PERFOGRAPH outperforms existing representations and sets new state-of-the-art results by reducing the error rate by 7.4\% (AMD dataset) and 10\% (NVIDIA dataset) in the well-known Device Mapping challenge. It also sets new state-of-the-art results in various performance optimization tasks like Parallelism Discovery and NUMA and Prefetchers Configuration prediction.},
+  booktitle = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
+  articleno = {2518},
+  numpages = {12},
+  location = {New Orleans, LA, USA},
+  series = {NIPS '23}
+}
+
+@article{tsne,
+  author  = {Laurens van der Maaten and Geoffrey Hinton},
+  title   = {Visualizing Data using t-SNE},
+  journal = {Journal of Machine Learning Research},
+  year    = {2008},
+  volume  = {9},
+  number  = {86},
+  pages   = {2579--2605},
+  url     = {http://jmlr.org/papers/v9/vandermaaten08a.html}
+}
+
+@incollection{inst2vec,
+  title = {Neural Code Comprehension: A Learnable Representation of Code Semantics},
+  author = {Ben-Nun, Tal and Jakobovits, Alice Shoshana and Hoefler, Torsten},
+  booktitle = {Advances in Neural Information Processing Systems 31},
+  editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  pages = {3588--3600},
+  year = {2018},
+  publisher = {Curran Associates, Inc.},
+  url = {http://papers.nips.cc/paper/7617-neural-code-comprehension-a-learnable-representation-of-code-semantics.pdf}
+}

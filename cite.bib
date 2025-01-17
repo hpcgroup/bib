@@ -1,3 +1,13 @@
+@misc{leviathan2023:specdec,
+  title={Fast Inference from Transformers via Speculative Decoding}, 
+  author={Yaniv Leviathan and Matan Kalman and Yossi Matias},
+  year={2023},
+  eprint={2211.17192},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2211.17192}, 
+}
+
 @misc{dubey2024llama3herdmodels,
   title={The Llama 3 Herd of Models},
   author={Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and others},
@@ -10142,7 +10152,6 @@ month = jul
   title = {Convolutional neural networks over tree structures for programming language processing},
   year = {2016},
   publisher = {AAAI Press},
-  abstract = {Programming language processing (similar to natural language processing) is a hot research topic in the field of software engineering; it has also aroused growing interest in the artificial intelligence community. However, different from a natural language sentence, a program contains rich, explicit, and complicated structural information. Hence, traditional NLP models may be inappropriate for programs. In this paper, we propose a novel tree-based convolutional neural network (TBCNN) for programming language processing, in which a convolution kernel is designed over programs' abstract syntax trees to capture structural information. TBCNN is a generic architecture for programming language processing; our experiments show its effectiveness in two different program analysis tasks: classifying programs according to functionality, and detecting code snippets of certain patterns. TBCNN outperforms baseline methods, including several neural models for NLP.},
   booktitle = {Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence},
   pages = {1287–1293},
   numpages = {7},
@@ -10167,7 +10176,6 @@ month = jul
   address = {New York, NY, USA},
   url = {https://doi.org/10.1145/3597503.3623345},
   doi = {10.1145/3597503.3623345},
-  abstract = {Deep learning-based vulnerability detection has shown great performance and, in some studies, outperformed static analysis tools. However, the highest-performing approaches use token-based transformer models, which are not the most efficient to capture code semantics required for vulnerability detection. Classical program analysis techniques such as dataflow analysis can detect many types of bugs based on their root causes. In this paper, we propose to combine such causal-based vulnerability detection algorithms with deep learning, aiming to achieve more efficient and effective vulnerability detection. Specifically, we designed DeepDFA, a dataflow analysis-inspired graph learning framework and an embedding technique that enables graph learning to simulate dataflow computation. We show that DeepDFA is both performant and efficient. DeepDFA outperformed all non-transformer baselines. It was trained in 9 minutes, 75x faster than the highest-performing baseline model. When using only 50+ vulnerable and several hundreds of total examples as training data, the model retained the same performance as 100\% of the dataset. DeepDFA also generalized to real-world vulnerabilities in DbgBench; it detected 8.7 out of 17 vulnerabilities on average across folds and was able to distinguish between patched and buggy versions, while the highest-performing baseline models did not detect any vulnerabilities. By combining DeepDFA with a large language model, we surpassed the state-of-the-art vulnerability detection performance on the Big-Vul dataset with 96.46 F1 score, 97.82 precision, and 95.14 recall. Our replication package is located at https://doi.org/10.6084/m9.figshare.21225413.},
   booktitle = {Proceedings of the IEEE/ACM 46th International Conference on Software Engineering},
   articleno = {16},
   numpages = {13},
@@ -10181,7 +10189,6 @@ month = jul
   year = {2024},
   publisher = {Curran Associates Inc.},
   address = {Red Hook, NY, USA},
-  abstract = {The remarkable growth and significant success of machine learning have expanded its applications into programming languages and program analysis. However, a key challenge in adopting the latest machine learning methods is the representation of programming languages, which directly impacts the ability of machine learning methods to reason about programs. The absence of numerical awareness, aggregate data structure information, and improper way of presenting variables in previous representation works have limited their performances. To overcome the limitations and challenges of current program representations, we propose a graph-based program representation called PERFOGRAPH. PERFOGRAPH can capture numerical information and the aggregate data structure by introducing new nodes and edges. Furthermore, we propose an adapted embedding method to incorporate numerical awareness. These enhancements make PERFOGRAPH a highly flexible and scalable representation that effectively captures programs' intricate dependencies and semantics. Consequently, it serves as a powerful tool for various applications such as program analysis, performance optimization, and parallelism discovery. Our experimental results demonstrate that PERFOGRAPH outperforms existing representations and sets new state-of-the-art results by reducing the error rate by 7.4\% (AMD dataset) and 10\% (NVIDIA dataset) in the well-known Device Mapping challenge. It also sets new state-of-the-art results in various performance optimization tasks like Parallelism Discovery and NUMA and Prefetchers Configuration prediction.},
   booktitle = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
   articleno = {2518},
   numpages = {12},
@@ -10218,7 +10225,6 @@ month = jul
 	shorttitle = {Effective resistance against pandemics},
 	url = {https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010650},
 	doi = {10.1371/journal.pcbi.1010650},
-	abstract = {Network science has increasingly become central to the field of epidemiology and our ability to respond to infectious disease threats. However, many networks derived from modern datasets are not just large, but dense, with a high ratio of edges to nodes. This includes human mobility networks where most locations have a large number of links to many other locations. Simulating large-scale epidemics requires substantial computational resources and in many cases is practically infeasible. One way to reduce the computational cost of simulating epidemics on these networks is sparsification, where a representative subset of edges is selected based on some measure of their importance. We test several sparsification strategies, ranging from naive thresholding to random sampling of edges, on mobility data from the U.S. Following recent work in computer science, we find that the most accurate approach uses the effective resistances of edges, which prioritizes edges that are the only efficient way to travel between their endpoints. The resulting sparse network preserves many aspects of the behavior of an SIR model, including both global quantities, like the epidemic size, and local details of stochastic events, including the probability each node becomes infected and its distribution of arrival times. This holds even when the sparse network preserves fewer than 10\% of the edges of the original network. In addition to its practical utility, this method helps illuminate which links of a weighted, undirected network are most important to disease spread.},
 	language = {en},
 	number = {11},
 	urldate = {2024-08-21},
@@ -10240,14 +10246,6 @@ month = jul
 	shorttitle = {The use of networks in spatial and temporal computational models for outbreak spread in epidemiology},
 	url = {https://www.sciencedirect.com/science/article/pii/S1532046423001430},
 	doi = {10.1016/j.jbi.2023.104422},
-	abstract = {Objectives
-To examine recent literature in order to present a comprehensive overview of the current trends as regards the computational models used to represent the propagation of an infectious outbreak in a population, paying particular attention to those that represent network-based transmission.
-Methods
-a systematic review was conducted following the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines. Papers published in English between 2010 and September 2021 were sought in the ACM Digital Library, IEEE Xplore, PubMed and Scopus databases.
-Results
-Upon considering their titles and abstracts, 832 papers were obtained, of which 192 were selected for a full content-body check. Of these, 112 studies were eventually deemed suitable for quantitative and qualitative analysis. Emphasis was placed on the spatial and temporal scales studied, the use of networks or graphs, and the granularity of the data used to evaluate the models. The models principally used to represent the spreading of outbreaks have been stochastic (55.36\%), while the type of networks most frequently used are relationship networks (32.14\%). The most common spatial dimension used is a region (19.64\%) and the most used unit of time is a day (28.57\%). Synthetic data as opposed to an external source were used in 51.79\% of the papers. With regard to the granularity of the data sources, aggregated data such as censuses or transportation surveys are the most common.
-Conclusion
-We identified a growing interest in the use of networks to represent disease transmission. We detected that research is focused on only certain combinations of the computational model, type of network (in both the expressive and the structural sense) and spatial scale, while the search for other interesting combinations has been left for the future.},
 	language = {en-US},
 	urldate = {2023-11-22},
 	journal = {Journal of Biomedical Informatics},
@@ -10266,7 +10264,6 @@ We identified a growing interest in the use of networks to represent disease tra
 	shorttitle = {Mathematical {Models} for {COVID}-19 {Pandemic}},
 	url = {https://doi.org/10.1007/s41745-020-00200-6},
 	doi = {10.1007/s41745-020-00200-6},
-	abstract = {COVID-19 pandemic represents an unprecedented global health crisis in the last 100 years. Its economic, social and health impact continues to grow and is likely to end up as one of the worst global disasters since the 1918 pandemic and the World Wars. Mathematical models have played an important role in the ongoing crisis; they have been used to inform public policies and have been instrumental in many of the social distancing measures that were instituted worldwide. In this article, we review some of the important mathematical models used to support the ongoing planning and response efforts. These models differ in their use, their mathematical form and their scope.},
 	language = {en},
 	number = {4},
 	urldate = {2023-12-11},
@@ -10278,3 +10275,110 @@ We identified a growing interest in the use of networks to represent disease tra
 	file = {Full Text PDF:C\:\\Users\\bitqu\\Zotero\\storage\\MX8USFDC\\Adiga et al. - 2020 - Mathematical Models for COVID-19 Pandemic A Compa.pdf:application/pdf},
 }
 
+@misc{openai2024gpt4ocard,
+      title={GPT-4o System Card}, 
+      author={OpenAI and Aaron Hurst and Adam Lerer and Adam P. Goucher and Adam Perelman and Aditya Ramesh and Aidan Clark and AJ Ostrow and Akila Welihinda and Alan Hayes and Alec Radford and Aleksander Mądry and Alex Baker-Whitcomb and Alex Beutel and Alex Borzunov and Alex Carney and Alex Chow and Alex Kirillov and Alex Nichol and Alex Paino and Alex Renzin and Alex Tachard Passos and Alexander Kirillov and Alexi Christakis and Alexis Conneau and Ali Kamali and Allan Jabri and Allison Moyer and Allison Tam and Amadou Crookes and Amin Tootoochian and Amin Tootoonchian and Ananya Kumar and Andrea Vallone and Andrej Karpathy and Andrew Braunstein and Andrew Cann and Andrew Codispoti and Andrew Galu and Andrew Kondrich and Andrew Tulloch and Andrey Mishchenko and Angela Baek and Angela Jiang and Antoine Pelisse and Antonia Woodford and Anuj Gosalia and Arka Dhar and Ashley Pantuliano and Avi Nayak and Avital Oliver and Barret Zoph and Behrooz Ghorbani and Ben Leimberger and Ben Rossen and Ben Sokolowsky and Ben Wang and Benjamin Zweig and Beth Hoover and Blake Samic and Bob McGrew and Bobby Spero and Bogo Giertler and Bowen Cheng and Brad Lightcap and Brandon Walkin and Brendan Quinn and Brian Guarraci and Brian Hsu and Bright Kellogg and Brydon Eastman and Camillo Lugaresi and Carroll Wainwright and Cary Bassin and Cary Hudson and Casey Chu and Chad Nelson and Chak Li and Chan Jun Shern and Channing Conger and Charlotte Barette and Chelsea Voss and Chen Ding and Cheng Lu and Chong Zhang and Chris Beaumont and Chris Hallacy and Chris Koch and Christian Gibson and Christina Kim and Christine Choi and Christine McLeavey and Christopher Hesse and Claudia Fischer and Clemens Winter and Coley Czarnecki and Colin Jarvis and Colin Wei and Constantin Koumouzelis and Dane Sherburn and Daniel Kappler and Daniel Levin and Daniel Levy and David Carr and David Farhi and David Mely and David Robinson and David Sasaki and Denny Jin and Dev Valladares and Dimitris Tsipras and Doug Li and Duc Phong Nguyen and Duncan Findlay and Edede Oiwoh and Edmund Wong and Ehsan Asdar and Elizabeth Proehl and Elizabeth Yang and Eric Antonow and Eric Kramer and Eric Peterson and Eric Sigler and Eric Wallace and Eugene Brevdo and Evan Mays and Farzad Khorasani and Felipe Petroski Such and Filippo Raso and Francis Zhang and Fred von Lohmann and Freddie Sulit and Gabriel Goh and Gene Oden and Geoff Salmon and Giulio Starace and Greg Brockman and Hadi Salman and Haiming Bao and Haitang Hu and Hannah Wong and Haoyu Wang and Heather Schmidt and Heather Whitney and Heewoo Jun and Hendrik Kirchner and Henrique Ponde de Oliveira Pinto and Hongyu Ren and Huiwen Chang and Hyung Won Chung and Ian Kivlichan and Ian O'Connell and Ian O'Connell and Ian Osband and Ian Silber and Ian Sohl and Ibrahim Okuyucu and Ikai Lan and Ilya Kostrikov and Ilya Sutskever and Ingmar Kanitscheider and Ishaan Gulrajani and Jacob Coxon and Jacob Menick and Jakub Pachocki and James Aung and James Betker and James Crooks and James Lennon and Jamie Kiros and Jan Leike and Jane Park and Jason Kwon and Jason Phang and Jason Teplitz and Jason Wei and Jason Wolfe and Jay Chen and Jeff Harris and Jenia Varavva and Jessica Gan Lee and Jessica Shieh and Ji Lin and Jiahui Yu and Jiayi Weng and Jie Tang and Jieqi Yu and Joanne Jang and Joaquin Quinonero Candela and Joe Beutler and Joe Landers and Joel Parish and Johannes Heidecke and John Schulman and Jonathan Lachman and Jonathan McKay and Jonathan Uesato and Jonathan Ward and Jong Wook Kim and Joost Huizinga and Jordan Sitkin and Jos Kraaijeveld and Josh Gross and Josh Kaplan and Josh Snyder and Joshua Achiam and Joy Jiao and Joyce Lee and Juntang Zhuang and Justyn Harriman and Kai Fricke and Kai Hayashi and Karan Singhal and Katy Shi and Kavin Karthik and Kayla Wood and Kendra Rimbach and Kenny Hsu and Kenny Nguyen and Keren Gu-Lemberg and Kevin Button and Kevin Liu and Kiel Howe and Krithika Muthukumar and Kyle Luther and Lama Ahmad and Larry Kai and Lauren Itow and Lauren Workman and Leher Pathak and Leo Chen and Li Jing and Lia Guy and Liam Fedus and Liang Zhou and Lien Mamitsuka and Lilian Weng and Lindsay McCallum and Lindsey Held and Long Ouyang and Louis Feuvrier and Lu Zhang and Lukas Kondraciuk and Lukasz Kaiser and Luke Hewitt and Luke Metz and Lyric Doshi and Mada Aflak and Maddie Simens and Madelaine Boyd and Madeleine Thompson and Marat Dukhan and Mark Chen and Mark Gray and Mark Hudnall and Marvin Zhang and Marwan Aljubeh and Mateusz Litwin and Matthew Zeng and Max Johnson and Maya Shetty and Mayank Gupta and Meghan Shah and Mehmet Yatbaz and Meng Jia Yang and Mengchao Zhong and Mia Glaese and Mianna Chen and Michael Janner and Michael Lampe and Michael Petrov and Michael Wu and Michele Wang and Michelle Fradin and Michelle Pokrass and Miguel Castro and Miguel Oom Temudo de Castro and Mikhail Pavlov and Miles Brundage and Miles Wang and Minal Khan and Mira Murati and Mo Bavarian and Molly Lin and Murat Yesildal and Nacho Soto and Natalia Gimelshein and Natalie Cone and Natalie Staudacher and Natalie Summers and Natan LaFontaine and Neil Chowdhury and Nick Ryder and Nick Stathas and Nick Turley and Nik Tezak and Niko Felix and Nithanth Kudige and Nitish Keskar and Noah Deutsch and Noel Bundick and Nora Puckett and Ofir Nachum and Ola Okelola and Oleg Boiko and Oleg Murk and Oliver Jaffe and Olivia Watkins and Olivier Godement and Owen Campbell-Moore and Patrick Chao and Paul McMillan and Pavel Belov and Peng Su and Peter Bak and Peter Bakkum and Peter Deng and Peter Dolan and Peter Hoeschele and Peter Welinder and Phil Tillet and Philip Pronin and Philippe Tillet and Prafulla Dhariwal and Qiming Yuan and Rachel Dias and Rachel Lim and Rahul Arora and Rajan Troll and Randall Lin and Rapha Gontijo Lopes and Raul Puri and Reah Miyara and Reimar Leike and Renaud Gaubert and Reza Zamani and Ricky Wang and Rob Donnelly and Rob Honsby and Rocky Smith and Rohan Sahai and Rohit Ramchandani and Romain Huet and Rory Carmichael and Rowan Zellers and Roy Chen and Ruby Chen and Ruslan Nigmatullin and Ryan Cheu and Saachi Jain and Sam Altman and Sam Schoenholz and Sam Toizer and Samuel Miserendino and Sandhini Agarwal and Sara Culver and Scott Ethersmith and Scott Gray and Sean Grove and Sean Metzger and Shamez Hermani and Shantanu Jain and Shengjia Zhao and Sherwin Wu and Shino Jomoto and Shirong Wu and Shuaiqi and Xia and Sonia Phene and Spencer Papay and Srinivas Narayanan and Steve Coffey and Steve Lee and Stewart Hall and Suchir Balaji and Tal Broda and Tal Stramer and Tao Xu and Tarun Gogineni and Taya Christianson and Ted Sanders and Tejal Patwardhan and Thomas Cunninghman and Thomas Degry and Thomas Dimson and Thomas Raoux and Thomas Shadwell and Tianhao Zheng and Todd Underwood and Todor Markov and Toki Sherbakov and Tom Rubin and Tom Stasi and Tomer Kaftan and Tristan Heywood and Troy Peterson and Tyce Walters and Tyna Eloundou and Valerie Qi and Veit Moeller and Vinnie Monaco and Vishal Kuo and Vlad Fomenko and Wayne Chang and Weiyi Zheng and Wenda Zhou and Wesam Manassra and Will Sheu and Wojciech Zaremba and Yash Patil and Yilei Qian and Yongjik Kim and Youlong Cheng and Yu Zhang and Yuchen He and Yuchen Zhang and Yujia Jin and Yunxing Dai and Yury Malkov},
+      year={2024},
+      eprint={2410.21276},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.21276}, 
+}
+
+@misc{openai2024gpt4ocard_short_author,
+      title={GPT-4o System Card}, 
+      author={OpenAI and Aaron Hurst and et al},
+      year={2024},
+      eprint={2410.21276},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.21276}, 
+}
+
+@inproceedings{schneider:hpdc2024,
+  author = {Schneider, Nadav and Hasabnis, Niranjan and Vo, Vy A. and Kadosh, Tal and Krien, Neva and Capota, Mihai and Tamir, Guy and Willke, Theodore L. and Ahmed, Nesreen and Pinter, Yuval and Mattson, Timothy and Oren, Gal},
+  title = {MPIrigen: MPI Code Generation through Domain-Specific Language Models},
+  year = {2024},
+  isbn = {9798400706523},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3660605.3660944},
+  doi = {10.1145/3660605.3660944},
+  booktitle = {Proceedings of the 2024 Workshop on AI For Systems},
+  pages = {1–6},
+  numpages = {6},
+  keywords = {MPI, domain decomposition, transformer, LLM, AI, code generation},
+  location = {Pisa, Italy},
+  series = {AI4Sys '24}
+}
+
+@article{yin2025chathpc,
+  title={chatHPC: Empowering HPC users with large language models},
+  author={Yin, Junqi and Hines, Jesse and Herron, Emily and Ghosal, Tirthankar and Liu, Hong and Prentice, Suzanne and Lama, Vanessa and Wang, Feiyi},
+  journal={The Journal of Supercomputing},
+  volume={81},
+  number={1},
+  pages={194},
+  year={2025},
+  publisher={Springer}
+}
+
+@INPROCEEDINGS{dearing:cluster2024,
+  author={Dearing, Matthew T. and Tao, Yiheng and Wu, Xingfu and Lan, Zhiling and Taylor, Valerie},
+  booktitle={2024 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops)}, 
+  title={LASSI: An LLM-Based Automated Self-Correcting Pipeline for Translating Parallel Scientific Codes}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={136-143},
+  keywords={Codes;Runtime;Parallel programming;Conferences;Large language models;Pipelines;Graphics processing units;Training data;Debugging;Benchmark testing;Large Language Models (LLMs);Code Generation;Code Translation;Parallel Scientific Codes;Self-Correcting},
+  doi={10.1109/CLUSTERWorkshops61563.2024.00029}
+}
+
+@misc{guo2024deepseekcoderlargelanguagemodel,
+      title={DeepSeek-Coder: When the Large Language Model Meets Programming -- The Rise of Code Intelligence}, 
+      author={Daya Guo and Qihao Zhu and Dejian Yang and Zhenda Xie and Kai Dong and Wentao Zhang and Guanting Chen and Xiao Bi and Y. Wu and Y. K. Li and Fuli Luo and Yingfei Xiong and Wenfeng Liang},
+      year={2024},
+      eprint={2401.14196},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2401.14196}, 
+}
+
+@article{cassano:oopsla2024,
+  author = {Cassano, Federico and Gouwar, John and Lucchetti, Francesca and Schlesinger, Claire and Freeman, Anders and Anderson, Carolyn Jane and Feldman, Molly Q and Greenberg, Michael and Jangda, Abhinav and Guha, Arjun},
+  title = {Knowledge Transfer from High-Resource to Low-Resource Programming Languages for Code LLMs},
+  year = {2024},
+  issue_date = {October 2024},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {8},
+  number = {OOPSLA2},
+  url = {https://doi.org/10.1145/3689735},
+  doi = {10.1145/3689735},
+  journal = {Proc. ACM Program. Lang.},
+  month = oct,
+  articleno = {295},
+  numpages = {32},
+  keywords = {Large Language Models trained on Code}
+}
+
+@misc{xu2024surveyknowledgedistillationlarge,
+      title={A Survey on Knowledge Distillation of Large Language Models}, 
+      author={Xiaohan Xu and Ming Li and Chongyang Tao and Tao Shen and Reynold Cheng and Jinyang Li and Can Xu and Dacheng Tao and Tianyi Zhou},
+      year={2024},
+      eprint={2402.13116},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2402.13116}, 
+}
+
+@misc{deepseek-coder-v2,
+      title={DeepSeek-Coder-V2: Breaking the Barrier of Closed-Source Models in Code Intelligence}, 
+      author={DeepSeek-AI and Qihao Zhu and Daya Guo and Zhihong Shao and Dejian Yang and Peiyi Wang and Runxin Xu and Y. Wu and Yukun Li and Huazuo Gao and Shirong Ma and Wangding Zeng and Xiao Bi and Zihui Gu and Hanwei Xu and Damai Dai and Kai Dong and Liyue Zhang and Yishi Piao and Zhibin Gou and Zhenda Xie and Zhewen Hao and Bingxuan Wang and Junxiao Song and Deli Chen and Xin Xie and Kang Guan and Yuxiang You and Aixin Liu and Qiushi Du and Wenjun Gao and Xuan Lu and Qinyu Chen and Yaohui Wang and Chengqi Deng and Jiashi Li and Chenggang Zhao and Chong Ruan and Fuli Luo and Wenfeng Liang},
+      year={2024},
+      eprint={2406.11931},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2406.11931}, 
+}

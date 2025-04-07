@@ -11021,3 +11021,160 @@ file = {Submitted Version:files/42/Prabhat et al. - 2012 - TECA A Parallel Toolk
   year         = {2024},
   url          = {https://www.olcf.ornl.gov/draft-olcf-6-technical-requirements/benchmarks/},
 }
+
+@inproceedings{cagnet,
+author = {Tripathy, Alok and Yelick, Katherine and Bulu\c{c}, Ayd\i{}n},
+title = {Reducing communication in graph neural network training},
+year = {2020},
+isbn = {9781728199986},
+publisher = {IEEE Press},
+abstract = {Graph Neural Networks (GNNs) are powerful and flexible neural networks that use the naturally sparse connectivity information of the data. GNNs represent this connectivity as sparse matrices, which have lower arithmetic intensity and thus higher communication costs compared to dense matrices, making GNNs harder to scale to high concurrencies than convolutional or fully-connected neural networks.We introduce a family of parallel algorithms for training GNNs and show that they can asymptotically reduce communication compared to previous parallel GNN training methods. We implement these algorithms, which are based on 1D, 1.5D, 2D, and 3D sparse-dense matrix multiplication, using torch.distributed on GPU-equipped clusters. Our algorithms optimize communication across the full GNN training pipeline. We train GNNs on over a hundred GPUs on multiple datasets, including a protein network with over a billion edges.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {70},
+numpages = {17},
+keywords = {graph neural networks, distributed training, communication-avoiding algorithms},
+location = {Atlanta, Georgia},
+series = {SC '20}
+}
+
+@inproceedings{dgcl,
+author = {Cai, Zhenkun and Yan, Xiao and Wu, Yidi and Ma, Kaihao and Cheng, James and Yu, Fan},
+title = {DGCL: an efficient communication library for distributed GNN training},
+year = {2021},
+isbn = {9781450383349},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447786.3456233},
+doi = {10.1145/3447786.3456233},
+abstract = {Graph neural networks (GNNs) have gained increasing popularity in many areas such as e-commerce, social networks and bio-informatics. Distributed GNN training is essential for handling large graphs and reducing the execution time. However, for distributed GNN training, a peer-to-peer communication strategy suffers from high communication overheads. Also, different GPUs require different remote vertex embeddings, which leads to an irregular communication pattern and renders existing communication planning solutions unsuitable. We propose the distributed graph communication library (DGCL) for efficient GNN training on multiple GPUs. At the heart of DGCL is a communication planning algorithm tailored for GNN training, which jointly considers fully utilizing fast links, fusing communication, avoiding contention and balancing loads on different links. DGCL can be easily adopted to extend existing single-GPU GNN systems to distributed training. We conducted extensive experiments on different datasets and network configurations to compare DGCL with alternative communication schemes. In our experiments, DGCL reduces the communication time of the peer-to-peer communication by 77.5\% on average and the training time for an epoch by up to 47\%.},
+booktitle = {Proceedings of the Sixteenth European Conference on Computer Systems},
+pages = {130–144},
+numpages = {15},
+keywords = {distributed and parallel training, graph neural networks, network communication},
+location = {Online Event, United Kingdom},
+series = {EuroSys '21}
+}
+
+@misc{pipegcn,
+      title={PipeGCN: Efficient Full-Graph Training of Graph Convolutional Networks with Pipelined Feature Communication}, 
+      author={Cheng Wan and Youjie Li and Cameron R. Wolfe and Anastasios Kyrillidis and Nam Sung Kim and Yingyan Lin},
+      year={2022},
+      eprint={2203.10428},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2203.10428}, 
+}
+
+@article{sancus,
+author = {Peng, Jingshu and Chen, Zhao and Shao, Yingxia and Shen, Yanyan and Chen, Lei and Cao, Jiannong},
+title = {Sancus: staleness-aware communication-avoiding full-graph decentralized training in large-scale graph neural networks},
+year = {2022},
+issue_date = {May 2022},
+publisher = {VLDB Endowment},
+volume = {15},
+number = {9},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3538598.3538614},
+doi = {10.14778/3538598.3538614},
+abstract = {Graph neural networks (GNNs) have emerged due to their success at modeling graph data. Yet, it is challenging for GNNs to efficiently scale to large graphs. Thus, distributed GNNs come into play. To avoid communication caused by expensive data movement between workers, we propose Sancus, a staleness-aware communication-avoiding decentralized GNN system. By introducing a set of novel bounded embedding staleness metrics and adaptively skipping broadcasts, Sancus abstracts decentralized GNN processing as sequential matrix multiplication and uses historical embeddings via cache. Theoretically, we show bounded approximation errors of embeddings and gradients with convergence guarantee. Empirically, we evaluate Sancus with common GNN models via different system setups on large-scale benchmark datasets. Compared to SOTA works, Sancus can avoid up to 74\% communication with at least 1.86X faster throughput on average without accuracy loss.},
+journal = {Proc. VLDB Endow.},
+month = may,
+pages = {1937–1950},
+numpages = {14}
+}
+
+@inproceedings{neutronstar,
+author = {Wang, Qiange and Zhang, Yanfeng and Wang, Hao and Chen, Chaoyi and Zhang, Xiaodong and Yu, Ge},
+title = {NeutronStar: Distributed GNN Training with Hybrid Dependency Management},
+year = {2022},
+isbn = {9781450392495},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3514221.3526134},
+doi = {10.1145/3514221.3526134},
+abstract = {GNN's training needs to resolve issues of vertex dependencies, i.e., each vertex representation's update depends on its neighbors. Existing distributed GNN systems adopt either a dependencies-cached approach or a dependencies-communicated approach. Having made intensive experiments and analysis, we find that a decision to choose one or the other approach for the best performance is determined by a set of factors, including graph inputs, model configurations, and an underlying computing cluster environment. If various GNN trainings are supported solely by one approach, the performance results are often suboptimal. We study related factors for each GNN training before its execution to choose the best-fit approach accordingly. We propose a hybrid dependency-handling approach that adaptively takes the merits of the two approaches at runtime. Based on the hybrid approach, we further develop a distributed GNN training system called NeutronStar, which makes high performance GNN trainings in an automatic way. NeutronStar is also empowered by effective optimizations in CPU-GPU computation and data processing. Our experimental results on 16-node Aliyun cluster demonstrate that NeutronStar achieves 1.81X-14.25X speedup over existing GNN systems including DistDGL and ROC.},
+booktitle = {Proceedings of the 2022 International Conference on Management of Data},
+pages = {1301–1315},
+numpages = {15},
+keywords = {distributed training, gpu, graph neural networks, hybrid dependency management},
+location = {Philadelphia, PA, USA},
+series = {SIGMOD '22}
+}
+
+@misc{mg-gcn,
+      title={MG-GCN: Scalable Multi-GPU GCN Training Framework}, 
+      author={Muhammed Fatih Balın and Kaan Sancak and Ümit V. Çatalyürek},
+      year={2021},
+      eprint={2110.08688},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2110.08688}, 
+}
+
+@INPROCEEDINGS{rdm,
+  author={Kurt, Süreyya Emre and Yan, Jinghua and Sukumaran-Rajam, Aravind and Pandey, Prashant and Sadayappan, P.},
+  booktitle={2023 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
+  title={Communication Optimization for Distributed Execution of Graph Neural Networks}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={512-523},
+  keywords={Training;Distributed processing;Machine learning algorithms;Machine learning;Graph neural networks;Partitioning algorithms;Sparse matrices;Graph Neural Networks;Distributed Algorithms;Multi-GPU GNN;Performance Modeling},
+  doi={10.1109/IPDPS54959.2023.00058}
+}
+
+@misc{adaqp,
+      title={Adaptive Message Quantization and Parallelization for Distributed Full-graph GNN Training}, 
+      author={Borui Wan and Juntao Zhao and Chuan Wu},
+      year={2023},
+      eprint={2306.01381},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2306.01381}, 
+}
+
+@inproceedings {mgg,
+author = {Yuke Wang and Boyuan Feng and Zheng Wang and Tong Geng and Kevin Barker and Ang Li and Yufei Ding},
+title = {{MGG}: Accelerating Graph Neural Networks with {Fine-Grained} {Intra-Kernel} {Communication-Computation} Pipelining on {Multi-GPU} Platforms},
+booktitle = {17th USENIX Symposium on Operating Systems Design and Implementation (OSDI 23)},
+year = {2023},
+isbn = {978-1-939133-34-2},
+address = {Boston, MA},
+pages = {779--795},
+url = {https://www.usenix.org/conference/osdi23/presentation/wang-yuke},
+publisher = {USENIX Association},
+month = jul
+}
+
+@misc{neutrontp,
+      title={NeutronTP: Load-Balanced Distributed Full-Graph GNN Training with Tensor Parallelism}, 
+      author={Xin Ai and Hao Yuan and Zeyu Ling and Qiange Wang and Yanfeng Zhang and Zhenbo Fu and Chaoyi Chen and Yu Gu and Ge Yu},
+      year={2024},
+      eprint={2412.20379},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2412.20379}, 
+}
+
+@misc{cdfgnn,
+      title={CDFGNN: a Systematic Design of Cache-based Distributed Full-Batch Graph Neural Network Training with Communication Reduction}, 
+      author={Shuai Zhang and Zite Jiang and Haihang You},
+      year={2024},
+      eprint={2408.00232},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2408.00232}, 
+}
+
+@misc{granndis,
+      title={GraNNDis: Efficient Unified Distributed Training Framework for Deep GNNs on Large Clusters}, 
+      author={Jaeyong Song and Hongsun Jang and Jaewon Jung and Youngsok Kim and Jinho Lee},
+      year={2024},
+      eprint={2311.06837},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2311.06837}, 
+}
+
+
+

@@ -10774,7 +10774,7 @@ series = {ICS '21}
   title        = {DIMACS10/europe\_osm},
   year         = {2010},
   howpublished = {SuiteSparse Matrix Collection},
-  url          = {https://www.cise.ufl.edu/research/sparse/matrices/DIMACS10/europe_osm.html}
+  url          = {https://sparse.tamu.edu/DIMACS10/europe_osm}
 }
 
 @inproceedings{cagnet-sparsity-aware,
@@ -11181,4 +11181,38 @@ month = jul
   title        = {OSLO: Open Source for Large-scale Optimization},
   howpublished = {\url{https://github.com/EleutherAI/oslo}},
   year         = {2021},
+}
+
+@inproceedings{amazon-products,
+author = {He, Ruining and McAuley, Julian},
+title = {Ups and Downs: Modeling the Visual Evolution of Fashion Trends with One-Class Collaborative Filtering},
+year = {2016},
+isbn = {9781450341431},
+publisher = {International World Wide Web Conferences Steering Committee},
+address = {Republic and Canton of Geneva, CHE},
+url = {https://doi.org/10.1145/2872427.2883037},
+doi = {10.1145/2872427.2883037},
+abstract = {Building a successful recommender system depends on understanding both the dimensions of people's preferences as well as their dynamics. In certain domains, such as fashion, modeling such preferences can be incredibly difficult, due to the need to simultaneously model the visual appearance of products as well as their evolution over time. The subtle semantics and non-linear dynamics of fashion evolution raise unique challenges especially considering the sparsity and large scale of the underlying datasets. In this paper we build novel models for the One-Class Collaborative Filtering setting, where our goal is to estimate users' fashion-aware personalized ranking functions based on their past feedback. To uncover the complex and evolving visual factors that people consider when evaluating products, our method combines high-level visual features extracted from a deep convolutional neural network, users' past feedback, as well as evolving trends within the community. Experimentally we evaluate our method on two large real-world datasets from Amazon.com, where we show it to outperform state-of-the-art personalized ranking measures, and also use it to visualize the high-level fashion trends across the 11-year span of our dataset.},
+booktitle = {Proceedings of the 25th International Conference on World Wide Web},
+pages = {507–517},
+numpages = {11},
+keywords = {visual dimensions, recommender systems, personalized ranking, fashion evolution},
+location = {Montr\'{e}al, Qu\'{e}bec, Canada},
+series = {WWW '16}
+}
+
+@article{hipmcl,
+    author = {Azad, Ariful and Pavlopoulos, Georgios A and Ouzounis, Christos A and Kyrpides, Nikos C and Buluç, Aydin},
+    title = {HipMCL: a high-performance parallel implementation of the Markov clustering algorithm for large-scale networks},
+    journal = {Nucleic Acids Research},
+    volume = {46},
+    number = {6},
+    pages = {e33-e33},
+    year = {2018},
+    month = {01},
+    abstract = {Biological networks capture structural or functional properties of relevant entities such as molecules, proteins or genes. Characteristic examples are gene expression networks or protein–protein interaction networks, which hold information about functional affinities or structural similarities. Such networks have been expanding in size due to increasing scale and abundance of biological data. While various clustering algorithms have been proposed to find highly connected regions, Markov Clustering (MCL) has been one of the most successful approaches to cluster sequence similarity or expression networks. Despite its popularity, MCL’s scalability to cluster large datasets still remains a bottleneck due to high running times and memory demands. Here, we present High-performance MCL (HipMCL), a parallel implementation of the original MCL algorithm that can run on distributed-memory computers. We show that HipMCL can efficiently utilize 2000 compute nodes and cluster a network of ∼70 million nodes with ∼68 billion edges in ∼2.4 h. By exploiting distributed-memory environments, HipMCL clusters large-scale networks several orders of magnitude faster than MCL and enables clustering of even bigger networks. HipMCL is based on MPI and OpenMP and is freely available under a modified BSD license.},
+    issn = {0305-1048},
+    doi = {10.1093/nar/gkx1313},
+    url = {https://doi.org/10.1093/nar/gkx1313},
+    eprint = {https://academic.oup.com/nar/article-pdf/46/6/e33/24525991/gkx1313.pdf},
 }

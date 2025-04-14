@@ -11243,3 +11243,23 @@ series = {WWW '16}
     pages = "188--197",
     abstract = "Several recent works have considered the problem of generating reviews (or {\textquoteleft}tips') as a form of explanation as to why a recommendation might match a customer`s interests. While promising, we demonstrate that existing approaches struggle (in terms of both quality and content) to generate justifications that are relevant to users' decision-making process. We seek to introduce new datasets and methods to address the recommendation justification task. In terms of data, we first propose an {\textquoteleft}extractive' approach to identify review segments which justify users' intentions; this approach is then used to distantly label massive review corpora and construct large-scale personalized recommendation justification datasets. In terms of generation, we are able to design two personalized generation models with this data: (1) a reference-based Seq2Seq model with aspect-planning which can generate justifications covering different aspects, and (2) an aspect-conditional masked language model which can generate diverse justifications based on templates extracted from justification histories. We conduct experiments on two real-world datasets which show that our model is capable of generating convincing and diverse justifications."
 }
+
+@article{gvb-graph-partitioner,
+author = {Acer, Seher and Selvitopi, Oguz and Aykanat, Cevdet},
+title = {Improving performance of sparse matrix dense matrix multiplication on large-scale parallel systems},
+year = {2016},
+issue_date = {November 2016},
+publisher = {Elsevier Science Publishers B. V.},
+address = {NLD},
+volume = {59},
+number = {C},
+issn = {0167-8191},
+url = {https://doi.org/10.1016/j.parco.2016.10.001},
+doi = {10.1016/j.parco.2016.10.001},
+abstract = {A generic model to scale sparse matrix dense matrix multiplication (SpMM).SpMM suffers from high communication volume overhead.Different volume-based metrics such as maximum volume besides total volume.Simultaneous minimization of volume-based communication cost metrics.Portable models based on graph and hypergraph partitioning. We propose a comprehensive and generic framework to minimize multiple and different volume-based communication cost metrics for sparse matrix dense matrix multiplication (SpMM). SpMM is an important kernel that finds application in computational linear algebra and big data analytics. On distributed memory systems, this kernel is usually characterized with its high communication volume requirements. Our approach targets irregularly sparse matrices and is based on both graph and hypergraph partitioning models that rely on the widely adopted recursive bipartitioning paradigm. The proposed models are lightweight, portable (can be realized using any graph and hypergraph partitioning tool) and can simultaneously optimize different cost metrics besides total volume, such as maximum send/receive volume, maximum sum of send and receive volumes, etc., in a single partitioning phase. They allow one to define and optimize as many custom volume-based metrics as desired through a flexible formulation. The experiments on a wide range of about thousand matrices show that the proposed models drastically reduce the maximum communication volume compared to the standard partitioning models that only address the minimization of total volume. The improvements obtained on volume-based partition quality metrics using our models are validated with parallel SpMM as well as parallel multi-source BFS experiments on two large-scale systems. For parallel SpMM, compared to the standard partitioning models, our graph and hypergraph partitioning models respectively achieve reductions of 14\% and 22\% in runtime, on average. Compared to the state-of-the-art partitioner UMPa, our graph model is overall 14.5 faster and achieves an average improvement of 19\% in the partition quality on instances that are bounded by maximum volume. For parallel BFS, we show on graphs with more than a billion edges that the scalability can significantly be improved with our models compared to a recently proposed two-dimensional partitioning model.},
+journal = {Parallel Comput.},
+month = nov,
+pages = {71–96},
+numpages = {26},
+keywords = {Combinatorial scientific computing, Communication volume balancing, Graph partitioning, Hypergraph partitioning, Irregular applications, Load balancing, Matrix partitioning, Recursive bipartitioning, Sparse matrices, Sparse matrix dense matrix multiplication}
+}

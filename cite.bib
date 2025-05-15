@@ -12041,3 +12041,110 @@ author = "John R. Tramm and Geoffrey Gunow and Tim He and Kord S. Smith and Beno
   year = {2024},
   url = {https://qwenlm.github.io/blog/qwq-32b-preview/}
 }
+
+@article{nahshan2023linear,
+  title={Linear log-normal attention with unbiased concentration},
+  author={Nahshan, Yury and Kampeas, Joseph and Haleva, Emir},
+  journal={arXiv preprint arXiv:2311.13541},
+  year={2023}
+}
+
+@inproceedings{zhang2023parallel,
+  author = {Zhang, Jingrong and Naruse, Akira and Li, Xipeng and Wang, Yong},
+  title = {Parallel Top-K Algorithms on GPU: A Comprehensive Study and New Methods},
+  year = {2023},
+  isbn = {9798400701092},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3581784.3607062},
+  doi = {10.1145/3581784.3607062},
+  abstract = {The top-K problem is an essential part of many important applications in scientific computing, information retrieval, etc. As data volume grows rapidly, high-performance parallel top-K algorithms become critical. We propose two parallel top-K algorithms, AIR Top-K (Adaptive and Iteration-fused Radix Top-K) and GridSelect, for GPU. AIR Top-K employs an iteration-fused design to minimize CPU-GPU communication and device data access. Its adaptive strategy eliminates unnecessary device memory traffic automatically under various data distributions. GridSelect can process data on-the-fly. It adopts a shared queue and parallel two-step insertion to decrease the frequency of costly operations. We comprehensively compare 8 open-source GPU implementations and our methods for a wide range of problem sizes and data distributions. For batch sizes 1 and 100, respectively, AIR Top-K shows 1.98--21.48\texttimes{} and 8.01--574.78\texttimes{} speedup over previous radix top-K algorithm, and 1.44--7.34\texttimes{} and 1.38--31.91\texttimes{} speedup over state-of-the-art methods. GridSelect shows up to 882.29\texttimes{} speedup over its baseline.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {76},
+  numpages = {13},
+  keywords = {top-K, K-selection, radix select, parallel algorithms, GPU, CUDA},
+  location = {Denver, CO, USA},
+  series = {SC '23}
+}
+
+@inproceedings{li2022accelerating,
+  title={Accelerating attention through gradient-based learned runtime pruning},
+  author={Li, Zheng and Ghodrati, Soroush and Yazdanbakhsh, Amir and Esmaeilzadeh, Hadi and Kang, Mingu},
+  booktitle={Proceedings of the 49th Annual International Symposium on Computer Architecture},
+  pages={902--915},
+  year={2022}
+}
+
+@article{berestizshevsky2025top,
+  title={Top-Theta Attention: Sparsifying Transformers by Compensated Thresholding},
+  author={Berestizshevsky, Konstantin and Andri, Renzo and Cavigelli, Lukas},
+  journal={arXiv preprint arXiv:2502.08363},
+  year={2025}
+}
+
+@article{bai2024longwriter,
+  title={Longwriter: Unleashing 10,000+ word generation from long context llms},
+  author={Bai, Yushi and Zhang, Jiajie and Lv, Xin and Zheng, Linzhi and Zhu, Siqi and Hou, Lei and Dong, Yuxiao and Tang, Jie and Li, Juanzi},
+  journal={arXiv preprint arXiv:2408.07055},
+  year={2024}
+}
+
+@misc{open-llm-leaderboard-v2,
+  author = {Clémentine Fourrier and Nathan Habib and Alina Lozovskaya and Konrad Szafer and Thomas Wolf},
+  title = {Open LLM Leaderboard v2},
+  year = {2024},
+  publisher = {Hugging Face},
+  howpublished = "\url{https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard}",
+}
+
+@inproceedings{bahdanau2014neural,
+  author       = {Dzmitry Bahdanau and
+                  Kyunghyun Cho and
+                  Yoshua Bengio},
+  editor       = {Yoshua Bengio and
+                  Yann LeCun},
+  title        = {Neural Machine Translation by Jointly Learning to Align and Translate},
+  booktitle    = {3rd International Conference on Learning Representations, {ICLR} 2015,
+                  San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year         = {2015},
+  url          = {http://arxiv.org/abs/1409.0473},
+  timestamp    = {Wed, 17 Jul 2019 10:40:54 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/BahdanauCB14.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{ivanov2021data,
+  title={Data movement is all you need: A case study on optimizing transformers},
+  author={Ivanov, Andrei and Dryden, Nikoli and Ben-Nun, Tal and Li, Shigang and Hoefler, Torsten},
+  journal={Proceedings of Machine Learning and Systems},
+  volume={3},
+  pages={711--732},
+  year={2021}
+}
+
+@article{yang2024qwen2,
+  title={Qwen2. 5 technical report},
+  author={Yang, An and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and Wei, Haoran and others},
+  journal={arXiv preprint arXiv:2412.15115},
+  year={2024}
+}
+
+@misc{zhou2023instruction,
+  title={Instruction-Following Evaluation for Large Language Models},
+  author={Jeffrey Zhou and Tianjian Lu and Swaroop Mishra and Siddhartha Brahma and Sujoy Basu and Yi Luan and Denny Zhou and Le Hou},
+  year={2023},
+  eprint={2311.07911},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2311.07911},
+}
+
+@misc{hendrycks2021measuring,
+  title={Measuring Mathematical Problem Solving With the MATH Dataset},
+  author={Dan Hendrycks and Collin Burns and Saurav Kadavath and Akul Arora and Steven Basart and Eric Tang and Dawn Song and Jacob Steinhardt},
+  year={2021},
+  eprint={2103.03874},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2103.03874},
+}

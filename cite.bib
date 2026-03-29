@@ -12808,6 +12808,15 @@ series = {ACM SIGCOMM '24}
   note         = {Licence: CC BY 4.0}
 }
 
+@inproceedings{rabenseifner2004optimization,
+  title        = {Optimization of Collective Reduction Operations},
+  author       = {Rabenseifner, Rolf},
+  pages        = {1--8},
+  publisher    = {Springer-Verlag},
+  year         = {2004},
+  url          = {https://fs.hlrs.de/projects/rabenseifner/publ/myreduce_iccs2004_2.pdf}
+}
+
 @misc{li2024flashcommunication,
   title        = {Flash Communication: Reducing Tensor Parallelization Bottleneck for Fast Large Language Model Inference},
   author       = {Li, Qingyuan and Zhang, Bo and Ye, Liang and Zhang, Yifan and Wu, Wei and Sun, Yerui and Ma, Lin and Xie, Yuchen},
@@ -13805,32 +13814,6 @@ series = {HPDC '20}
   year={2022}
 }
 
-@article{ddosa,
-  title={D-DOSA: DPU-Based Dataflow Offloading and Sparse Allreduce Framework for Distributed Training},
-  author={Yu, Zhenqi and Li, Wenjing and Guo, Shaoyong and Li, Qingfeng and Qi, Feng and Xiu, Jiapeng},
-  journal={IEEE Transactions on Cloud Computing},
-  year={2025},
-  publisher={IEEE}
-}
-
-@software{omnireducemicrobenchmark,
-  title        = {OmniReduce Experiments},
-  author       = {sands-lab},
-  year         = {2021},
-  journal      = {GitHub repository},
-  publisher    = {GitHub},
-  howpublished = {\url{https://github.com/sands-lab/omnireduce-experiments/commit/a2bdc8082c805a1cb86499ce1eae7a9b48fbf8c4}}
-}
-
-@inproceedings{rabenseifner2004optimization,
-    title={Optimization of collective reduction operations},
-    author={Rabenseifner, Rolf},
-    booktitle={International Conference on Computational Science},
-    pages={1--9},
-    year={2004},
-    organization={Springer}
-}
-
 @article{kalamkar2019study,
   title={A study of BFLOAT16 for deep learning training},
   author={Kalamkar, Dhiraj and Mudigere, Dheevatsa and Mellempudi, Naveen and Das, Dipankar and Banerjee, Kunal and Avancha, Sasikanth and Vooturi, Dharma Teja and Jammalamadaka, Nataraj and Huang, Jianyu and Yuen, Hector and others},
@@ -13838,94 +13821,41 @@ series = {HPDC '20}
   year={2019}
 }
 
-@article{langr2015evaluation,
-    title={Evaluation criteria for sparse matrix storage formats},
-    author={Langr, Daniel and Tvrdik, Pavel},
-    journal={IEEE Transactions on parallel and distributed systems},
-    volume={27},
-    number={2},
-    pages={428--440},
-    year={2015},
-    publisher={IEEE}
-}
-
-@article{gao2023systematic,
-  title={A systematic survey of general sparse matrix-matrix multiplication},
-  author={Gao, Jianhua and Ji, Weixing and Chang, Fangli and Han, Shiyu and Wei, Bingxin and Liu, Zeming and Wang, Yizhuo},
-  journal={ACM Computing Surveys},
-  volume={55},
-  number={12},
-  pages={1--36},
-  year={2023},
-  publisher={ACM New York, NY}
-}
-
-@techreport{saad1990sparskit,
-  title={SPARSKIT: A basic tool kit for sparse matrix computations},
-  author={Saad, Youcef},
-  year={1990}
-}
-
-@inproceedings{kestur2012towards,
-  title={Towards a universal FPGA matrix-vector multiplication architecture},
-  author={Kestur, Srinidhi and Davis, John D and Chung, Eric S},
-  booktitle={2012 IEEE 20th International Symposium on Field-Programmable Custom Computing Machines},
-  pages={9--16},
-  year={2012},
+@inproceedings{chen2025mithril,
+  title={Mithril: A scalable system for deep GNN training},
+  author={Chen, Jingji and Chen, Zhuoming and Qian, Xuehai},
+  booktitle={2025 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
+  pages={1052--1065},
+  year={2025},
   organization={IEEE}
 }
 
-@inproceedings{pasta,
-  title={Engineering compact data structures for rank and select queries on bit vectors},
-  author={Kurpicz, Florian},
-  booktitle={International Symposium on String Processing and Information Retrieval},
-  pages={257--272},
-  year={2022},
-  organization={Springer}
+@article{chen2023gnnpipe,
+  title={GNNPipe: Scaling deep gnn training with pipelined model parallelism},
+  author={Chen, Jingji and Chen, Zhuoming and Qian, Xuehai},
+  journal={arXiv preprint arXiv:2308.10087},
+  year={2023}
 }
 
-@inproceedings{poppy,
-  title={Space-efficient, high-performance rank and select structures on uncompressed bit sequences},
-  author={Zhou, Dong and Andersen, David G and Kaminsky, Michael},
-  booktitle={International Symposium on Experimental Algorithms},
-  pages={151--163},
-  year={2013},
-  organization={Springer}
+@inproceedings{zhu2024fastgl,
+  title={FastGL: A GPU-Efficient Framework for Accelerating Sampling-Based GNN Training at Large Scale},
+  author={Zhu, Zeyu and Wang, Peisong and Hu, Qinghao and Li, Gang and Liang, Xiaoyao and Cheng, Jian},
+  booktitle={Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 4},
+  pages={94--110},
+  year={2024}
 }
 
-@article{hillis1986data,
-  title={Data parallel algorithms},
-  author={Hillis, W Daniel and Steele Jr, Guy L},
-  journal={Communications of the ACM},
-  volume={29},
-  number={12},
-  pages={1170--1183},
-  year={1986},
-  publisher={ACM New York, NY, USA}
+@inproceedings{liu2023bgl,
+  title={$\{$BGL$\}$:$\{$GPU-Efficient$\}$$\{$GNN$\}$ training by optimizing graph data $\{$I/O$\}$ and preprocessing},
+  author={Liu, Tianfeng and Chen, Yangrui and Li, Dan and Wu, Chuan and Zhu, Yibo and He, Jun and Peng, Yanghua and Chen, Hongzheng and Chen, Hongzhi and Guo, Chuanxiong},
+  booktitle={20th USENIX Symposium on Networked Systems Design and Implementation (NSDI 23)},
+  pages={103--118},
+  year={2023}
 }
 
-@inproceedings{graham2020scalable,
-  title={Scalable hierarchical aggregation and reduction protocol (sharp) tm streaming-aggregation hardware design and evaluation},
-  author={Graham, Richard L and Levi, Lion and Burredy, Devendar and Bloch, Gil and Shainer, Gilad and Cho, David and Elias, George and Klein, Daniel and Ladd, Joshua and Maor, Ophir and others},
-  booktitle={International Conference on High Performance Computing},
-  pages={41--59},
-  year={2020},
-  organization={Springer}
+@article{polisetty2023gsplit,
+  title={Gsplit: Scaling graph neural network training on large graphs via split-parallelism},
+  author={Polisetty, Sandeep and Liu, Juelin and Falus, Kobi and Fung, Yi Ren and Lim, Seung-Hwan and Guan, Hui and Serafini, Marco},
+  journal={arXiv preprint arXiv:2303.13775},
+  year={2023}
 }
-
-@article{jeaugey2025pat,
-  title={PAT: a new algorithm for all-gather and reduce-scatter operations at scale},
-  author={Jeaugey, Sylvain},
-  journal={arXiv preprint arXiv:2506.20252},
-  year={2025}
-}
-
-@inproceedings{huang2021communication,
-  title={Communication algorithm-architecture co-design for distributed deep learning},
-  author={Huang, Jiayi and Majumder, Pritam and Kim, Sungkeun and Muzahid, Abdullah and Yum, Ki Hwan and Kim, Eun Jung},
-  booktitle={2021 ACM/IEEE 48th Annual International Symposium on Computer Architecture (ISCA)},
-  pages={181--194},
-  year={2021},
-  organization={IEEE}
-}
-

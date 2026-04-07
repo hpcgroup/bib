@@ -13484,8 +13484,8 @@ series = {PGAS '10}
 
 @article{jiang20202dhra,
   author={Jiang, Youhe and Gu, Huaxi and Lu, Yunfeng and Yu, Xiaoshan},
-  journal={IEEE Access}, 
-  title={2D-HRA: Two-Dimensional Hierarchical Ring-Based All-Reduce Algorithm in Large-Scale Distributed Machine Learning}, 
+  journal={IEEE Access},
+  title={2D-HRA: Two-Dimensional Hierarchical Ring-Based All-Reduce Algorithm in Large-Scale Distributed Machine Learning},
   year={2020},
   volume={8},
   number={},
@@ -13495,8 +13495,8 @@ series = {PGAS '10}
 
 @inproceedings{ueno2019hierarchical,
   author={Ueno, Yuichiro and Yokota, Rio},
-  booktitle={2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)}, 
-  title={Exhaustive Study of Hierarchical AllReduce Patterns for Large Messages Between GPUs}, 
+  booktitle={2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)},
+  title={Exhaustive Study of Hierarchical AllReduce Patterns for Large Messages Between GPUs},
   year={2019},
   volume={},
   number={},
@@ -13732,8 +13732,8 @@ series = {HPDC '20}
 
 @INPROCEEDINGS{Sencan2025Refine,
   author={Sencan, Efe and Lee, Yin-Ching and Casey, Connor and Schwaller, Benjamin and Leung, Vitus J. and Brandt, Jim and Kulis, Brian and Egele, Manuel and Coskun, Ayse K.},
-  booktitle={ISC High Performance 2025 Research Paper Proceedings (40th International Conference)}, 
-  title={Refine: A Robust Approach to Unsupervised Anomaly Detection for Production HPC Systems}, 
+  booktitle={ISC High Performance 2025 Research Paper Proceedings (40th International Conference)},
+  title={Refine: A Robust Approach to Unsupervised Anomaly Detection for Production HPC Systems},
   year={2025},
   volume={},
   number={},
@@ -14046,4 +14046,32 @@ series = {HPDC '20}
   pages={181--194},
   year={2021},
   organization={IEEE}
+}
+
+@article{li2020dataparallel,
+author = {Li, Shen and Zhao, Yanli and Varma, Rohan and Salpekar, Omkar and Noordhuis, Pieter and Li, Teng and Paszke, Adam and Smith, Jeff and Vaughan, Brian and Damania, Pritam and Chintala, Soumith},
+title = {PyTorch distributed: experiences on accelerating data parallel training},
+year = {2020},
+issue_date = {August 2020},
+publisher = {VLDB Endowment},
+volume = {13},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3415478.3415530},
+doi = {10.14778/3415478.3415530},
+abstract = {This paper presents the design, implementation, and evaluation of the PyTorch distributed data parallel module. Py-Torch is a widely-adopted scientific computing package used in deep learning research and applications. Recent advances in deep learning argue for the value of large datasets and large models, which necessitates the ability to scale out model training to more computational resources. Data parallelism has emerged as a popular solution for distributed training thanks to its straightforward principle and broad applicability. In general, the technique of distributed data parallelism replicates the model on every computational resource to generate gradients independently and then communicates those gradients at each iteration to keep model replicas consistent. Despite the conceptual simplicity of the technique, the subtle dependencies between computation and communication make it non-trivial to optimize the distributed training efficiency. As of v1.5, PyTorch natively provides several techniques to accelerate distributed data parallel, including bucketing gradients, overlapping computation with communication, and skipping gradient synchronization. Evaluations show that, when configured appropriately, the PyTorch distributed data parallel module attains near-linear scalability using 256 GPUs.},
+journal = {Proc. VLDB Endow.},
+month = aug,
+pages = {3005–3018},
+numpages = {14}
+}
+
+@inproceedings{seide14_interspeech,
+  title     = {{1-bit stochastic gradient descent and its application to data-parallel distributed training of speech DNNs}},
+  author    = {Frank Seide and Hao Fu and Jasha Droppo and Gang Li and Dong Yu},
+  year      = {2014},
+  booktitle = {{Interspeech 2014}},
+  pages     = {1058--1062},
+  doi       = {10.21437/Interspeech.2014-274},
+  issn      = {2958-1796},
 }

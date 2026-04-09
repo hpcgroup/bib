@@ -14137,3 +14137,56 @@ numpages = {14}
   institution={Nvidia Technical Report NVR-2008-004, Nvidia Corporation}
 }
 
+@inproceedings{gpu_comm_conjugate,
+	author = {Trotter, James D. and Ekmek\c{c}iba\c{s}\i{}, Sinan and Sa\u{g}bili, Do\u{g}an and Langguth, Johannes and Cai, Xing and Unat, Didem},
+	title = {CPU- and GPU-initiated Communication Strategies for Conjugate Gradient Methods on Large GPU Clusters},
+	year = {2025},
+	isbn = {9798400714665},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3712285.3759774},
+	doi = {10.1145/3712285.3759774},
+	abstract = {The Conjugate Gradient (CG) method is a key building block in numerous applications, yet its low computational intensity and sensitivity to communication overhead make it difficult to scale efficiently on multi-GPU systems. In light of recent advances in multi-GPU communication technologies, we revisit CG parallelization for large-scale GPU clusters.This work presents scalable CG and pipelined CG solvers targeting NVIDIA and AMD GPUs, using GPU-aware MPI, NCCL/RCCL and NVSHMEM to implement both CPU- and GPU-initiated communication schemes. We also introduce a monolithic variant that offloads the entire CG loop to the GPU, enabling fully device-initiated execution via NVSHMEM. Optimizations across all variants reduce unnecessary data transfers and synchronization overheads; the GPU-initiated variant eliminates CPU involvement altogether.We benchmark our implementations on NVIDIA- and AMD-based supercomputers using SuiteSparse matrices and a real-world finite element application. By avoiding data transfers and synchronization bottlenecks, our single-GPU implementations achieve 8–14&nbsp;\% performance gains over state-of-the-art solvers. In strong scaling tests on over 1,000 GPUs, we outperform existing approaches by 5–15&nbsp;\%.While CPU-initiated variants remain favorable due to a lack of vendor supported device-side computational kernels and suboptimal NVSHMEM configurations at the clusters, the strong scaling properties of the GPU-initiated CG variant indicates that it will be highly competitive at even larger GPU counts and with further tuning.},
+	booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+	pages = {298–315},
+	numpages = {18},
+	keywords = {GPU, Conjugate Gradient, CUDA, HIP, GPU-aware MPI, NCCL, RCCL, NVSHMEM},
+	location = {
+	},
+	series = {SC '25}
+}
+
+@article{amesos2,
+	author = {Bavier, Eric and Hoemmen, Mark and Rajamanickam, Sivasankaran and Thornquist, Heidi},
+	title = {Amesos2 and Belos: Direct and Iterative Solvers for Large Sparse Linear Systems},
+	journal = {Scientific Programming},
+	volume = {20},
+	number = {3},
+	pages = {243875},
+	keywords = {Linear solvers, iterative linear solvers, parallel computing},
+	doi = {https://doi.org/10.3233/SPR-2012-0352},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.3233/SPR-2012-0352},
+	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.3233/SPR-2012-0352},
+	abstract = {Solvers for large sparse linear systems come in two categories: direct and iterative. Amesos2, a package in the Trilinos software project, provides direct methods, and Belos, another Trilinos package, provides iterative methods. Amesos2 offers a common interface to many different sparse matrix factorization codes, and can handle any implementation of sparse matrices and vectors, via an easy-to-extend C++ traits interface. It can also factor matrices whose entries have arbitrary "Scalar" type, enabling extended-precision and mixed-precision algorithms. Belos includes many different iterative methods for solving large sparse linear systems and least-squares problems. Unlike competing iterative solver libraries, Belos completely decouples the algorithms from the implementations of the underlying linear algebra objects. This lets Belos exploit the latest hardware without changes to the code. Belos favors algorithms that solve higher-level problems, such as multiple simultaneous linear systems and sequences of related linear systems, faster than standard algorithms. The package also supports extended-precision and mixed-precision algorithms. Together, Amesos2 and Belos form a complete suite of sparse linear solvers.},
+	year = {2012}
+}
+
+@article{superlu_sparse,
+	author = {Li, Xiaoye S. and Lin, Paul and Liu, Yang and Sao, Piyush},
+	title = {Newly Released Capabilities in the Distributed-Memory SuperLU Sparse Direct Solver},
+	year = {2023},
+	issue_date = {March 2023},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {49},
+	number = {1},
+	issn = {0098-3500},
+	url = {https://doi.org/10.1145/3577197},
+	doi = {10.1145/3577197},
+	abstract = {We present the new features available in the recent release of SuperLU_DIST, Version 8.1.1. SuperLU_DIST is a distributed-memory parallel sparse direct solver. The new features include (1) a 3D communication-avoiding algorithm framework that trades off inter-process communication for selective memory duplication, (2) multi-GPU support for both NVIDIA GPUs and AMD GPUs, and (3) mixed-precision routines that perform single-precision LU factorization and double-precision iterative refinement. Apart from the algorithm improvements, we also modernized the software build system to use CMake and Spack package installation tools to simplify the installation procedure. Throughout the article, we describe in detail the pertinent performance-sensitive parameters associated with each new algorithmic feature, show how they are exposed to the users, and give general guidance of how to set these parameters. We illustrate that the solver's performance both in time and memory can be greatly improved after systematic tuning of the parameters, depending on the input sparse matrix and underlying hardware.},
+	journal = {ACM Trans. Math. Softw.},
+	month = mar,
+	articleno = {10},
+	numpages = {20},
+	keywords = {Sparse direct solver, communication-avoiding, GPU, mixed precision}
+}

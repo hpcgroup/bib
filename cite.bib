@@ -2701,7 +2701,7 @@
   journal       = {CoRR},
   volume        = {abs/1609.07843},
   year          = {2016},
-  url           = {http://arxiv.org/abs/1609.07843},
+  url           = {https://doi.org/10.48550/arXiv.1609.07843},
   archiveprefix = {arXiv},
   eprint        = {1609.07843},
   timestamp     = {Thu, 21 Mar 2019 11:19:44 +0100},
@@ -12361,13 +12361,18 @@ author = "John R. Tramm and Geoffrey Gunow and Tim He and Kord S. Smith and Beno
   commit       = {}
 }
 
-@inproceedings{hu2025demystifyingncclindepthanalysis,
-  title={Demystifying NCCL: An in-depth analysis of GPU communication protocols and algorithms},
-  author={Hu, Zhiyi and Shen, Siyuan and Bonato, Tommaso and Jeaugey, Sylvain and Alexander, Cedell and Spada, Eric and Dinan, James and Hammond, Jeff and Hoefler, Torsten},
-  booktitle={2025 IEEE Symposium on High-Performance Interconnects (HOTI)},
-  pages={48--59},
-  year={2025},
-  organization={IEEE}
+
+@INPROCEEDINGS{hu2025demystifyingncclindepthanalysis,
+    author={Hu, Zhiyi and Shen, Siyuan and Bonato, Tommaso and Jeaugey, Sylvain and Alexander, Cedell and Spada, Eric and Dinan, James and Hammond, Jeff and Hoefler, Torsten},
+    booktitle={2025 IEEE Symposium on High-Performance Interconnects (HOTI)}, 
+    title={Demystifying NCCL: An In-Depth Analysis of GPU Communication Protocols and Algorithms}, 
+    year={2025},
+    volume={},
+    number={},
+    pages={48-59},
+    keywords={Training;Performance evaluation;Protocols;Systematics;Heuristic algorithms;Graphics processing units;Libraries;Software;Object recognition;Artificial intelligence;NVIDIA NCCL;Collective communication;Communication libraries;Multi-GPU cluster training},
+    doi={10.1109/HOTI66940.2025.00024},
+    url={https://doi.org/10.1109/HOTI66940.2025.00024}
 }
 
 @inproceedings{austin2024system,
@@ -14177,7 +14182,7 @@ numpages = {14}
 	number = {3},
 	pages = {243875},
 	keywords = {Linear solvers, iterative linear solvers, parallel computing},
-	doi = {https://doi.org/10.3233/SPR-2012-0352},
+	doi = {10.3233/SPR-2012-0352},
 	url = {https://doi.org/10.3233/SPR-2012-0352},
 	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.3233/SPR-2012-0352},
 	abstract = {Solvers for large sparse linear systems come in two categories: direct and iterative. Amesos2, a package in the Trilinos software project, provides direct methods, and Belos, another Trilinos package, provides iterative methods. Amesos2 offers a common interface to many different sparse matrix factorization codes, and can handle any implementation of sparse matrices and vectors, via an easy-to-extend C++ traits interface. It can also factor matrices whose entries have arbitrary "Scalar" type, enabling extended-precision and mixed-precision algorithms. Belos includes many different iterative methods for solving large sparse linear systems and least-squares problems. Unlike competing iterative solver libraries, Belos completely decouples the algorithms from the implementations of the underlying linear algebra objects. This lets Belos exploit the latest hardware without changes to the code. Belos favors algorithms that solve higher-level problems, such as multiple simultaneous linear systems and sequences of related linear systems, faster than standard algorithms. The package also supports extended-precision and mixed-precision algorithms. Together, Amesos2 and Belos form a complete suite of sparse linear solvers.},
@@ -14428,21 +14433,38 @@ numpages = {14}
   year={2026}
 }
 
-
 @inproceedings{maxrate,
-  title={Modeling MPI communication performance on SMP nodes: Is it time to retire the ping pong test},
-  author={Gropp, William and Olson, Luke N and Samfass, Philipp},
-  booktitle={Proceedings of the 23rd European MPI Users' Group Meeting},
-  pages={41--50},
-  year={2016}
+    author = {Gropp, William and Olson, Luke N. and Samfass, Philipp},
+    title = {Modeling MPI Communication Performance on SMP Nodes: Is it Time to Retire the Ping Pong Test},
+    year = {2016},
+    isbn = {9781450342346},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2966884.2966919},
+    doi = {10.1145/2966884.2966919},
+    abstract = {The "postal" model of communication [3, 8] T = α + βn, for sending n bytes of data between two processes with latency α and bandwidth 1/β, is perhaps the most commonly used communication performance model in parallel computing. This performance model is often used in developing and evaluating parallel algorithms in high-performance computing, and was an effective model when it was first proposed. Consequently, numerous tests of "ping pong" communication have been developed in order to measure these parameters in the model. However, with the advent of multicore nodes connected to a single (or a few) network interfaces, the model has become a poor match to modern hardware. In this paper, we show a simple three-parameter model that better captures the behavior of current parallel computing systems, and demonstrate its accuracy on several systems. In support of this model, which we call the max-rate model, we have developed an open source benchmark1 that can be used to determine the model parameters.},
+    booktitle = {Proceedings of the 23rd European MPI Users' Group Meeting},
+    pages = {41–50},
+    numpages = {10},
+    keywords = {symmetric multiprocessor cluster, ping pong, performance model, parallel computing, multi-core, communication, benchmark, bandwidth saturation},
+    location = {Edinburgh, United Kingdom},
+    series = {EuroMPI '16}
 }
 
 @inproceedings{loggp,
-  title={LogGP: Incorporating long messages into the LogP model—one step closer towards a realistic model for parallel computation},
-  author={Alexandrov, Albert and Ionescu, Mihai F and Schauser, Klaus E and Scheiman, Chris},
-  booktitle={Proceedings of the seventh annual ACM symposium on Parallel algorithms and architectures},
-  pages={95--105},
-  year={1995}
+    author = {Alexandrov, Albert and Ionescu, Mihai F. and Schauser, Klaus E. and Scheiman, Chris},
+    title = {LogGP: incorporating long messages into the LogP model—one step closer towards a realistic model for parallel computation},
+    year = {1995},
+    isbn = {0897917170},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/215399.215427},
+    doi = {10.1145/215399.215427},
+    booktitle = {Proceedings of the Seventh Annual ACM Symposium on Parallel Algorithms and Architectures},
+    pages = {95–105},
+    numpages = {11},
+    location = {Santa Barbara, California, USA},
+    series = {SPAA '95}
 }
 
 @inproceedings{esclapez2025dales,

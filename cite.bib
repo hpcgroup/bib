@@ -14976,3 +14976,127 @@ numpages = {14}
   year         = {2026},
   url          = {https://ofiwg.github.io/libfabric/main/man/fi_cxi.7.html}
 }
+
+
+@misc{deepep2025,
+      title={DeepEP: an efficient expert-parallel communication library},
+      author={Chenggang Zhao and Shangyan Zhou and Liyue Zhang and Chengqi Deng and Zhean Xu and Yuxuan Liu and Kuai Yu and Jiashi Li and Liang Zhao},
+      year={2025},
+      publisher = {GitHub},
+      howpublished = {\url{https://github.com/deepseek-ai/DeepEP}},
+}
+
+@misc{goldman2026ncclepunifiedexpert,
+      title={NCCL EP: Towards a Unified Expert Parallel Communication API for NCCL},
+      author={Amos Goldman and Nimrod Boker and Maayan Sheraizin and Nimrod Admoni and Artem Polyakov and Subhadeep Bhattacharya and Fan Yu and Kai Sun and Georgios Theodorakis and Hsin-Chun Yin and Peter-Jan Gootzen and Aamir Shafi and Assaf Ravid and Salvatore Di Girolamo and James Dinan and Xiaofan Li and Manjunath Gorentla Venkata and Gil Bloch},
+      year={2026},
+      eprint={2603.13606},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2603.13606},
+}
+
+@misc{mao2026ucclepportableexpertparallelcommunication,
+      title={UCCL-EP: Portable Expert-Parallel Communication},
+      author={Ziming Mao and Yihan Zhang and Chihan Cui and Zhen Huang and Kaichao You and Zhongjie Chen and Zhiying Xu and Zhenyu Gu and Scott Shenker and Costin Raiciu and Yang Zhou and Ion Stoica},
+      year={2026},
+      eprint={2512.19849},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2512.19849},
+}
+
+@inproceedings{10.1145/3731599.3767389,
+author = {White, James Buford},
+title = {Large-Message All-to-All Communication at Frontier Scale},
+year = {2025},
+isbn = {9798400718717},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731599.3767389},
+doi = {10.1145/3731599.3767389},
+abstract = {Near the full scale of exascale supercomputers, latency can dominate the cost of all-to-all communication even for very large message sizes. We describe GPU-aware all-to-all implementations designed to reduce latency for large message sizes at extreme scales, and we present their performance using 65536 tasks (8192 nodes) on the Frontier supercomputer at the Oak Ridge Leadership Computing Facility. Two implementations perform best for different ranges of message size, and all outperform the vendor-provided MPI_Alltoall. Our results show promising options for improving implementations of MPI_Alltoall_init.},
+booktitle = {Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+pages = {461–467},
+numpages = {7},
+keywords = {GPU-aware MPI, all-to-all communication},
+location = {
+},
+series = {SC Workshops '25}
+}
+
+@misc{namugwanya2026analyzingpersistentalltoallvrma,
+      title={Analyzing Persistent Alltoallv RMA Implementations for High-Performance MPI Communication},
+      author={Evelyn Namugwanya},
+      year={2026},
+      eprint={2604.05099},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2604.05099},
+}
+
+@inproceedings {306031,
+author = {Chenxingyu Zhao and Jaehong Min and Ming Liu and Arvind Krishnamurthy},
+title = {{White-Boxing} {RDMA} with {Packet-Granular} Software Control},
+booktitle = {22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI 25)},
+year = {2025},
+isbn = {978-1-939133-46-5},
+address = {Philadelphia, PA},
+pages = {427--449},
+url = {https://www.usenix.org/conference/nsdi25/presentation/zhao-chenxingyu},
+publisher = {USENIX Association},
+month = apr
+}
+
+@inproceedings {298513,
+author = {Sugi Lee and Mingyu Choi and Ikjun Yeom and Younghoon Kim},
+title = {{PeRF}: Preemption-enabled {RDMA} Framework},
+booktitle = {2024 USENIX Annual Technical Conference (USENIX ATC 24)},
+year = {2024},
+isbn = {978-1-939133-41-0},
+address = {Santa Clara, CA},
+pages = {209--225},
+url = {https://www.usenix.org/conference/atc24/presentation/lee},
+publisher = {USENIX Association},
+month = jul
+}
+
+@article{Wang2023sRDMAAG,
+  title={sRDMA: A General and Low-Overhead Scheduler for RDMA},
+  author={Xizheng Wang and Shuai Wang and Dan Li},
+  journal={Proceedings of the 7th Asia-Pacific Workshop on Networking},
+  year={2023},
+  url={https://api.semanticscholar.org/CorpusID:259378321}
+}
+
+
+@inproceedings{10.1145/3731599.3767519,
+author = {Nichols, Nathan and Applencourt, Thomas},
+title = {Extending THAPI with CXI Hardware Counter Sampling for High Resolution NIC Telemetry},
+year = {2025},
+isbn = {9798400718717},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731599.3767519},
+doi = {10.1145/3731599.3767519},
+abstract = {High performance computing (HPC) applications are sensitive to network variability, yet existing tracing tools lack insight into low level network behavior. Modern network interface controllers (NICs), such as HPE’s Slingshot-11 Cassini, provide detailed hardware counters that can reveal conditions like congestion and retries, but remain underused due to limited integration with tracing frameworks. We extend the THAPI framework with a sampling plugin for Cassini’s CXI interface, periodically collecting NIC counters and integrating them into HPC trace timelines via the iprof tool. Data is visualized in Perfetto, enabling correlation between network telemetry and application events. Our approach imposes negligible overhead at typical sampling rates and exposes previously hidden performance factors, such as congestion delays and load imbalances. Case studies on point-to-point and collective patterns demonstrate new diagnostic capabilities. Contributions include the plugin’s design, integration into a state-of-the-art tracing toolchain, and evaluation highlighting opportunities for improved HPC communication performance.},
+booktitle = {Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+pages = {1601–1610},
+numpages = {10},
+keywords = {High-performance computing, Network performance monitoring, Network interface controllers, Performance analysis, Telemetry systems, Tracing frameworks},
+location = {
+},
+series = {SC Workshops '25}
+}
+
+
+@INPROCEEDINGS{hotchips-xgmi,
+  author={Smith, Alan and James, Norman},
+  booktitle={2022 IEEE Hot Chips 34 Symposium (HCS)},
+  title={AMD Instinct™ MI200 Series Accelerator and Node Architectures},
+  year={2022},
+  volume={},
+  number={},
+  pages={1-23},
+  keywords={Fabrics;Engines;Computer architecture;Lead;Transistors;Technological innovation;System-on-chip},
+  doi={10.1109/HCS55958.2022.9895477}}

@@ -15100,3 +15100,80 @@ series = {SC Workshops '25}
   pages={1-23},
   keywords={Fabrics;Engines;Computer architecture;Lead;Transistors;Technological innovation;System-on-chip},
   doi={10.1109/HCS55958.2022.9895477}}
+
+  @INPROCEEDINGS{SCTP-kamal,
+    author={Kamal, H. and Penoff, B. and Tsai, M. and Vong, E. and Wagner, A.},
+    booktitle={Proceedings 20th IEEE International Parallel \& Distributed Processing Symposium},
+    title={Using SCTP to hide latency in MPI programs},
+    year={2006},
+    volume={},
+    number={},
+    pages={13 pp.-},
+    keywords={Delay;Wide area networks;Parallel processing;Bandwidth;Message passing;Transport protocols;Middleware;Pipeline processing;Performance loss;Robustness},
+    doi={10.1109/IPDPS.2006.1639391}}
+
+    @INPROCEEDINGS{dalessandro-rdma,
+      author={Dalessandro, Dennis and Wyckoff, Pete},
+      booktitle={15th Annual IEEE Symposium on High-Performance Interconnects (HOTI 2007)},
+      title={Memory Management Strategies for Data Serving with RDMA},
+      year={2007},
+      volume={},
+      number={},
+      pages={135-142},
+      keywords={Memory management;Operating systems;Network servers;Registers;Supercomputers;Marine vehicles;Computer networks;File servers;Pipeline processing;File systems},
+      doi={10.1109/HOTI.2007.5}}
+
+      @inproceedings{pyarali1997proactor,
+        author    = {Irfan Pyarali and Tim Harrison and Douglas C. Schmidt and Thomas D. Jordan},
+        title     = {Proactor: An Object Behavioral Pattern for Demultiplexing and Dispatching Handlers for Asynchronous Events},
+        booktitle = {Proceedings of the 4th Annual Pattern Languages of Programming Conference},
+        year      = {1997},
+        address   = {Allerton Park, Illinois},
+        url       = {https://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf}
+      }
+
+
+      @article{wan2022bns,
+        title={{BNS-GCN}: Efficient Full-graph Training of Graph Convolutional Networks with Partition-parallelism and Random Boundary Node Sampling},
+        author={Wan, Cheng and Li, Youjie and Li, Ang and Kim, Nam Sung and Lin, Yingyan},
+        journal={Proceedings of Machine Learning and Systems},
+        volume={4},
+        pages={673--693},
+        year={2022}
+      }
+
+      @inproceedings{datalog,
+      author = {Shovon, Ahmedur Rahman and Sun, Yihao and Micinski, Kristopher and Gilray, Thomas and Kumar, Sidharth},
+      title = {Multi-Node Multi-GPU Datalog},
+      year = {2025},
+      isbn = {9798400715372},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3721145.3730431},
+      doi = {10.1145/3721145.3730431},
+      abstract = {Datalog, a declarative logic programming language that operates bottom-up, has experienced increasing popularity due to its natural handling of recursive queries. Its applications span diverse fields, including graph mining, program analysis, deductive databases, and neuro-symbolic reasoning. While Datalog shares similarities with SQL in using relational algebra kernels, it uniquely employs iterative execution until reaching a fixed point to support recursion. Current Datalog engines like SLOG, LogicBlox, and Souffl{\'e} work well with multi-core and multi-threaded systems, but none have yet tackled multi-node, multi-GPU architectures. Our research addresses this gap by developing the first multi-GPU, multi-node Datalog engine. This advancement is particularly for high-performance computing (HPC) systems, which typically feature multiple GPUs per node. Our implementation combines MPI for inter-node communication with CUDA for GPU parallelization, enabling the processing of massive datasets in real time. We have created novel data-parallel implementations of core relational algebra operations (join), while also optimizing deduplication and tuple materialization. To handle iterative execution, we have developed two novel GPU-accelerated methods for non-uniform all-to-all data exchange. Evaluating on Argonne National Lab’s Polaris supercomputer demonstrated our engine’s effectiveness, achieving performance improvements of up to 32 {\texttimes} against state-of-the-art multi-node Datalog engine.},
+      booktitle = {Proceedings of the 39th ACM International Conference on Supercomputing},
+      pages = {822–836},
+      numpages = {15},
+      keywords = {Datalog, Multi-GPU, Analytic Databases},
+      location = {
+      },
+      series = {ICS '25}
+      }
+
+      @inproceedings{meta-recommendation-model,
+      author = {Mudigere, Dheevatsa and Hao, Yuchen and Huang, Jianyu and Jia, Zhihao and Tulloch, Andrew and Sridharan, Srinivas and Liu, Xing and Ozdal, Mustafa and Nie, Jade and Park, Jongsoo and Luo, Liang and Yang, Jie (Amy) and Gao, Leon and Ivchenko, Dmytro and Basant, Aarti and Hu, Yuxi and Yang, Jiyan and Ardestani, Ehsan K. and Wang, Xiaodong and Komuravelli, Rakesh and Chu, Ching-Hsiang and Yilmaz, Serhat and Li, Huayu and Qian, Jiyuan and Feng, Zhuobo and Ma, Yinbin and Yang, Junjie and Wen, Ellie and Li, Hong and Yang, Lin and Sun, Chonglin and Zhao, Whitney and Melts, Dimitry and Dhulipala, Krishna and Kishore, KR and Graf, Tyler and Eisenman, Assaf and Matam, Kiran Kumar and Gangidi, Adi and Chen, Guoqiang Jerry and Krishnan, Manoj and Nayak, Avinash and Nair, Krishnakumar and Muthiah, Bharath and khorashadi, Mahmoud and Bhattacharya, Pallab and Lapukhov, Petr and Naumov, Maxim and Mathews, Ajit and Qiao, Lin and Smelyanskiy, Mikhail and Jia, Bill and Rao, Vijay},
+      title = {Software-hardware co-design for fast and scalable training of deep learning recommendation models},
+      year = {2022},
+      isbn = {9781450386104},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3470496.3533727},
+      doi = {10.1145/3470496.3533727},
+      abstract = {Deep learning recommendation models (DLRMs) have been used across many business-critical services at Meta and are the single largest AI application in terms of infrastructure demand in its data-centers. In this paper, we present Neo, a software-hardware co-designed system for high-performance distributed training of large-scale DLRMs. Neo employs a novel 4D parallelism strategy that combines table-wise, row-wise, column-wise, and data parallelism for training massive embedding operators in DLRMs. In addition, Neo enables extremely high-performance and memory-efficient embedding computations using a variety of critical systems optimizations, including hybrid kernel fusion, software-managed caching, and quality-preserving compression. Finally, Neo is paired with ZionEX, a new hardware platform co-designed with Neo's 4D parallelism for optimizing communications for large-scale DLRM training. Our evaluation on 128 GPUs using 16 ZionEX nodes shows that Neo outperforms existing systems by up to 40{\texttimes} for training 12-trillion-parameter DLRM models deployed in production.},
+      booktitle = {Proceedings of the 49th Annual International Symposium on Computer Architecture},
+      pages = {993–1011},
+      numpages = {19},
+      location = {New York, New York},
+      series = {ISCA '22}
+      }

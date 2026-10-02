@@ -4662,7 +4662,6 @@
   volume        = {17},
   year          = {1982}
 }
-}
 
 @article{mellorcrummey+:jsc02,
   author        = {J. Mellor-Crummey and R. Fowler and G. Marin},
@@ -15202,3 +15201,44 @@ publisher = {USENIX Association},
 month = jul
 }
 
+
+@article{10.1162/qssa00021,
+    author = {Wang, Kuansan and Shen, Zhihong and Huang, Chiyuan and Wu, Chieh-Han and Dong, Yuxiao and Kanakia, Anshul},
+    title = {Microsoft Academic Graph: When experts are not enough},
+    journal = {Quantitative Science Studies},
+    volume = {1},
+    number = {1},
+    pages = {396-413},
+    year = {2020},
+    month = {02},
+    abstract = {An ongoing project explores the extent to which artificial intelligence (AI), specifically in the areas of natural language processing and semantic reasoning, can be exploited to facilitate the studies of science by deploying software agents equipped with natural language understanding capabilities to read scholarly publications on the web. The knowledge extracted by these AI agents is organized into a heterogeneous graph, called Microsoft Academic Graph (MAG), where the nodes and the edges represent the entities engaging in scholarly communications and the relationships among them, respectively. The frequently updated data set and a few software tools central to the underlying AI components are distributed under an open data license for research and commercial applications. This paper describes the design, schema, and technical and business motivations behind MAG and elaborates how MAG can be used in analytics, search, and recommendation scenarios. How AI plays an important role in avoiding various biases and human induced errors in other data sets and how the technologies can be further improved in the future are also discussed.},
+    issn = {2641-3337},
+    doi = {10.1162/qss_a_00021},
+    url = {https://doi.org/10.1162/qss_a_00021},
+    eprint = {https://direct.mit.edu/qss/article-pdf/1/1/396/1760880/qss_a_00021.pdf},
+}
+
+
+@inproceedings{OrtizSuarezSagotRomary2019,
+  author    = {Pedro Javier {Ortiz Su{\'a}rez} and Beno{\^i}t Sagot and Laurent Romary},
+  title     = {Asynchronous pipelines for processing huge corpora on medium to low resource infrastructures},
+  booktitle = {Proceedings of the Workshop on Challenges in the Management of Large Corpora (CMLC-7)},
+  editor    = {Piotr Bański and Adrien Barbaresi and Hanno Biber and Evelyn Breiteneder and Simon Clematide and Marc Kupietz and Harald L{\"u}ngen and Caroline Iliadi},
+  publisher = {Leibniz-Institut f{\"u}r Deutsche Sprache},
+  address   = {Mannheim},
+  doi       = {10.14618/ids-pub-9021},
+  url       = {http://nbn-resolving.de/urn:nbn:de:bsz:mh39-90215},
+  pages     = {9 -- 16},
+  year      = {2019},
+  abstract  = {Common Crawl is a considerably large, heterogeneous multilingual corpus comprised of crawled documents from the internet, surpassing 20TB of data and distributed as a set of more than 50 thousand plain text files where each contains many documents written in a wide variety of languages. Even though each document has a metadata block associated to it, this data lacks any information about the language in which each document is written, making it extremely difficult to use Common Crawl for monolingual applications. We propose a general, highly parallel, multithreaded pipeline to clean and classify Common Crawl by language; we specifically design it so that it runs efficiently on medium to low resource infrastructures where I/O speeds are the main constraint. We develop the pipeline so that it can be easily reapplied to any kind of heterogeneous corpus and so that it can be parameterised to a wide range of infrastructures. We also distribute a 6.3TB version of Common Crawl, filtered, classified by language, shuffled at line level in order to avoid copyright issues, and ready to be used for NLP applications.},
+  language  = {en}
+}
+
+@software{aws-ofi-nccl,
+  title        = {{AWS OFI NCCL}},
+  author       = {{Amazon Web Services}},
+  year         = {},
+  journal      = {GitHub repository},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/aws/aws-ofi-nccl}}
+}

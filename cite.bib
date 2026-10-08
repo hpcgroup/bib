@@ -15308,3 +15308,193 @@ month = jul
     url          = {https://docs.vllm.ai/en/stable/serving/parallelism\_scaling/},
     commit       = {}
 }
+
+      @inproceedings {AlphaServe,
+      author = {Zhuohan Li and Lianmin Zheng and Yinmin Zhong and Vincent Liu and Ying Sheng and Xin Jin and Yanping Huang and Zhifeng Chen and Hao Zhang and Joseph E. Gonzalez and Ion Stoica},
+      title = {{AlpaServe}: Statistical Multiplexing with Model Parallelism for Deep Learning Serving},
+      booktitle = {17th USENIX Symposium on Operating Systems Design and Implementation (OSDI 23)},
+      year = {2023},
+      isbn = {978-1-939133-34-2},
+      address = {Boston, MA},
+      pages = {663--679},
+      url = {https://www.usenix.org/conference/osdi23/presentation/li-zhouhan},
+      publisher = {USENIX Association},
+      month = jul
+      }
+
+  @INPROCEEDINGS{AMPeD,
+    author={Moolchandani, Diksha and Kundu, Joyjit and Ruelens, Frederik and Vrancx, Peter and Evenblij, Timon and Perumkunnil, Manu},
+    booktitle={2023 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+    title={AMPeD: An Analytical Model for Performance in Distributed Training of Transformers},
+    year={2023},
+    volume={},
+    number={},
+    pages={306-315},
+    keywords={Training;Analytical models;Computational modeling;Memory management;Systems architecture;Parallel processing;Transformers;Analytical Modeling;Transformers;Distributed Training;performance},
+    doi={10.1109/ISPASS57527.2023.00037}}
+
+@INPROCEEDINGS{arif2026inference,
+  author={Arif, Moiz and Maurya, Avinash and Vazhkudai, Sudharshan and Nicolae, Bogdan},
+  booktitle={2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)},
+  title={Understanding Inference Scaling for LLMS: Bottlenecks, Trade-Offs, and Performance Principles},
+  year={2026},
+  volume={},
+  number={},
+  pages={1070-1083},
+  keywords={Bandwidth;Cognition;Cognitive systems;Memory;Modeling;Decoding;Information rates;Throughput;Graphics processing units;Printing;LLM inference;parallelism and scheduling Analysis;performance characterization;memory capacity wall},
+  doi={10.1109/ISCA66397.2026.00084}}
+
+    @INPROCEEDINGS{astrasim,
+      author={Won, William and Heo, Taekyung and Rashidi, Saeed and Sridharan, Srinivas and Srinivasan, Sudarshan and Krishna, Tushar},
+      booktitle={2023 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+      title={ASTRA-sim2.0: Modeling Hierarchical Networks and Disaggregated Systems for Large-model Training at Scale},
+      year={2023},
+      volume={},
+      number={},
+      pages={283-294},
+      keywords={Training;Semiconductor device modeling;Analytical models;Network topology;Systems modeling;Throughput;Data models;Distributed training;High-performance training;Multi-dimensional network;Disaggregated memory system},
+      doi={10.1109/ISPASS57527.2023.00035}}
+
+      @inproceedings {DistServe,
+      author = {Yinmin Zhong and Shengyu Liu and Junda Chen and Jianbo Hu and Yibo Zhu and Xuanzhe Liu and Xin Jin and Hao Zhang},
+      title = {{DistServe}: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving},
+      booktitle = {18th USENIX Symposium on Operating Systems Design and Implementation (OSDI 24)},
+      year = {2024},
+      isbn = {978-1-939133-40-3},
+      address = {Santa Clara, CA},
+      pages = {193--210},
+      url = {https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin},
+      publisher = {USENIX Association},
+      month = jul
+      }
+
+    @inproceedings{DistSim,
+    author = {Lu, Guandong and Chen, Runzhe and Wang, Yakai and Zhou, Yangjie and Zhang, Rui and Hu, Zheng and Miao, Yanming and Cai, Zhifang and Li, Li and Leng, Jingwen and Guo, Minyi},
+    title = {DistSim: A performance model of large-scale hybrid distributed DNN training},
+    year = {2023},
+    isbn = {9798400701405},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3587135.3592200},
+    doi = {10.1145/3587135.3592200},
+    abstract = {With the ever-increasing computational demand of DNN training workloads, distributed training has been widely adopted. A combination of data, model and pipeline parallelism strategy, called hybrid parallelism distributed training, is imported to tackle the problem of deploying large-scale models. However, how to evaluate the hybrid strategy and the utilization of each device remains a challenge since existing works either profile on a real large-scale cluster with high time and money costs or only analyze a specific type of parallelism without considering the hybrid parallelism. In this work, we proposed DistSim, an event-based performance model to accurately analyze each device's computation and communication activities with low profiling costs. DistDim breaks down the model into events according to the given distributed strategy, which can be profiled on two nodes. Then DistSim leverages the hierarchy of different parallel strategies to generate the computation and communication event-flow from layer level to model level and finally the activity timeline of each device participating in training. Experiment shows that DistSim can reach <4\% errors when predicting distributing training batch time and <5\% errors when predicting a single device's activity time in various hybrid strategy settings. We also provide a use-case of DistSim, automatically evaluate and search the best distributed training strategy, and find a hybrid strategy with at most 7.37{\texttimes} throughput improvement.},
+    booktitle = {Proceedings of the 20th ACM International Conference on Computing Frontiers},
+    pages = {112–122},
+    numpages = {11},
+    keywords = {Distributed DNN training, performance model},
+    location = {Bologna, Italy},
+    series = {CF '23}
+    }
+
+      @inproceedings{HelixServing,
+      author = {Mei, Yixuan and Zhuang, Yonghao and Miao, Xupeng and Yang, Juncheng and Jia, Zhihao and Vinayak, Rashmi},
+      title = {Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow},
+      year = {2025},
+      isbn = {9798400706981},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3669940.3707215},
+      doi = {10.1145/3669940.3707215},
+      abstract = {This paper introduces Helix, a distributed system for high-throughput, low-latency large language model (LLM) serving in heterogeneous GPU clusters. The key idea behind Helix is to formulate inference computation of LLMs over heterogeneous GPUs and network connections as a max-flow problem on directed, weighted graphs, whose nodes represent GPU instances and edges capture both GPU and network heterogeneity through their capacities. Helix then uses a mixed integer linear programming (MILP) algorithm to discover highly optimized strategies to serve LLMs on heterogeneous GPUs. This approach allows Helix to jointly optimize model placement and request scheduling, two highly entangled tasks in heterogeneous LLM serving. Our evaluation on several heterogeneous clusters ranging from 24 to 42 GPU nodes shows that Helix improves serving throughput by up to 3.3x and reduces prompting and decoding latency by up to 66\% and 24\%, respectively, compared to existing approaches. Helix is available at https://github.com/Thesys-lab/Helix-ASPLOS25.},
+      booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1},
+      pages = {586–602},
+      numpages = {17},
+      keywords = {cloud computing, distributed systems, large language model serving, system for ml},
+      location = {Rotterdam, Netherlands},
+      series = {ASPLOS '25}
+      }
+
+@inproceedings{Huang2024moeinference,
+ author = {Huang, Haiyang and Ardalani, Newsha and Sun, Anna and Ke, Liu and Lee, Hsien-Hsin S. and Bhosale, Shruti and Wu, Carole-Jean and Lee, Benjamin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ doi = {10.52202/079017-2670},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {84033--84059},
+ publisher = {Curran Associates, Inc.},
+ title = {Toward Efficient Inference for Mixture of Experts},
+ volume = {37},
+ year = {2024}
+}
+
+  @inproceedings{isaevsc23,
+  author = {Isaev, Mikhail and Mcdonald, Nic and Dennison, Larry and Vuduc, Richard},
+  title = {Calculon: a methodology and tool for high-level co-design of systems and large language models},
+  year = {2023},
+  isbn = {9798400701092},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3581784.3607102},
+  doi = {10.1145/3581784.3607102},
+  abstract = {This paper presents a parameterized analytical performance model of transformer-based Large Language Models (LLMs) for guiding high-level algorithm-architecture codesign studies. This model derives from an extensive survey of performance optimizations that have been proposed for the training and inference of LLMs; the model's parameters capture application characteristics, the hardware system, and the space of implementation strategies. With such a model, we can systematically explore a joint space of hardware and software configurations to identify optimal system designs under given constraints, like the total amount of system memory. We implemented this model and methodology in a Python-based open-source tool called Calculon. Using it, we identified novel system designs that look significantly different from current inference and training systems, showing quantitatively the estimated potential to achieve higher efficiency, lower cost, and better scalability.},
+  booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  articleno = {71},
+  numpages = {14},
+  location = {Denver, CO, USA},
+  series = {SC '23}
+  }
+
+@misc{li2024flashcommunication,
+  title        = {Flash Communication: Reducing Tensor Parallelization Bottleneck for Fast Large Language Model Inference},
+  author       = {Li, Qingyuan and Zhang, Bo and Ye, Liang and Zhang, Yifan and Wu, Wei and Sun, Yerui and Ma, Lin and Xie, Yuchen},
+  archivePrefix= {arXiv},
+  year         = {2024},
+  month        = dec,
+  url          = {https://arxiv.org/abs/2412.04964}
+}
+
+    @INPROCEEDINGS{LLMServingSim,
+        author={Cho, Jaehong and Kim, Minsu and Choi, Hyunmin and Heo, Guseul and Park, Jongse},
+        booktitle={2024 IEEE International Symposium on Workload Characterization (IISWC)},
+        title={{LLMServingSim: A HW/SW Co-Simulation Infrastructure for LLM Inference Serving
+                at Scale}},
+        year={2024},
+        pages={15-29},
+        doi={10.1109/IISWC63097.2024.00012}
+    }
+
+    @INPROCEEDINGS{LLMServingSim2,
+        author={Cho, Jaehong and Choi, Hyunmin and Heo, Guseul and Park, Jongse},
+        booktitle={2026 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+        title={{LLMServingSim 2.0: A Unified Simulator for Heterogeneous and Disaggregated LLM Serving Infrastructure}},
+        year={2026},
+        pages={1-14},
+        doi={10.1109/ISPASS69572.2026.00012}
+    }
+
+      @inproceedings{metaMLSYS2026serve,
+       author = {Cho, Sung Min and Lee, Jaewon and Tang, Chunqiang and Lee, Yejin and Jeong, Geonhwa and Agape, Anca and Batura, Scott and Boivin, Vincent and Chen, Stephen and Chen, Renfei and Chen, Sijia and Cui, Yan and Davis, Bradley and Deng, Zhaoxia and Egebo, Nick and El-Haraty, Emad and Estienne, Sebastien and Fang, Lu and Fromm, Josh and Ganapathy, Raj and Goswami, Vedanuj and Guo, Leo and Hu, Ye and Hua, Chenheli and Huang, Jianyu and Ibrahim, Aya and Jagannath, Niranjan and Jia, Hongyi and Kim, Changkyu and Li, Shikai and Liu, Brandon and Liu, Jiawen and Mathews, Ajit and Meng, Xiaozhu and Mihailescu, Vlad Tiberiu and Nagpal, Amit and Naumov, Maxim and Ostrowski, Michal and Ouyang, Jialin and Park, Jason and Pumma, Sarunya and Qi, Ye and Qi, Zixi and Reizenstein, Jeremy and Saha, Rajasi and Santhanam, Nandhini and Shu, Zhan and Silva, Ruan and Sizov, Grigory and Swenson, Jon Maltiel and Taylor, Brandon and Thi, Chris and Victoria, Adolfo and Wang, Yunfan and Wang, Pengchao and Wang, Wenchen and Wang, Xiaodong and Wasti, Bram and Xu, Wei and Yang, Qirui and Yang, Jingyi and Yuen, Hector and Zhang, Zhengyuan and Zhang, Jing and Zhen, Jenny and Zhou, Yanjun},
+       booktitle = {Proceedings of Machine Learning and Systems},
+       editor = {A. Chowdhery and Z. Jia},
+       pages = {1415--1430},
+       publisher = {MLSys},
+       title = {Optimizing Deployment Configurations for LLM Inference},
+       volume = {8},
+       year = {2026}
+      }
+
+      @inproceedings{Splitwise,
+      author = {Patel, Pratyush and Choukse, Esha and Zhang, Chaojie and Shah, Aashaka and Goiri, {\'I}{\~n}igo and Maleki, Saeed and Bianchini, Ricardo},
+      title = {Splitwise: Efficient Generative LLM Inference Using Phase Splitting},
+      year = {2025},
+      isbn = {9798350326581},
+      publisher = {IEEE Press},
+      url = {https://doi.org/10.1109/ISCA59077.2024.00019},
+      doi = {10.1109/ISCA59077.2024.00019},
+      abstract = {Generative large language model (LLM) applications are growing rapidly, leading to large-scale deployments of expensive and power-hungry GPUs. Our characterization of LLM inference shows that each inference request undergoes two phases: a compute-intensive prompt computation phase and a memoryintensive token generation phase, each with distinct latency, throughput, memory, and power characteristics. Despite state-of-the-art batching and scheduling, the token generation phase underutilizes compute resources. Unlike prompt computation, token generation does not need the compute capability of the latest GPUs and can be run with lower power and cost.Based on these insights, we propose Splitwise, a model deployment and scheduling technique that splits the two phases of LLM inference requests on to separate machines. Splitwise enables phase-specific resource management using hardware that is well suited for each phase. Request state is transferred efficiently between machines using optimized network libraries on the fast back-plane interconnects available in today's GPU clusters. Using Splitwise, we design homogeneous and heterogeneous LLM inference clusters optimized for throughput, cost, and power. Compared to current designs, Splitwise clusters achieve up to 1.4{\texttimes} higher throughput at 20\% lower cost. Alternatively, they can deliver 2.35{\texttimes} more throughput under the same power and cost budgets.},
+      booktitle = {Proceedings of the 51st Annual International Symposium on Computer Architecture},
+      pages = {118–132},
+      numpages = {15},
+      location = {Buenos Aires, Argentina},
+      series = {ISCA '24}
+      }
+
+    @inproceedings{vidur,
+     author = {Agrawal, Amey and Kedia, Nitin and Mohan, Jayashree and Panwar, Ashish and Kwatra, Nipun and Gulavani, Bhargav S. and Ramjee, Ramachandran and Tumanov, Alexey},
+     booktitle = {Proceedings of Machine Learning and Systems},
+     editor = {P. Gibbons and G. Pekhimenko and C. De Sa},
+     pages = {351--366},
+     title = {VIDUR: A LARGE-SCALE SIMULATION FRAMEWORK FOR LLM INFERENCE},
+     url = {https://proceedings.mlsys.org/paper\_files/paper/2024/file/b74a8de47d2b3c928360e0a011f48351-Paper-Conference.pdf},
+     volume = {6},
+     year = {2024}
+    }

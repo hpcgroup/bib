@@ -15765,3 +15765,69 @@ month = jul
     month        = apr,
     howpublished = {\url{https://api-docs.deepseek.com/news/news260424}}
 }
+
+@techreport{gemmascope2,
+  title       = {Gemma Scope 2: Technical Paper},
+  author      = {McDougall, Callum and Conmy, Arthur
+                 and Kram{\'a}r, J{\'a}nos
+                 and Lieberum, Tom
+                 and Rajamanoharan, Senthooran
+                 and Nanda, Neel},
+  institution = {Google DeepMind},
+  year        = {2025},
+  type        = {Technical Report},
+  url         = {https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/Gemma\_Scope\_2\_Technical\_Paper.pdf}
+}
+
+@misc{gemmascope,
+      title={Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2}, 
+      author={Tom Lieberum and Senthooran Rajamanoharan and Arthur Conmy and Lewis Smith and Nicolas Sonnerat and Vikrant Varma and János Kramár and Anca Dragan and Rohin Shah and Neel Nanda},
+      year={2024},
+      eprint={2408.05147},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2408.05147}, 
+}
+
+
+@InProceedings{sae-ensemble,
+  title = 	 {Ensembling Sparse Autoencoders},
+  author =       {Gadgil, Soham and Lin, Chris and Lee, Su-In},
+  booktitle = 	 {Proceedings of the 43rd International Conference on Machine Learning},
+  pages = 	 {32515--32541},
+  year = 	 {2026},
+  editor = 	 {Zhang, Tong and Dudik, Miroslav and Jaggi, Martin and Agarwal, Alekh and Li, Sharon and Schuurmans, Dale and Zhu, Jerry and Berkenkamp, Felix and Dong, Hanze and Bietti, Alberto},
+  volume = 	 {306},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v306/main/assets/gadgil26a/gadgil26a.pdf},
+  url = 	 {https://proceedings.mlr.press/v306/gadgil26a.html},
+  abstract = 	 {Sparse autoencoders (SAEs) are used to decompose neural network activations into human-interpretable features. Typically, features learned by a single SAE are used for downstream applications. However, it has recently been shown that a single SAE captures only a limited subset of features that can be extracted from the activation space. Motivated by this limitation, we introduce and formalize SAE ensembles. Furthermore, we propose to ensemble multiple SAEs through <em>naive bagging</em> and <em>boosting</em>. In naive bagging, SAEs trained with different weight initializations are ensembled, whereas in boosting SAEs sequentially trained to minimize the residual error are ensembled. Theoretically, naive bagging and boosting are justified as approaches to reduce reconstruction error. Empirically, we evaluate our ensemble approaches with three settings of language models and SAE architectures. Our empirical results demonstrate that, compared to an expanded SAE that matches the number of features in the ensemble, ensembling SAEs improves the reconstruction of language model activations along with SAE stability. Additionally, on downstream tasks such as concept detection and spurious correlation removal, SAE ensembles achieve better performance, showing improved practical utility.}
+}
+
+@misc{llamascope,
+      title={Llama Scope: Extracting Millions of Features from Llama-3.1-8B with Sparse Autoencoders}, 
+      author={Zhengfu He and Wentao Shu and Xuyang Ge and Lingjie Chen and Junxuan Wang and Yunhua Zhou and Frances Liu and Qipeng Guo and Xuanjing Huang and Zuxuan Wu and Yu-Gang Jiang and Xipeng Qiu},
+      year={2024},
+      eprint={2410.20526},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.20526}, 
+}
+
+@article{ameisen2025circuit,
+  author = {Ameisen, Emmanuel and Lindsey, Jack and Pearce, Adam
+    and Gurnee, Wes and Turner, Nicholas L. and Chen, Brian
+    and Citro, Craig and Abrahams, David and Carter, Shan
+    and Hosmer, Basil and Marcus, Jonathan and Sklar, Michael
+    and Templeton, Adly and Bricken, Trenton and McDougall, Callum
+    and Cunningham, Hoagy and Henighan, Thomas and Jermyn, Adam
+    and Jones, Andy and Persic, Andrew and Qi, Zhenyi
+    and Ben Thompson, T. and Zimmerman, Sam and Rivoire, Kelley
+    and Conerly, Thomas and Olah, Chris and Batson, Joshua},
+  title = {Circuit Tracing: Revealing Computational Graphs in Language Models},
+  journal = {Transformer Circuits Thread},
+  year = {2025},
+  url = {https://transformer-circuits.pub/2025/attribution-graphs/methods.html}
+}

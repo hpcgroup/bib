@@ -16132,3 +16132,124 @@ series = {PPoPP '22}
   year={2026},
   publisher={Nature Publishing Group UK, London}
 }
+
+@inproceedings{noukhovitch2025asyncrlhf,
+  title     = {Asynchronous {RLHF}: Faster and More Efficient Off-Policy {RL} for Language Models},
+  author    = {Noukhovitch, Michael and Huang, Shengyi and Xhonneux, Sophie and Hosseini, Arian and Agarwal, Rishabh and Courville, Aaron},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+}
+
+@misc{fu2025areal,
+  title         = {{AReaL}: A Large-Scale Asynchronous Reinforcement Learning System for Language Reasoning},
+  author        = {Fu, Wei and Gao, Jiaxuan and Shen, Xujie and Zhu, Chen and Mei, Zhiyu and He, Chuyi and Xu, Shusheng and Wei, Guo and Mei, Jun and Wang, Jiashu and Yang, Tongkai and Yuan, Binhang and Wu, Yi},
+  year          = {2025},
+  eprint        = {2505.24298},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  howpublished  = {arXiv preprint arXiv:2505.24298},
+}
+
+@misc{zhong2025streamrl,
+  title         = {{StreamRL}: Scalable, Heterogeneous, and Elastic {RL} for {LLMs} with Disaggregated Stream Generation},
+  author        = {Zhong, Yinmin and Zhang, Zili and Song, Xiaoniu and Hu, Hanpeng and Jin, Chao and Wu, Bingyang and Chen, Nuo and Chen, Yukun and Zhou, Yu and Wan, Changyi and Zhou, Hongyu and Jiang, Yimin and Zhu, Yibo and Jiang, Daxin},
+  year          = {2025},
+  eprint        = {2504.15930},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  howpublished  = {arXiv preprint arXiv:2504.15930},
+}
+
+@misc{wu2025llamarl,
+  title         = {{LlamaRL}: A Distributed Asynchronous Reinforcement Learning Framework for Efficient Large-scale {LLM} Training},
+  author        = {Wu, Bo and Wang, Sid and Tang, Yunhao and Ding, Jia and Helenowski, Eryk and Tan, Liang and Xu, Tengyu and Gowda, Tushar and Chen, Zhengxing and Zhu, Chen and Tang, Xiaocheng and Qian, Yundi and Zhu, Beibei and Hou, Rui},
+  year          = {2025},
+  eprint        = {2505.24034},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  howpublished  = {arXiv preprint arXiv:2505.24034},
+}
+
+@inproceedings{klimovic2025longtail,
+author = {Hu, Qinghao and Yang, Shang and Guo, Junxian and Yao, Xiaozhe and Lin, Yujun and Gu, Yuxian and Cai, Han and Gan, Chuang and Klimovic, Ana and Han, Song},
+title = {Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter},
+year = {2026},
+isbn = {9798400723599},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3779212.3790231},
+doi = {10.1145/3779212.3790231},
+abstract = {The emergence of Large Language Models (LLMs) with strong reasoning capabilities marks a significant milestone, unlocking new frontiers in complex problem-solving. However, training these reasoning models, typically using Reinforcement Learning (RL), encounters critical efficiency bottlenecks: response generation during RL training exhibits a persistent long-tail distribution, where a few very long responses dominate execution time, wasting resources and inflating costs. To address this, we propose TLT, a system that accelerates reasoning RL training losslessly by integrating adaptive speculative decoding. Applying speculative decoding in RL is challenging due to the dynamic workloads, evolving target model, and draft model training overhead. TLT overcomes these obstacles with two synergistic components: (1) Adaptive Drafter, a lightweight draft model trained continuously on idle GPUs during long-tail generation to maintain alignment with the target model at no extra cost; and (2) Adaptive Rollout Engine, which maintains a memory-efficient pool of pre-captured CUDAGraphs and adaptively select suitable SD strategies for each input batch. Evaluations demonstrate that TLT achieves over 1.7x end-to-end RL training speedup over state-of-the-art systems, preserves the model accuracy, and yields a high-quality draft model as a free byproduct suitable for efficient deployment. Code is released at https://github.com/mit-han-lab/fastrl.},
+booktitle = {Proceedings of the 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+pages = {1933–1948},
+numpages = {16},
+keywords = {large language models, reinforcement learning, speculative decoding, training efficiency},
+location = {Pittsburgh, PA, USA},
+series = {ASPLOS '26}
+}
+
+@inproceedings{yu2025dapo,
+  title     = {{DAPO}: An Open-Source {LLM} Reinforcement Learning System at Scale},
+  author    = {Yu, Qiying and Zhang, Zheng and Zhu, Ruofei and Yuan, Yufeng and Zuo, Xiaochen and Yue, Yu and Dai, Weinan and Fan, Tiantian and Liu, Gaohong and Liu, Juncai and Liu, LingJun and Liu, Xin and Lin, Haibin and Lin, Zhiqi and Ma, Bole and Sheng, Guangming and Tong, Yuxuan and Zhang, Chi and Zhang, Mofan and Zhang, Ru and Zhang, Wang and Zhu, Hang and Zhu, Jinhua and Chen, Jiaze and Chen, Jiangjie and Wang, Chengyi and Yu, Hongli and Song, Yuxuan and Wei, Xiangpeng and Zhou, Hao and Liu, Jingjing and Ma, Wei-Ying and Zhang, Ya-Qin and Yan, Lin and Wu, Yonghui and Wang, Mingxuan},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+}
+
+@inproceedings{mukherjee2025rlsubnetworks,
+  title     = {Reinforcement Learning Finetunes Small Subnetworks in Large Language Models},
+  author    = {Mukherjee, Sagnik and Yuan, Lifan and Hakkani-Tur, Dilek and Peng, Hao},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+}
+
+@inproceedings{agrawal2024sarathiserve,
+  title     = {Taming Throughput-Latency Tradeoff in {LLM} Inference with {Sarathi-Serve}},
+  author    = {Agrawal, Amey and Kedia, Nitin and Panwar, Ashish and Mohan, Jayashree and Kwatra, Nipun and Gulavani, Bhargav S. and Tumanov, Alexey and Ramjee, Ramachandran},
+  booktitle = {USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+  year      = {2024},
+}
+
+@inproceedings{kamath2025podattention,
+  title     = {{POD-Attention}: Unlocking Full Prefill-Decode Overlap for Faster {LLM} Inference},
+  author    = {Kamath, Aditya K. and Prabhu, Ramya and Mohan, Jayashree and Peter, Simon and Ramjee, Ramachandran and Panwar, Ashish},
+  booktitle = {ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  year      = {2025},
+}
+
+@inproceedings{sheng2025hybridflow,
+  title     = {{HybridFlow}: A Flexible and Efficient {RLHF} Framework},
+  author    = {Sheng, Guangming and Zhang, Chi and Ye, Zilingfeng and Wu, Xibin and Zhang, Wang and Zhang, Ru and Peng, Yanghua and Lin, Haibin and Wu, Chuan},
+  booktitle = {European Conference on Computer Systems (EuroSys)},
+  year      = {2025},
+}
+
+@inproceedings{weingram2025hpcr1,
+  title     = {{HPC-R1}: Characterizing {R1}-like Large Reasoning Models on {HPC}},
+  author    = {Weingram, Adam and Zhang, Duo and Chen, Zhonghao and Qi, Hao and Lu, Xiaoyi},
+  booktitle = {International Conference for High Performance Computing, Networking, Storage and Analysis (SC)},
+  year      = {2025},
+}
+
+@misc{zhou2025rlinthewild,
+  title         = {{RL} in the Wild: Characterizing {RLVR} Training in {LLM} Deployment},
+  author        = {Zhou, Jiecheng and Hu, Qinghao and Jin, Yuyang and Wang, Zerui and Sun, Peng and Gu, Yuzhe and Zhang, Wenwei and Zhai, Mingshu and Zhang, Xingcheng and Zhang, Weiming},
+  year          = {2025},
+  eprint        = {2509.25279},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  howpublished  = {arXiv preprint arXiv:2509.25279},
+}
+
+@misc{skyrl,
+  title        = {{SkyRL}: A Modular Full-stack {RL} Library for {LLMs}},
+  author       = {{NovaSky-AI}},
+  howpublished = {\url{https://github.com/NovaSky-AI/SkyRL}},
+  year         = {2025},
+}
+
+@misc{nemorl,
+  title        = {{NeMo RL}: A Scalable Toolkit for Efficient Model Reinforcement},
+  author       = {{NVIDIA}},
+  howpublished = {\url{https://github.com/NVIDIA-NeMo/RL}},
+  year         = {2025},
+}

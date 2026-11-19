@@ -3435,7 +3435,7 @@
   publisher    = {},
   journal      = {},
   howpublished = {\url{https://www.nvidia.com/en-us/data-center/nvlink/}},
-  commit       = {}
+  commit       = {},
 }
 
 @misc{gloo,
@@ -16379,6 +16379,7 @@ series = {ASPLOS '26}
   volume={38},
   year={2026}
 }
+
 @inproceedings{schroeder2006open,
   author = {Schroeder, Bianca and Wierman, Adam and Harchol-Balter, Mor},
   title = {Open versus closed: a cautionary tale},
@@ -16391,4 +16392,63 @@ series = {ASPLOS '26}
   location = {San Jose, CA},
   series = {NSDI'06},
   doi = {10.5555/1267680.1267698}
+}
+
+@inproceedings{chu2025scalingllama3,
+author = {Chu, Weiwei and Xie, Xinfeng and Yu, Jiecao and Wang, Jie and Phanishayee, Amar and Tang, Chunqiang and Hao, Yuchen and Huang, Jianyu and Ozdal, Mustafa and Wang, Jun and Goswami, Vedanuj and Goyal, Naman and Kadian, Abhishek and Gu, Andrew and Cai, Chris and Tian, Feng and Wang, Xiaodong and Si, Min and Balaji, Pavan and Chu, Ching-Hsiang and Park, Jongsoo},
+title = {Scaling Llama 3 Training with Efficient Parallelism Strategies},
+year = {2025},
+isbn = {9798400712616},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3695053.3731410},
+doi = {10.1145/3695053.3731410},
+abstract = {Llama is a widely used open-source large language model. This paper presents the design and implementation of the parallelism techniques used in Llama 3 pre-training. To achieve efficient training on tens of thousands of GPUs, Llama 3 employs a combination of four-dimensional parallelism: fully sharded data parallelism, tensor parallelism, pipeline parallelism, and context parallelism. Beyond achieving efficiency through parallelism and model co-design, we also address other equally critical aspects. First, we enhance flexibility—for example, through novel pipeline parallelism that supports evolving batch sizes and heterogeneous model architectures, and innovative context parallelism that enables model innovations such as document-mask attention. Second, we prioritize practicality—for example, by enabling the diagnosis of performance and numerical issues at scale. Finally, drawing on our experience with large-scale training, we provide recommendations for future hardware design.},
+booktitle = {Proceedings of the 52nd Annual International Symposium on Computer Architecture},
+pages = {1703–1716},
+numpages = {14},
+keywords = {Large Language Model, Training, Parallelism, Distributed System},
+location = {Tokyo, Japan},
+series = {ISCA '25}
+}
+
+@misc{cx7,
+  author       = {NVIDIA},
+  title        = {ConnectX-7 400G Adapters: Accelerated networking for modern data center infrastructures.},
+  year         = {2023},
+  publisher    = {},
+  journal      = {},
+  howpublished = {\url{https://resources.nvidia.com/en-us-accelerated-networking-resource-library/connectx-7-datasheet}},
+  commit       = {}
+}
+
+@article{hamidouche2025gpu,
+  title={GPU-initiated networking for NCCL},
+  author={Hamidouche, Khaled and Bachan, John and Markthub, Pak and Gootzen, Peter-Jan and Agostini, Elena and Jeaugey, Sylvain and Shafi, Aamir and Theodorakis, Georgios and Venkata, Manjunath Gorentla},
+  journal={arXiv preprint arXiv:2511.15076},
+  year={2025}
+}
+
+@misc{nccl-device,
+  title        = {NCCL Device API},
+  year         = {2025},
+  publisher    = {NVIDIA},
+  url = {https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/api/device.html}
+}
+
+@misc{nvl72-blog,
+  author       = {NVIDIA},
+  title        = {{NVIDIA GB200 NVL72} Delivers Trillion-Parameter {LLM} Training and Real-Time Inference},
+  year         = {2024},
+  month        = {},
+  howpublished = {NVIDIA Technical Blog},
+  url          = {https://developer.nvidia.com/blog/nvidia-gb200-nvl72-delivers-trillion-parameter-llm-training-and-real-time-inference/}
+}
+
+@misc{qwen35blog,
+    title = {Qwen3.5: Towards Native Multimodal Agents},
+    url = {https://qwen.ai/blog?id=qwen3.5},
+    author = {Qwen Team},
+    month = {February},
+    year = {2026}
 }
